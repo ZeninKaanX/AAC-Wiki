@@ -48,3 +48,8 @@ body{background:#080e18;font-size:14px;-webkit-font-smoothing:antialiased}
 @media(max-width:380px){.cover-actions{gap:9px}.cover-actions .primary-btn,.cover-actions .outline-btn{font-size:10px;padding:11px}.breadcrumb{font-size:11px}.motion-toggle{font-size:9px}.wiki-cover-copy{padding:24px 19px}}
 
 .process-content h4{margin:18px 0 10px;color:#d6e8fe;font-size:15px;font-weight:600;line-height:1.8}
+
+/* Author signature */
+.site-signature{margin-top:auto;padding:28px 12px 22px;color:#b7c9e1;font-family:Lora,Georgia,serif;font-style:italic;font-size:20px;letter-spacing:1px;line-height:1.4;user-select:none}
+.footer-signature{display:none}
+@media(max-width:900px){.footer-signature{display:inline-block;margin-right:16px;font-family:Lora,Georgia,serif;font-style:italic;font-size:18px;color:#b7c9e1;letter-spacing:1px}}
