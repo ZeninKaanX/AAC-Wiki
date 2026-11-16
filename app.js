@@ -5,7 +5,7 @@ const escapeHTML=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>'
 const clips=[
   {
     "id": 1,
-    "file": "Örnek-Hile-Klipleri/8d49bb07-d3a2-4464-9506-9bb1f47ad67d.mp4",
+    "file": "Örnek-Hile-Klipleri/8d49bb07-d3a2-4464-9506-9bb1f47ad67d-ses-v1.mp4",
     "duration": 31,
     "poster": "assets/posters/clip-1.jpg",
     "title": "Hile örneği 01",
@@ -50,7 +50,7 @@ const clips=[
   },
   {
     "id": 2,
-    "file": "Örnek-Hile-Klipleri/93dcbad8-268b-4ddf-8688-5fd32ce9f59b.mp4",
+    "file": "Örnek-Hile-Klipleri/93dcbad8-268b-4ddf-8688-5fd32ce9f59b-ses-v1.mp4",
     "duration": 22,
     "poster": "assets/posters/clip-2.jpg",
     "title": "Hile örneği 02",
@@ -95,7 +95,7 @@ const clips=[
   },
   {
     "id": 3,
-    "file": "Örnek-Hile-Klipleri/Atlas Client _ Minecraft 1.21.11 2026-11-12 19-17-04 - Trim.mp4",
+    "file": "Örnek-Hile-Klipleri/Atlas Client _ Minecraft 1.21.11 2026-11-12 19-17-04 - Trim-ses-v1.mp4",
     "duration": 5,
     "poster": "assets/posters/clip-3.jpg",
     "title": "Hile örneği 03",
@@ -140,7 +140,7 @@ const clips=[
   },
   {
     "id": 4,
-    "file": "Örnek-Hile-Klipleri/AutoPot.mp4",
+    "file": "Örnek-Hile-Klipleri/AutoPot-ses-v1.mp4",
     "duration": 21,
     "poster": "assets/posters/clip-4.jpg",
     "title": "Hile örneği 04",
@@ -185,7 +185,7 @@ const clips=[
   },
   {
     "id": 5,
-    "file": "Örnek-Hile-Klipleri/b47e0333-5791-498c-b8c9-fe9d001a1f31.mp4",
+    "file": "Örnek-Hile-Klipleri/b47e0333-5791-498c-b8c9-fe9d001a1f31-ses-v1.mp4",
     "duration": 21,
     "poster": "assets/posters/clip-5.jpg",
     "title": "Hile örneği 05",
@@ -235,7 +235,7 @@ const clips=[
   },
   {
     "id": 6,
-    "file": "Örnek-Hile-Klipleri/5ebaebbd-30e9-4d06-a4fc-fc17fd56ee65.mp4",
+    "file": "Örnek-Hile-Klipleri/5ebaebbd-30e9-4d06-a4fc-fc17fd56ee65-ses-v1.mp4",
     "duration": 21,
     "poster": "assets/posters/clip-6.jpg",
     "title": "PvP bitirişi · Atlas Oyuncu · 15.11 01:34:54",

@@ -17,3 +17,7 @@ python3 -m http.server 8766 --bind 127.0.0.1
 ## İçerik
 
 Rehber, PC kontrol süreci, uygulama açıklamaları, mobil video, kanıt oluşturucu, rapor kontrol listesi, altı video ve iki ekran görüntüsü, uygulama testi. Reach eşiği 3,8 bloktur. Yazı tipleri ve medya yereldir; YouTube kullanım videosu internet gerektirir. Müzik atıfları `assets/music/credits.json` içinde korunur.
+
+## Kayıtların ana sesi
+
+Altı kaydın ses izi iki geçişli loudnorm ile yaklaşık −23 LUFS seviyesine getirildi (tepe hedefi −4 dBTP). Yeniden kodlanan AAC sesin en yüksek gerçek tepesi −3 dBTP altında doğrulandı. Görüntü akışı yeniden kodlanmadan kopyalandı ve SHA-256 ile eşitliği kontrol edildi. Müzik ayrı oynatıcıdan ayarlanır. Orijinaller, değişiklikten önceki Git geçmişinde korunur.
