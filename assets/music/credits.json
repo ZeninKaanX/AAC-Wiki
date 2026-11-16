@@ -1,0 +1,78 @@
+[
+  {
+    "slug": "nachtmusik",
+    "title": "Mozart · Eine kleine Nachtmusik",
+    "composer": "Wolfgang Amadeus Mozart",
+    "source": "https://commons.wikimedia.org/wiki/File:Mozart_K525_Serenade_in_G_Major_1_-_Allegro.ogg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/6/68/Mozart_K525_Serenade_in_G_Major_1_-_Allegro.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "license": "Public domain",
+    "licenseURL": "",
+    "artist": "Wolfgang Amadeus Mozart (1756–1791). The website lists the \"performer\" as the European Archive, which does not make sense (the link goes to <a rel=\"nofollow\" class=\"external free\" href=\"https://musopen.org/music/performer/european-archive/\">https://musopen.org/music/performer/european-archive/</a> )",
+    "file": "assets/music/nachtmusik.mp3",
+    "original": "Mozart K525 Serenade in G Major 1 - Allegro.ogg"
+  },
+  {
+    "slug": "fur-elise",
+    "title": "Beethoven · Für Elise",
+    "composer": "Ludwig van Beethoven",
+    "performer": "",
+    "file": "assets/music/fur-elise.mp3",
+    "source": "https://commons.wikimedia.org/wiki/File:FurElise.ogg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/7/7b/FurElise.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "license": "Public domain",
+    "licenseURL": "",
+    "changes": "50-second MP3 excerpt; normalized loudness; 0.5-second fade-in",
+    "original": "FurElise.ogg"
+  },
+  {
+    "slug": "spring",
+    "title": "Vivaldi · İlkbahar",
+    "composer": "Antonio Vivaldi",
+    "performer": "John Harrison, keman · Wichita State University Chamber Players",
+    "file": "assets/music/spring.mp3",
+    "source": "https://commons.wikimedia.org/wiki/File:Vivaldi_-_Four_Seasons_1_Spring_mvt_1_Allegro_-_John_Harrison_violin.oga",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Vivaldi_-_Four_Seasons_1_Spring_mvt_1_Allegro_-_John_Harrison_violin.oga?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+    "changes": "50-second MP3 excerpt; normalized loudness; 0.5-second fade-in",
+    "original": "Vivaldi - Four Seasons 1 Spring mvt 1 Allegro - John Harrison violin.oga"
+  },
+  {
+    "slug": "nocturne",
+    "title": "Chopin · Nocturne Op. 9 No. 2",
+    "composer": "Frédéric Chopin",
+    "performer": "Membeth",
+    "file": "assets/music/nocturne.mp3",
+    "source": "https://commons.wikimedia.org/wiki/File:Chopin.Nocturne.Es-Dur.opus.9.2.ogg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Chopin.Nocturne.Es-Dur.opus.9.2.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "license": "CC0",
+    "licenseURL": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "changes": "50-second MP3 excerpt; normalized loudness; 0.5-second fade-in",
+    "original": "Chopin.Nocturne.Es-Dur.opus.9.2.ogg"
+  },
+  {
+    "slug": "prelude",
+    "title": "Bach · Prelüd, BWV 846",
+    "composer": "Johann Sebastian Bach",
+    "performer": "Kimiko Ishizaka",
+    "file": "assets/music/prelude.mp3",
+    "source": "https://commons.wikimedia.org/wiki/File:Kimiko_Ishizaka_-_Bach_-_Well-Tempered_Clavier,_Book_1_-_01_Prelude_No._1_in_C_major,_BWV_846.ogg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Kimiko_Ishizaka_-_Bach_-_Well-Tempered_Clavier%2C_Book_1_-_01_Prelude_No._1_in_C_major%2C_BWV_846.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "license": "CC0",
+    "licenseURL": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "changes": "50-second MP3 excerpt; normalized loudness; 0.5-second fade-in",
+    "original": "Kimiko Ishizaka - Bach - Well-Tempered Clavier, Book 1 - 01 Prelude No. 1 in C major, BWV 846.ogg"
+  },
+  {
+    "slug": "symphony-40",
+    "title": "Mozart · Senfoni No. 40",
+    "file": "assets/music/symphony-40.mp3",
+    "composer": "Wolfgang Amadeus Mozart",
+    "performer": "Musopen Symphony",
+    "source": "https://commons.wikimedia.org/wiki/File:Mozart_-_Symphony_No._40_in_G_minor,_K550_-_I._Molto_allegro_(Musopen_Symphony).flac",
+    "license": "Public domain",
+    "licenseURL": "",
+    "changes": "50-second MP3 excerpt; normalized loudness; fade-in",
+    "original": "Mozart - Symphony No. 40 in G minor, K550 - I. Molto allegro (Musopen Symphony).flac"
+  }
+]

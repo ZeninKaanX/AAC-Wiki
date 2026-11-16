@@ -1,0 +1,17 @@
+{
+  "source": "https://dosya.co/02l40dsuhax5/AtlasOyuncu_Hile_Kontrol.rar.html",
+  "archive": "AtlasOyuncu_Hile_Kontrol.rar",
+  "sha256": "1436f55013439153ea85aafa1c32c1e2cfff7c7aae2c91a823750832506d53b6",
+  "bytes": 8983759,
+  "inspection": "Arşiv dosya listesi ve iki uygulamanın statik kimlik bilgileri incelendi; uygulamalar çalıştırılmadı.",
+  "files": [
+    "AtlasOyuncu Hile Kontrol/BrowserDownloadsView.exe",
+    "AtlasOyuncu Hile Kontrol/BrowsingHistoryView.exe",
+    "AtlasOyuncu Hile Kontrol/Everything-1.4.1.1030.x86-Setup.exe",
+    "AtlasOyuncu Hile Kontrol/journal-tool.exe",
+    "AtlasOyuncu Hile Kontrol/JournalTrace.exe",
+    "AtlasOyuncu Hile Kontrol/LastActivityView.exe",
+    "AtlasOyuncu Hile Kontrol/USBDeview.exe",
+    "AtlasOyuncu Hile Kontrol/WinPrefetchView.exe"
+  ]
+}

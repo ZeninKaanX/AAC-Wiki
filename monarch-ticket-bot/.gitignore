@@ -1,4 +1,0 @@
-.env
-node_modules/
-data/store.json
-data/order-errors.log

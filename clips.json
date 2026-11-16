@@ -1,0 +1,259 @@
+[
+  {
+    "id": 1,
+    "file": "Örnek-Hile-Klipleri/8d49bb07-d3a2-4464-9506-9bb1f47ad67d.mp4",
+    "duration": 31,
+    "poster": "assets/posters/clip-1.jpg",
+    "title": "Hile örneği 01",
+    "summary": "Zaman işaretlerinden ilgili bölümlere geçerek kaydı inceleyebilirsin.",
+    "observations": [
+      {
+        "time": 0,
+        "label": "Arazi görünümü",
+        "text": "Obsidyenler görünürken aralarındaki geniş alanlar boş görünüyor."
+      },
+      {
+        "time": 11.1,
+        "label": "Dövüş bölümü",
+        "text": "Kamera yön değiştirirken oyuncuların hareketini ve saldırı dizisini birlikte izle."
+      },
+      {
+        "time": 30,
+        "label": "Sahne değişimi",
+        "text": "Kayıt sonunda alan değişiyor. Önceki dövüş dizisini bu noktaya kadar takip edebilirsin."
+      }
+    ],
+    "discord": {
+      "kind": "Dosya kimliği eşleşti",
+      "date": "14 Kasım 2026 · 17:40",
+      "recordTitle": "Atlas Oyuncu · 14.11 17:36:11",
+      "report": "Önceki raporda LEjYONER25 için kont red yazıyor. Ek dosyanın kimliği birebir eşleşti; raporla ilişki aynı gönderim dizisine dayanıyor.",
+      "url": "https://discord.com/channels/1225920047625797814/1279352655625457754"
+    },
+    "focus": "Zaman işaretlerinden ilgili bölümlere geçebilir, oynatma hızını düşürerek ayrıntılara bakabilirsin.",
+    "status": "Hile örneği",
+    "verificationSource": "Uzman AAC tarafından hile örneği olarak sağlandı.",
+    "music": {
+      "title": "Mozart · Eine kleine Nachtmusik",
+      "file": "assets/music/nachtmusik.mp3",
+      "composer": "Wolfgang Amadeus Mozart",
+      "performer": "",
+      "source": "https://commons.wikimedia.org/wiki/File:Mozart_K525_Serenade_in_G_Major_1_-_Allegro.ogg",
+      "license": "Public domain",
+      "licenseURL": "",
+      "changes": ""
+    }
+  },
+  {
+    "id": 2,
+    "file": "Örnek-Hile-Klipleri/93dcbad8-268b-4ddf-8688-5fd32ce9f59b.mp4",
+    "duration": 22,
+    "poster": "assets/posters/clip-2.jpg",
+    "title": "Hile örneği 02",
+    "summary": "Zaman işaretlerinden ilgili bölümlere geçerek kaydı inceleyebilirsin.",
+    "observations": [
+      {
+        "time": 5.9,
+        "label": "Yakınlaşma",
+        "text": "Rakibin yaklaşmasını, zıplamasını ve yön değiştirmesini takip et."
+      },
+      {
+        "time": 7.8,
+        "label": "Vuruş dizisi",
+        "text": "Saldırı ve hasar anlarını 0,25× hızda karşılaştır; hedef takibini aynı anda izle."
+      },
+      {
+        "time": 15.8,
+        "label": "Son dövüş anları",
+        "text": "Son vuruş dizisinde bakış yönü, hareket ve saldırı zamanlamasına odaklan."
+      }
+    ],
+    "discord": {
+      "kind": "Dosya kimliği eşleşti",
+      "date": "12 Kasım 2026 · 20:37",
+      "recordTitle": "PvP bitirişi · Atlas Oyuncu · 12.11 20:20:24",
+      "report": "Önceki raporda nbrknk için kont kaçış yazıyor. Dosya kimliği birebir eşleşti.",
+      "url": "https://discord.com/channels/1225920047625797814/1279352655625457754"
+    },
+    "focus": "Zaman işaretlerinden ilgili bölümlere geçebilir, oynatma hızını düşürerek ayrıntılara bakabilirsin.",
+    "status": "Hile örneği",
+    "verificationSource": "Uzman AAC tarafından hile örneği olarak sağlandı.",
+    "music": {
+      "title": "Beethoven · Für Elise",
+      "file": "assets/music/fur-elise.mp3",
+      "composer": "Ludwig van Beethoven",
+      "performer": "",
+      "source": "https://commons.wikimedia.org/wiki/File:FurElise.ogg",
+      "license": "Public domain",
+      "licenseURL": "",
+      "changes": "50-second MP3 excerpt; normalized loudness; 0.5-second fade-in"
+    }
+  },
+  {
+    "id": 3,
+    "file": "Örnek-Hile-Klipleri/Atlas Client _ Minecraft 1.21.11 2026-11-12 19-17-04 - Trim.mp4",
+    "duration": 5,
+    "poster": "assets/posters/clip-3.jpg",
+    "title": "Hile örneği 03",
+    "summary": "Zaman işaretlerinden ilgili bölümlere geçerek kaydı inceleyebilirsin.",
+    "observations": [
+      {
+        "time": 1.7,
+        "label": "İksir seçimi",
+        "text": "Hotbar seçimi kılıçtan iyileştirme iksirine geçiyor; can düşük."
+      },
+      {
+        "time": 2.1,
+        "label": "İksir atışı",
+        "text": "İksir yere doğru gidiyor. Ardından seçili slot boşalıyor ve can yükseliyor."
+      },
+      {
+        "time": 2.6,
+        "label": "Envanter",
+        "text": "Envanterin kısa açılışını ve bu sırada devam eden mücadeleyi birlikte incele."
+      }
+    ],
+    "discord": {
+      "kind": "Kesin dosya eşleşmesi yok",
+      "date": "",
+      "recordTitle": "",
+      "report": "İncelenen mesajlarda bu dosyayla birebir eşleştirilebilen ek bulunmadı. Benzer oyuncu adı veya yakın saat tek başına eşleştirme sayılmadı.",
+      "url": "https://discord.com/channels/1225920047625797814/1279352655625457754"
+    },
+    "focus": "Zaman işaretlerinden ilgili bölümlere geçebilir, oynatma hızını düşürerek ayrıntılara bakabilirsin.",
+    "status": "Hile örneği",
+    "verificationSource": "Uzman AAC tarafından hile örneği olarak sağlandı.",
+    "music": {
+      "title": "Vivaldi · İlkbahar",
+      "file": "assets/music/spring.mp3",
+      "composer": "Antonio Vivaldi",
+      "performer": "John Harrison, keman · Wichita State University Chamber Players",
+      "source": "https://commons.wikimedia.org/wiki/File:Vivaldi_-_Four_Seasons_1_Spring_mvt_1_Allegro_-_John_Harrison_violin.oga",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "changes": "50-second MP3 excerpt; normalized loudness; 0.5-second fade-in"
+    }
+  },
+  {
+    "id": 4,
+    "file": "Örnek-Hile-Klipleri/AutoPot.mp4",
+    "duration": 21,
+    "poster": "assets/posters/clip-4.jpg",
+    "title": "Hile örneği 04",
+    "summary": "Zaman işaretlerinden ilgili bölümlere geçerek kaydı inceleyebilirsin.",
+    "observations": [
+      {
+        "time": 6.5,
+        "label": "İyileştirme öncesi",
+        "text": "Hotbar ve can durumunu izle; boş slot seçimi de görülüyor."
+      },
+      {
+        "time": 7.0,
+        "label": "Peş peşe iksir",
+        "text": "İyileştirme iksirleri kullanılıyor, hotbar slotları boşalırken can yükseliyor."
+      },
+      {
+        "time": 18.9,
+        "label": "İkinci kontrol noktası",
+        "text": "Düşük can ve yeniden iksir seçimi görülüyor. İlk diziyle karşılaştırmak için duraklat."
+      }
+    ],
+    "discord": {
+      "kind": "Kesin dosya eşleşmesi yok",
+      "date": "",
+      "recordTitle": "",
+      "report": "İncelenen mesajlarda bu dosyayla birebir eşleştirilebilen ek bulunmadı. Benzer oyuncu adı veya yakın saat tek başına eşleştirme sayılmadı.",
+      "url": "https://discord.com/channels/1225920047625797814/1279352655625457754"
+    },
+    "focus": "Zaman işaretlerinden ilgili bölümlere geçebilir, oynatma hızını düşürerek ayrıntılara bakabilirsin.",
+    "status": "Hile örneği",
+    "verificationSource": "Uzman AAC tarafından hile örneği olarak sağlandı.",
+    "music": {
+      "title": "Chopin · Nocturne Op. 9 No. 2",
+      "file": "assets/music/nocturne.mp3",
+      "composer": "Frédéric Chopin",
+      "performer": "Membeth",
+      "source": "https://commons.wikimedia.org/wiki/File:Chopin.Nocturne.Es-Dur.opus.9.2.ogg",
+      "license": "CC0",
+      "licenseURL": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "changes": "50-second MP3 excerpt; normalized loudness; 0.5-second fade-in"
+    }
+  },
+  {
+    "id": 5,
+    "file": "Örnek-Hile-Klipleri/b47e0333-5791-498c-b8c9-fe9d001a1f31.mp4",
+    "duration": 21,
+    "poster": "assets/posters/clip-5.jpg",
+    "title": "Hile örneği 05",
+    "summary": "Zaman işaretlerinden ilgili bölümlere geçerek kaydı inceleyebilirsin.",
+    "observations": [
+      {
+        "time": 5.4,
+        "label": "İlk doldurma",
+        "text": "Hotbardaki boş iksir yuvaları, envanterin açıldığı bu aralıkta yeniden doluyor."
+      },
+      {
+        "time": 11.2,
+        "label": "Tekrarlanan doldurma",
+        "text": "Boşalan hotbar yuvaları bir sonraki envanter açılışında tekrar dolduruluyor."
+      },
+      {
+        "time": 16,
+        "label": "Totemle kurtuluş",
+        "text": "Totemin tetiklendiği anı, hotbar geçişlerini ve ardından gelen envanter açılışını takip et."
+      },
+      {
+        "time": 18.8,
+        "label": "Son envanter kontrolü",
+        "text": "İksirler ve aktif etkiler görülebiliyor; seçilen slotlar ayrıca karşılaştırılabilir."
+      }
+    ],
+    "discord": {
+      "kind": "Dosya kimliği eşleşti",
+      "date": "14 Kasım 2026 · 17:28",
+      "recordTitle": "Totemle kurtuluş · Atlas Oyuncu · 14.11 17:22:01",
+      "report": "Önceki raporda turkuz31692 için kont kaçış yazıyor. Dosya kimliği birebir eşleşti.",
+      "url": "https://discord.com/channels/1225920047625797814/1279352655625457754"
+    },
+    "focus": "Zaman işaretlerinden ilgili bölümlere geçebilir, oynatma hızını düşürerek ayrıntılara bakabilirsin.",
+    "status": "Hile örneği",
+    "verificationSource": "Uzman AAC tarafından hile örneği olarak sağlandı.",
+    "music": {
+      "title": "Bach · Prelüd, BWV 846",
+      "file": "assets/music/prelude.mp3",
+      "composer": "Johann Sebastian Bach",
+      "performer": "Kimiko Ishizaka",
+      "source": "https://commons.wikimedia.org/wiki/File:Kimiko_Ishizaka_-_Bach_-_Well-Tempered_Clavier,_Book_1_-_01_Prelude_No._1_in_C_major,_BWV_846.ogg",
+      "license": "CC0",
+      "licenseURL": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "changes": "50-second MP3 excerpt; normalized loudness; 0.5-second fade-in"
+    }
+  },
+  {
+    "id": 6,
+    "file": "Örnek-Hile-Klipleri/5ebaebbd-30e9-4d06-a4fc-fc17fd56ee65.mp4",
+    "duration": 21,
+    "poster": "assets/posters/clip-6.jpg",
+    "title": "PvP bitirişi · Atlas Oyuncu · 15.11 01:34:54",
+    "summary": "Oynatma hızını düşürerek kaydı inceleyebilir, zaman işaretinden bitiriş anına geçebilirsin.",
+    "observations": [
+      {
+        "time": 15.544676922999997,
+        "label": "PvP bitiriş işareti",
+        "text": ""
+      }
+    ],
+    "focus": "",
+    "status": "Hile örneği",
+    "music": {
+      "title": "Mozart · Senfoni No. 40",
+      "file": "assets/music/symphony-40.mp3",
+      "composer": "Wolfgang Amadeus Mozart",
+      "performer": "Musopen Symphony",
+      "source": "https://commons.wikimedia.org/wiki/File:Mozart_-_Symphony_No._40_in_G_minor,_K550_-_I._Molto_allegro_(Musopen_Symphony).flac",
+      "license": "Public domain",
+      "licenseURL": "",
+      "changes": "50-second MP3 excerpt; normalized loudness; fade-in"
+    }
+  }
+]
