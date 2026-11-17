@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101b18">
+<meta name="description" content="AtlasOyuncu Rehber ekibi için sohbet kuralları, ceza süreleri, örnekler ve komutlar.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rehber Wiki · AtlasOyuncu">
+<meta property="og:description" content="Sohbet düzeni, ceza süreleri, örnekler ve rehberlik notları. Hepsi tek yerde.">
+<meta property="og:url" content="https://astralissaga.xyz/rehber/">
+<meta property="og:image" content="https://astralissaga.xyz/rehber/assets/share-v1.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://astralissaga.xyz/rehber/">
+<link rel="icon" href="assets/logo.png" type="image/png">
+<title>Rehber Wiki · AtlasOyuncu</title>
+<link rel="stylesheet" href="styles.css?v=1">
+<script defer src="data.js?v=1"></script>
+<script defer src="backgrounds.js?v=1"></script>
+<script defer src="app.js?v=1"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">İçeriğe geç</a>
+<div class="scrim" id="scrim" hidden></div>
+<aside class="sidebar" id="sidebar" aria-label="Ana gezinme">
+<a class="brand" href="#home"><img src="assets/logo.png" alt="AtlasOyuncu"><span>Rehber Wiki<small>EKİP REHBERİ</small></span></a>
+<nav aria-label="Rehber Wiki sayfaları">
+<a href="#home" data-page="home"><i data-icon="home"></i>Başlangıç</a>
+<span class="nav-label">Sohbet yönetimi</span>
+<a href="#rules" data-page="rules"><i data-icon="book"></i>Mute rehberi</a>
+<a href="#penalties" data-page="penalties"><i data-icon="shield"></i>Cezalar<span class="nav-count">18</span></a>
+<a href="#examples" data-page="examples"><i data-icon="image"></i>Örnekler<span class="nav-count">25</span></a>
+<a href="#commands" data-page="commands"><i data-icon="command"></i>Komutlar</a>
+<span class="nav-label">Ekip düzeni</span>
+<a href="#team" data-page="team"><i data-icon="users"></i>Yetkili rehberi</a>
+<a href="#communication" data-page="communication"><i data-icon="message"></i>İletişim ve düzeltme</a>
+</nav>
+<div class="sidebar-signature">E.V.</div>
+</aside>
+<div class="shell">
+<header class="topbar"><div class="breadcrumb"><button class="icon-button menu-toggle" id="menu-toggle" aria-label="Menüyü aç" aria-controls="sidebar" aria-expanded="false"><i data-icon="menu"></i></button><span class="breadcrumb-root">Rehber Wiki</span><span class="slash">/</span><span id="current-page">Başlangıç</span></div><div class="top-actions"><button class="motion-button" id="motion-toggle" type="button" aria-pressed="true">Hareketi durdur</button><button class="search-button" id="open-search"><i data-icon="search"></i><span>Rehberde ara…</span><kbd>Ctrl K</kbd></button></div></header>
+<main id="main" tabindex="-1"></main>
+<footer><span>AtlasOyuncu <b>/</b> Rehber Wiki</span><span class="footer-signature">E.V.</span></footer>
+</div>
+<dialog id="search-dialog" class="search-dialog" aria-labelledby="search-title"><div class="dialog-top"><h2 id="search-title">Rehberde ara</h2><button class="icon-button" data-close="search-dialog" aria-label="Aramayı kapat">✕</button></div><div class="search-entry"><i data-icon="search"></i><input type="search" id="search-input" aria-label="Konu, ceza veya komut ara" placeholder="Konu, ceza veya komut ara…" autocomplete="off"></div><div id="search-results" class="search-results"></div></dialog>
+<dialog id="image-dialog" class="image-dialog" aria-labelledby="image-title"><div class="dialog-top"><h2 id="image-title">Örnek</h2><button class="icon-button" data-close="image-dialog" aria-label="Görseli kapat">✕</button></div><div class="lightbox-image"><img id="large-image" alt=""></div><div class="image-caption"><p id="image-caption"></p><a id="image-original" target="_blank" rel="noopener">Görseli ayrı aç ↗</a></div></dialog>
+<div class="toast" id="toast" role="status" hidden></div>
+</body>
+</html>

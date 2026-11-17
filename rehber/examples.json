@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "category": "Ailevi Küfür",
+    "group": "Ağır Cezalar",
+    "file": "assets/examples/ailevi-kufur-1.webp",
+    "width": 186,
+    "height": 54
+  },
+  {
+    "id": 2,
+    "category": "Ailevi Küfür",
+    "group": "Ağır Cezalar",
+    "file": "assets/examples/ailevi-kufur-2.webp",
+    "width": 218,
+    "height": 40
+  },
+  {
+    "id": 3,
+    "category": "Ailevi Küfür",
+    "group": "Ağır Cezalar",
+    "file": "assets/examples/ailevi-kufur-3.webp",
+    "width": 151,
+    "height": 47
+  },
+  {
+    "id": 4,
+    "category": "Cinsel İçerikli Sohbet",
+    "group": "Ağır Cezalar",
+    "file": "assets/examples/cinsel-icerikli-sohbet-1.webp",
+    "width": 682,
+    "height": 43
+  },
+  {
+    "id": 5,
+    "category": "Cinsel İçerikli Sohbet",
+    "group": "Ağır Cezalar",
+    "file": "assets/examples/cinsel-icerikli-sohbet-2.webp",
+    "width": 1656,
+    "height": 73
+  },
+  {
+    "id": 6,
+    "category": "Cinsel İçerikli Sohbet",
+    "group": "Ağır Cezalar",
+    "file": "assets/examples/cinsel-icerikli-sohbet-3.webp",
+    "width": 343,
+    "height": 26
+  },
+  {
+    "id": 7,
+    "category": "Irkçılık",
+    "group": "Ağır Cezalar",
+    "file": "assets/examples/irkcilik-1.webp",
+    "width": 271,
+    "height": 40
+  },
+  {
+    "id": 8,
+    "category": "Irkçılık",
+    "group": "Ağır Cezalar",
+    "file": "assets/examples/irkcilik-2.webp",
+    "width": 292,
+    "height": 43
+  },
+  {
+    "id": 9,
+    "category": "Irkçılık",
+    "group": "Ağır Cezalar",
+    "file": "assets/examples/irkcilik-3.webp",
+    "width": 148,
+    "height": 51
+  },
+  {
+    "id": 10,
+    "category": "Küfür",
+    "group": "Ağır Cezalar",
+    "file": "assets/examples/kufur-1.webp",
+    "width": 257,
+    "height": 20
+  },
+  {
+    "id": 11,
+    "category": "Küfür",
+    "group": "Ağır Cezalar",
+    "file": "assets/examples/kufur-2.webp",
+    "width": 571,
+    "height": 30
+  },
+  {
+    "id": 12,
+    "category": "Küfür",
+    "group": "Ağır Cezalar",
+    "file": "assets/examples/kufur-3.webp",
+    "width": 158,
+    "height": 37
+  },
+  {
+    "id": 13,
+    "category": "Yetkili Ekibine Hakaret",
+    "group": "Ağır Cezalar",
+    "file": "assets/examples/yetkili-ekibine-hakaret-1.webp",
+    "width": 338,
+    "height": 50
+  },
+  {
+    "id": 14,
+    "category": "Yetkili Ekibine Hakaret",
+    "group": "Ağır Cezalar",
+    "file": "assets/examples/yetkili-ekibine-hakaret-2.webp",
+    "width": 383,
+    "height": 51
+  },
+  {
+    "id": 15,
+    "category": "Yetkili Ekibine Hakaret",
+    "group": "Ağır Cezalar",
+    "file": "assets/examples/yetkili-ekibine-hakaret-3.webp",
+    "width": 504,
+    "height": 57
+  },
+  {
+    "id": 16,
+    "category": "Sohbet Kirletme",
+    "group": "Hafif Cezalar",
+    "file": "assets/examples/sohbet-kirletme-1.webp",
+    "width": 651,
+    "height": 203
+  },
+  {
+    "id": 17,
+    "category": "Halk Dilinde Argo",
+    "group": "Kusurlu Cezalar",
+    "file": "assets/examples/halk-dilinde-argo-1.webp",
+    "width": 186,
+    "height": 48
+  },
+  {
+    "id": 18,
+    "category": "Halk Dilinde Argo",
+    "group": "Kusurlu Cezalar",
+    "file": "assets/examples/halk-dilinde-argo-2.webp",
+    "width": 537,
+    "height": 69
+  },
+  {
+    "id": 19,
+    "category": "Halk Dilinde Argo",
+    "group": "Kusurlu Cezalar",
+    "file": "assets/examples/halk-dilinde-argo-3.webp",
+    "width": 386,
+    "height": 56
+  },
+  {
+    "id": 20,
+    "category": "Oyunculara Hakaret",
+    "group": "Kusurlu Cezalar",
+    "file": "assets/examples/oyunculara-hakaret-1.webp",
+    "width": 268,
+    "height": 55
+  },
+  {
+    "id": 21,
+    "category": "Oyunculara Hakaret",
+    "group": "Kusurlu Cezalar",
+    "file": "assets/examples/oyunculara-hakaret-2.webp",
+    "width": 304,
+    "height": 57
+  },
+  {
+    "id": 22,
+    "category": "Oyunculara Hakaret",
+    "group": "Kusurlu Cezalar",
+    "file": "assets/examples/oyunculara-hakaret-3.webp",
+    "width": 230,
+    "height": 58
+  },
+  {
+    "id": 23,
+    "category": "Yetkili Oyalama",
+    "group": "Kusurlu Cezalar",
+    "file": "assets/examples/yetkili-oyalama-1.webp",
+    "width": 651,
+    "height": 47
+  },
+  {
+    "id": 24,
+    "category": "Yetkili Oyalama",
+    "group": "Kusurlu Cezalar",
+    "file": "assets/examples/yetkili-oyalama-2.webp",
+    "width": 536,
+    "height": 42
+  },
+  {
+    "id": 25,
+    "category": "Yetkili Oyalama",
+    "group": "Kusurlu Cezalar",
+    "file": "assets/examples/yetkili-oyalama-3.webp",
+    "width": 651,
+    "height": 43
+  }
+]
