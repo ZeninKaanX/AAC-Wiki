@@ -335,7 +335,7 @@ const guides=[
   {
     id:'team',title:'Üst yetkililer ve AAC kadrosu',
     text:'Üst yetkili isteği AAC kadro '+seniorTeam.concat(aacTeam).map(name=>'@'+name).join(' '),
-    body:`<p>Kullanıcı adına tıklayarak kopyalayabilirsin. Kanıt hazırlarken <a href="#report">hızlı doldurma listesinden</a> de seçim yapabilirsin.</p><h3>Üst yetkililer</h3>${staffRoster(seniorTeam)}<h3>AAC kadrosu</h3>${staffRoster(aacTeam)}`
+    body:`<p>Kullanıcı adına tıklayarak kopyalayabilirsin. Kanıt hazırlarken <a href="#report">açılır seçim kutularından</a> de seçim yapabilirsin.</p><h3>Üst yetkililer</h3>${staffRoster(seniorTeam)}<h3>AAC kadrosu</h3>${staffRoster(aacTeam)}`
   },
   {
     "id": "commands",

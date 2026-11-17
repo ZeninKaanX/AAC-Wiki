@@ -75,3 +75,5 @@ body{background:#080e18;font-size:14px;-webkit-font-smoothing:antialiased}
 
 /* Staff quick access */
 .staff-roster{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0 22px}.staff-roster button{border:1px solid #355272;background:#14263e;color:#c8ddfa;border-radius:6px;padding:9px 12px;font-size:13px;line-height:1.6;text-align:left;overflow-wrap:anywhere;max-width:100%;transition:background .15s,border-color .15s}.staff-roster button:hover{background:#213e63;border-color:#6b9cdb;color:white}.evidence-team-picker{border:1px solid #304967;background:#0e1d31;border-radius:8px;padding:14px 16px;margin:19px 0}.evidence-team-picker summary{cursor:pointer;color:#d4e5fc;font-size:14px;font-weight:500}.evidence-team-picker h3{font-size:14px;margin:20px 0 8px;color:#d4e5fc}.evidence-team-picker p{font-size:13px;line-height:1.8;color:#b7cbe4}.evidence-team-picker .staff-roster:last-child{margin-bottom:0}
+
+.report-result-field .evidence-dependent{display:block;margin-top:15px}.report-result-field .evidence-dependent[hidden]{display:none!important}
