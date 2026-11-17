@@ -377,7 +377,7 @@ const guides=[
     "id": "pc-process",
     "title": "PC kontrolünün sırası",
     "text": "Everything Journal Tool JournalTrace LastActivityView BrowserDownloadsView USBDeview WinPrefetchView",
-    "body": "<p>Kontrolü dört bölümde yürüt: bağlantı ve sistem kayıtları; Minecraft dizinleri; dosya hareketleri; tarayıcı / etkinlik / USB kayıtları ve raporlama.</p><ol><li>AnyDesk bağlantısını kur ve gerekli araçları hazırla.</li><li>Kurulum, önyükleme, USN ve servis durumlarını kaydet.</li><li>Gerçek oyun dizinini ve dosya hareketlerini incele.</li><li>İndirme, ziyaret, etkinlik ve USB kayıtlarını zamanlarıyla karşılaştır.</li><li>Kontrolü bitir ve kanıt metnini hazırla.</li></ol><p><a href=\"#process\">Dört bölümlük PC kontrol sürecini aç →</a></p>"
+    "body": "<p>Kontrolü dört bölümde yürüt: bağlantı ve sistem kayıtları; Minecraft dizinleri; dosya hareketleri; tarayıcı / etkinlik / USB kayıtları ve raporlama.</p><ol><li>AnyDesk bağlantısını kur; ilk olarak AtlasAC’yi açıp taramayı başlat. AtlasAC arka planda çalışırken diğer araçları hazırla ve kontrolüne devam et.</li><li>Kurulum, önyükleme, USN ve servis durumlarını kaydet.</li><li>Gerçek oyun dizinini ve dosya hareketlerini incele.</li><li>İndirme, ziyaret, etkinlik ve USB kayıtlarını zamanlarıyla karşılaştır.</li><li>AtlasAC taraması tamamlandığında sonuçları ve taranamayan kaynakları incele; diğer bulgularla karşılaştır. Gerekiyorsa JSON raporunu kaydet.</li><li>Kontrolü bitir ve kanıt metnini hazırla.</li></ol><p><a href=\"#process\">Dört bölümlük PC kontrol sürecini aç →</a></p>"
   },
   {
     "id": "cheat-types",
@@ -405,7 +405,7 @@ function clipCard(c){return `<article class="clip-card"><button class="clip-post
 function home(){return `<section class="wiki-cover" aria-labelledby="wiki-title"><video class="wiki-cover-video" id="ambient-video" muted loop playsinline preload="none" poster="assets/brand/atlas-background.webp" aria-hidden="true" tabindex="-1" data-src="assets/brand/atlas-background.mp4"></video><div class="wiki-cover-copy"><span class="cover-kicker"><i></i> ATLASOYUNCU · AAC REHBERİ</span><h1 id="wiki-title">Kontrolün her adımı,<br><span>aynı yerde.</span></h1><p>Kontrol notları, uygulamalar, örnek kayıtlar.<br>İhtiyacın olan bölümü seç, kaldığın yerden devam et.</p><div class="cover-actions"><a class="primary-btn" href="#guide">Rehberi aç ${icon('arrow')}</a><a class="outline-btn" href="#report">Hile kanıtı oluştur ${icon('copy')}</a></div><div class="cover-links"><a href="#clips">${clips.length} video · ${imageExamples.length} görsel ↗</a><a href="#quiz">8 soruluk uygulama testi ↗</a></div></div></section>
 <div class="wiki-columns"><section class="wiki-index" aria-labelledby="contents-title"><h2 id="contents-title">İçindekiler</h2>${[
  ['01','guide','AAC rehberi','Komutlar, kontrole alma şartları ve kontrol süreci.'],
- ['02','process','PC kontrol süreci','AnyDesk, sistem kayıtları ve araçlarla inceleme sırası.'],
+ ['02','process','PC kontrol süreci','Önce AtlasAC taraması, ardından diğer kontroller.'],
  ['03','tools','Kontrol uygulamaları','Paketteki 8 uygulamanın ne işe yaradığı.'],
  ['04','pc','AtlasAC PC','Windows ve Linux için indirme ve adım adım kullanım.'],
  ['05','mobile','AtlasAC Mobil','Mobil kontrol için kullanım videosu.'],
