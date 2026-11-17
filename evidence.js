@@ -11,7 +11,7 @@ const evidenceFields=[
  ['result','Sonuç / yasaklanma sebebi','Örn. hile kullanımı'],
  ['time','Saat','18:09']
 ];
-const evidenceResultOptions=['Kont Red','Hile İtiraf','Freeze Oto Ban','İnsta Alt'];
+const evidenceResultOptions=['Kont Red','Hile İtiraf','Hile Kullanımı','Freeze Oto Ban','İnsta Alt','Temiz'];
 let evidenceResultMode='',evidenceCustomResult='';
 let evidenceDraft=Object.fromEntries(evidenceFields.map(([key])=>[key,'']));
 let evidenceChoiceDraft={reason:'',reasonCustom:'',seniorRequester:'',staff:'',staffCustom:''};
