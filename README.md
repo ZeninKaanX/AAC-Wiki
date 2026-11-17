@@ -24,7 +24,7 @@ Altı kaydın ses izi iki geçişli loudnorm ile yaklaşık −23 LUFS seviyesin
 
 ## AtlasAC kullanımı
 
-`#pc` sayfası Windows/Linux dosya adlarını, altı kullanım adımını, bölüm uyarılarını ve JSON dışa aktarmayı açıklar. Eşleşmelerin AAC tarafından değerlendirilmesi gerektiği notu korunur. Sayfa menü, ana sayfa, uygulamalar, PC süreci ve mobil rehberden erişilebilir; aramaya eklenmiştir.
+`#pc` sayfası Windows/Linux indirmelerini, sekiz kullanım adımını, gerçek uygulama ekranlarını, eşleşme gerekçelerini, kapsam uyarılarını ve JSON dışa aktarmayı açıklar. Eşleşmelerin AAC tarafından değerlendirilmesi gerektiği notu korunur. Sayfa menü, ana sayfa, uygulamalar, PC süreci ve mobil rehberden erişilebilir; aramaya eklenmiştir.
 
 Uygulama arşivleri, kullanıcı tarafından sağlanan Windows/Linux dosyalarından hazırlanmıştır. İndirmeler GitHub Releases üzerinden yapılır ve tek HTML içinde uygulama dosyaları bulunmaz. `atlasac-pc-20261117` sürümündeki SHA256SUMS.txt indirme bütünlüğünü doğrulamak içindir.
 
@@ -32,4 +32,6 @@ Uygulama arşivleri, kullanıcı tarafından sağlanan Windows/Linux dosyaların
 
 `#mobile`, 4.7 arayüzündeki tarama, izin, canlı sonuçlar, dosya/arşiv inceleme, kırmızı tespit vurgusu, mavi arama ve raporlama adımlarını açıklar. Önceki mobil video kaldırılmıştır; eski `mobile-player.html` bağlantısı rehbere yönlenir. Görseller çalıştırılmayan örnek test dosyalarından alınmıştır.
 
-`#updates`, AtlasAC ve AtlasAC Mobil afişlerini, kısa yenilik notlarını ve ilgili rehber bağlantılarını içerir. Afişler `assets/updates/`, mobil ekran görüntüleri `assets/mobile/` içindedir. Mobil APK özel depodan kamusal wikiye kopyalanmaz; rehber kullanıcıyı AAC ekibinin güncel paylaşımına yönlendirir. 4.7'nin test paketi olduğu belirtilir.
+`#updates`, AtlasAC ve AtlasAC Mobil afişlerini, kısa yenilik notlarını ve ilgili rehber bağlantılarını içerir. Afişler `assets/updates/`, mobil ekran görüntüleri `assets/mobile/` içindedir. Mobil indirme düğmesi, kullanıcının paylaşım talebiyle AAC Wiki'nin `atlasac-mobil-4.7-test` sürümüne yüklenen test APK'sına yönlenir. APK/SHA-256 dosyası GitHub Releases üzerinden sunulur; 4.7'nin test paketi ve imza uyumluluğu rehberde belirtilir. Ana sayfada iki küçük duyuru kartı bulunur; afişlerin tam boyu `#updates` bölümündedir.
+
+AtlasAC rehberindeki dolu sonuç ve dosya detayı ekranları, doğrulanmış resmî BleachHack örneğinin tek dosyalık statik taramasından alınmıştır. Uygulama/istemci çalıştırma veya sunucuda kullanım kanıtı olarak sunulmaz. Kaynak ve SHA-256 bilgisi `assets/desktop/README.md` içindedir. Schematica Printer ve Litematica Easy Place satırlarında 3 günlük ceza için oyunda kullanım koşulu belirtilir.
