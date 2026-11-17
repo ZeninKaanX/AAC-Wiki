@@ -19,7 +19,7 @@ const processSections=[
   <h3>1. Bağlantıyı ve araçları hazırla</h3>
   <p>AnyDesk bağlantısı kurulduktan sonra resmi kontrol paketini kullan. Bu süreçte aşağıdaki yedi araçla inceleme yapıyoruz:</p>
   <ul class="process-tools"><li>Everything</li><li>Journal-Tool</li><li>JournalTrace</li><li>LastActivityView</li><li>BrowsingHistoryView</li><li>BrowserDownloadsView</li><li>USBDeview</li></ul>
-  <p><a href="#tools">Uygulamaların işlevlerini incele →</a></p>
+  <p><a href="#tools">Uygulamaların işlevlerini incele →</a></p><p><a href="#pc">AtlasAC PC sürümü ve kullanım rehberi →</a></p>
   <div class="process-rule"><strong>Kontrol reddi</strong><p>Oyuncu gerekli araçları indirmeyi veya çalıştırmayı reddederse ya da AnyDesk erişimini kısıtlarsa kontrol reddi kapsamında işlem uygulanır. Verilen talebi ve oyuncunun yanıtını raporda açıkça belirt.</p></div>
   <h3>2. Kurulum ve önyükleme zamanını kaydet</h3>
   <p>Dosya aramasından önce Yönetici Komut İstemi'nde sistem tarihlerini görüntüle:</p>
