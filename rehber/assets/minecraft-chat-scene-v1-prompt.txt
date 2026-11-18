@@ -1,0 +1,3 @@
+Built-in image_gen tool. Prompt: Believable first-person Minecraft Java gameplay screenshot, modest multiplayer survival village, cobblestone path between oak plank houses, grass, trees, torches and small farm. Authentic block geometry and pixel textures, ordinary vanilla rendering, crisp focus, no cinematic blur, overcast daytime. White centered crosshair, survival hotbar, hearts and hunger at bottom center. No chat, names, text, logo or watermark. Lower left reserved for HTML chat. Restrained forest green palette.
+
+The chat is a separate accessible HTML illustration with fictional nicknames and sample dialogue. It is not original evidence.
