@@ -12,3 +12,5 @@ Yerel önizleme: index.html dosyasını açın. Ortak arka planlar kardeş AAC-W
 Yeni 12 ortamın promptları assets/scenes-v5/prompts.json dosyasındadır. İlk dört sahneyle aynı kılıç, kol ve HUD görünümü korunur. WebP sahneler toplam yaklaşık 3.6 MB; ihtiyaç oldukça yüklenir.
 
 Ana sayfanın sol menüsünde 31 saniyelik, sessiz H.264 kullanım videosu yer alır (assets/wiki-tour-v1.mp4; yaklaşık 650 KB). Gerçek yerel wiki ekranlarından hazırlanmıştır. Büyütme, oynatma kontrolleri ve Türkçe altyazı dosyası bulunur. Mobilde ana sayfa içeriğine taşınır; sayfa değiştiğinde durur. Hareketi durdur seçeneği ve azaltılmış hareket tercihi otomatik oynatmayı kapatır.
+
+Destek talepleri bölümü (#support), kullanıcının Wiki Destek kısmı.zip içindeki iki metninden düzenlendi. Hesap erişimi, genel bilgi, hile bildirimi, ödeme ve diğer talepler için bilgi toplama / yönlendirme adımları; ayrıca destek rolüne başvuru anlatılır. Panel erişim videosu assets/support-access-v1.mp4 dosyasıdır (17 saniye; kaynakta ses yoktur). Wiki giriş veya kişisel bilgi formu içermez; örnek cevaplar yalnızca kopyalanır.

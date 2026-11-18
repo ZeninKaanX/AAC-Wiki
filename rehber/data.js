@@ -623,5 +623,109 @@ const guideData={
       "width": 1440,
       "height": 810
     }
-  ]
+  ],
+  "support": {
+    "requirements": [
+      {
+        "title": "Oyun ve sunucu bilgisi",
+        "body": "Minecraft’ın temel mekaniklerini ve sunucudaki sistemleri bil. Bilmediğin bir konuda tahminle cevap vermek yerine doğru bilgiyi öğren veya ilgili yetkiliye danış."
+      },
+      {
+        "title": "Oyuncuyu ve durumu tanıma",
+        "body": "Oyuncunun ne istediğini ve sorunun nasıl oluştuğunu anlamadan işlem yapma. İddiaları mevcut kayıtlar ve kanıtlarla doğrula; kelime oyunlarıyla veya eksik bilgiyle haksız eşya ya da kazanç elde edilmesine dikkat et."
+      },
+      {
+        "title": "Olgun ve tutarlı üslup",
+        "body": "Yaşı veya sana yakınlığı ne olursa olsun herkese saygılı, açık ve ciddi cevap ver. Talepte arkadaşın olsa bile görev üslubunu koru; şakalaşma, tartışma ve kayırma yapma."
+      }
+    ],
+    "cases": [
+      {
+        "id": "sifre",
+        "title": "Şifremi unuttum",
+        "owner": "Bilgileri al → ilgili üst yetkiliye aktar",
+        "collect": [
+          "Oyun içi hesap adı",
+          "Hesaba bağlı e-posta adresi — yalnızca destek talebi içinde"
+        ],
+        "steps": [
+          "Oyuncudan hesap adını ve hesaba bağlı e-posta adresini iste.",
+          "Bilgiler tamamlandığında talebi ilgili üst yetkiliye aktar. Şifre işleminin devamını ilgili ekip yürütür.",
+          "Oyuncudan mevcut şifresini veya doğrulama kodunu isteme."
+        ],
+        "response": "Merhaba, yardımcı olabilmemiz için oyun içi hesap adınızı ve hesabınıza bağlı e-posta adresini bu destek talebi üzerinden paylaşır mısınız?",
+        "note": "Hesap bilgilerini genel sohbete taşımadan talep üzerinden ilerle."
+      },
+      {
+        "id": "bilgi",
+        "title": "Genel komut / bilgi sorusu",
+        "owner": "Bilgin ve yetkin dâhilinde cevapla",
+        "collect": [
+          "İlgili oyun modu veya site bölümü",
+          "Öğrenilmek istenen komut ya da yapılamayan işlem",
+          "Varsa hata mesajı veya ekran görüntüsü"
+        ],
+        "steps": [
+          "Oyuncunun yapmak istediği işlemi netleştir.",
+          "Doğru komutu veya işlem adımlarını sırayla anlat.",
+          "Oyuncunun adımları uygulayıp uygulayamadığını kontrol et. Emin olmadığın bilgiyi doğrulamadan paylaşma."
+        ],
+        "response": "Merhaba, hangi oyun modunda veya site bölümünde, hangi komut ya da işlemle ilgili yardıma ihtiyacınız olduğunu açıklar mısınız? Varsa gördüğünüz hata mesajını da paylaşabilirsiniz."
+      },
+      {
+        "id": "hile",
+        "title": "Hile bildirimi",
+        "owner": "Bilgileri al → Hile Kontrol ekibine ilet",
+        "collect": [
+          "Bildirilen oyuncunun oyun içi adı",
+          "Oyun modu",
+          "Varsa kayıt veya diğer kanıtlar"
+        ],
+        "steps": [
+          "Oyuncunun adını, oyun modunu ve varsa kanıtını iste.",
+          "Kanıtı Hile Kontrol yetkililerine ilet; incelemeyi ve gerekli işlemi ilgili ekip yapar.",
+          "Kanıt yoksa Hile Kontrol ekibinden yardım iste ve ilgili oyuncunun kontrol edilmesini talep et.",
+          "İncelemeyi yapan yetkiliden sonucu destek talebine yazmasını iste."
+        ],
+        "response": "Merhaba, bildirdiğiniz oyuncunun oyun içi adını, bulunduğu oyun modunu ve varsa kayıt ya da diğer kanıtları paylaşır mısınız? Bildiriniz Hile Kontrol ekibi tarafından değerlendirilecektir.",
+        "note": "Hile kararını destek yanıtını yazan kişi değil, incelemeyi yapan Hile Kontrol ekibi verir."
+      },
+      {
+        "id": "odeme",
+        "title": "Ödeme sorunları",
+        "owner": "Paneldeki hazır cevabı kullan",
+        "collect": [
+          "Oyuncunun bildirdiği ödeme sorununun açıklaması"
+        ],
+        "steps": [
+          "Sorunun açıklamasını oku.",
+          "Hazır cevaplar bölümünden “Ödeme Sorunları Beyaz Ekran” seçeneğini kullan.",
+          "Yanıtın talebe uygunluğunu kontrol et; çözemediğin kısmı ilgili yetkiliye aktar."
+        ],
+        "preset": "Ödeme Sorunları Beyaz Ekran",
+        "note": "Bu başlıkta paneldeki mevcut hazır cevap kullanılır."
+      },
+      {
+        "id": "diger",
+        "title": "Diğer talepler",
+        "owner": "Uygun hazır cevap → gerekirse ilgili yetkili",
+        "collect": [
+          "Sorunun anlaşılır açıklaması",
+          "İlgili oyun modu veya site bölümü",
+          "Varsa hatayı gösteren ekran görüntüsü"
+        ],
+        "steps": [
+          "Talebi okuyup konuyu netleştir.",
+          "Hazırlanmış hızlı cevaplar arasından konuya uygun olanı kullan.",
+          "Talep bilginin veya yetkinin dışındaysa ilgili yetkiliye aktar; çözüm ya da sonuç sözü verme."
+        ],
+        "response": "Merhaba, yaşadığınız sorunu, ilgili oyun modu veya site bölümüyle birlikte biraz daha ayrıntılı anlatır mısınız? Varsa hata mesajını ya da ekran görüntüsünü de paylaşabilirsiniz."
+      }
+    ],
+    "roleSteps": [
+      "Bu bölümdeki bilgi, üslup ve talep yönlendirme adımlarını dikkatlice oku.",
+      "Üst-iletişim kanalında Admin veya Moderatöre “Ben destek rolü almak istiyorum.” şeklinde talebini ilet.",
+      "Admin veya Moderatörle sesli görüşme yap."
+    ]
+  }
 };
