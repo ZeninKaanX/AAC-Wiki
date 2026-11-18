@@ -1,0 +1,66 @@
+{
+  "reference": "assets/zero-two-village-v4.webp",
+  "promptBase": "Create one wide 16:9 Minecraft first-person gameplay screenshot for a Turkish server guide. Use the reference as a strict reference for the same held ornate cyan, indigo and lavender sword on the RIGHT, same red-and-white Zero Two sleeve at bottom right, identical centered white crosshair and bottom survival HUD: ten hearts, hunger icons, green level 7, hotbar sword slot 1 selected, purple pickaxe slot 2, purple axe slot 3, slots 4 to 8 empty and gray blocks 17 in slot 9. Replace the WORLD completely with the requested setting. Grand detailed megabuilds with true voxel/block textures, convincing Minecraft gameplay, clear daylight or readable lighting. The world fills frame; keep lower-left readable for later HTML chat, but render NO chat, NO text, NO logos, NO labels, NO other UI beyond crosshair/HUD. Landscape 16:9 composition, sharp clean pixel edges. Setting: ",
+  "scenes": [
+    {
+      "name": "harbor",
+      "source": "/home/eververity/.codex/generated_images/01a1db9f-cf5e-7482-8ff9-e5cbf85ca082/exec-a2019156-d656-4cf1-b8bb-0e0cdb397792.png",
+      "setting": "A vast medieval harbor city with huge moored sailing ships, cranes, stone lighthouse and coastal fortress, seen from broad wooden dock at dawn."
+    },
+    {
+      "name": "snow",
+      "source": "/home/eververity/.codex/generated_images/01a1db9f-cf5e-7482-8ff9-e5cbf85ca082/exec-3e1ea3cf-d91f-41c4-ab51-0967100145c8.png",
+      "setting": "A magnificent snowy alpine citadel, tall spruce-roof towers, frozen canal, lanterns and a giant mountain castle, seen from a snow-covered street under clear winter sun."
+    },
+    {
+      "name": "desert",
+      "source": "/home/eververity/.codex/generated_images/01a1db9f-cf5e-7482-8ff9-e5cbf85ca082/exec-a75d1c50-6147-41e6-b671-362287cd21d2.png",
+      "setting": "An immense sandstone desert palace city with gold domes, palm oasis, tiled bazaar and towering gate, seen from a sandstone plaza."
+    },
+    {
+      "name": "underwater",
+      "source": "/home/eververity/.codex/generated_images/01a1db9f-cf5e-7482-8ff9-e5cbf85ca082/exec-16565f86-0a8b-49b8-97ab-5c0a8740905f.png",
+      "setting": "Inside a huge glass underwater dome city, ocean temple and coral gardens visible through curved glass walls, blue water and fish outside, prismarine arches inside."
+    },
+    {
+      "name": "sky",
+      "source": "/home/eververity/.codex/generated_images/01a1db9f-cf5e-7482-8ff9-e5cbf85ca082/exec-a0da60e3-7ab5-4815-bcbb-02efa7bf5c8a.png",
+      "setting": "A breathtaking city of floating sky islands with enormous white quartz castle, waterfalls dropping into clouds, suspended stone bridges; viewpoint on a wide bridge."
+    },
+    {
+      "name": "jungle",
+      "source": "/home/eververity/.codex/generated_images/01a1db9f-cf5e-7482-8ff9-e5cbf85ca082/exec-fe7617b2-2398-4400-b89c-7b275f7b9866.png",
+      "setting": "A colossal overgrown jungle temple with stepped pyramids, mossy stone towers, rope bridges and lush trees; viewpoint on a broad ancient paved approach."
+    },
+    {
+      "name": "mushroom",
+      "source": "/home/eververity/.codex/generated_images/01a1db9f-cf5e-7482-8ff9-e5cbf85ca082/exec-0c7bd54b-68e9-493a-b536-87899132ded8.png",
+      "setting": "An elaborate whimsical mushroom-island town with huge red mushroom houses and fantasy stone bridges, grand central mushroom palace and vivid mycelium landscape."
+    },
+    {
+      "name": "end",
+      "source": "/home/eververity/.codex/generated_images/01a1db9f-cf5e-7482-8ff9-e5cbf85ca082/exec-ac096bd5-4f7a-4066-a481-ab696558fd34.png",
+      "setting": "An immense violet End citadel built from end stone and purpur, towering spires and bridges above the void, chorus gardens and distant floating islands, readable purple glow."
+    },
+    {
+      "name": "autumn",
+      "source": "/home/eververity/.codex/generated_images/01a1db9f-cf5e-7482-8ff9-e5cbf85ca082/exec-12da1291-0b21-4d51-8c22-641542f13117.png",
+      "setting": "A large autumn valley village with giant windmill, watermill, terraced wheat fields and an imposing timber manor, orange and gold block foliage in warm afternoon sun."
+    },
+    {
+      "name": "canal",
+      "source": "/home/eververity/.codex/generated_images/01a1db9f-cf5e-7482-8ff9-e5cbf85ca082/exec-9fd8e51a-f8eb-4c9c-bcea-752a89aad25c.png",
+      "setting": "A sprawling elegant canal city with Italian-inspired block palaces, arched stone bridges, boats, colorful tall facades and grand domed civic building."
+    },
+    {
+      "name": "library",
+      "source": "/home/eververity/.codex/generated_images/01a1db9f-cf5e-7482-8ff9-e5cbf85ca082/exec-61a18ecc-b8a7-4fa0-8133-fec5e7bde330.png",
+      "setting": "Interior of a gigantic wizard library megabuild with towering bookshelves, multiple balconies, huge stained glass windows, enchanting tables and hanging lanterns, warm well-lit interior."
+    },
+    {
+      "name": "volcano",
+      "source": "/home/eververity/.codex/generated_images/01a1db9f-cf5e-7482-8ff9-e5cbf85ca082/exec-731fc1a9-bc09-48d8-9675-a6704b466c63.png",
+      "setting": "A massive dwarven forge city inside a volcano, giant basalt arches, bronze machinery, lava channels, a vast forge and stone bridges, brilliantly illuminated but detailed."
+    }
+  ]
+}

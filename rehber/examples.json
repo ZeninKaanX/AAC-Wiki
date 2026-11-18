@@ -49,7 +49,7 @@
   },
   {
     "id": 7,
-    "category": "Irkçılık",
+    "category": "Irkçılık, Din ve Siyaset",
     "group": "Ağır Cezalar",
     "file": "assets/examples/irkcilik-1.webp",
     "width": 271,
@@ -57,7 +57,7 @@
   },
   {
     "id": 8,
-    "category": "Irkçılık",
+    "category": "Irkçılık, Din ve Siyaset",
     "group": "Ağır Cezalar",
     "file": "assets/examples/irkcilik-2.webp",
     "width": 292,
@@ -65,7 +65,7 @@
   },
   {
     "id": 9,
-    "category": "Irkçılık",
+    "category": "Irkçılık, Din ve Siyaset",
     "group": "Ağır Cezalar",
     "file": "assets/examples/irkcilik-3.webp",
     "width": 148,
@@ -198,5 +198,181 @@
     "file": "assets/examples/yetkili-oyalama-3.webp",
     "width": 651,
     "height": 43
+  },
+  {
+    "id": 26,
+    "category": "Sohbeti Amacı Dışında Kullanmak",
+    "group": "Hafif Cezalar",
+    "file": "assets/scenes-v5/jungle.webp",
+    "width": 1440,
+    "height": 810
+  },
+  {
+    "id": 27,
+    "category": "Sohbeti Amacı Dışında Kullanmak",
+    "group": "Hafif Cezalar",
+    "file": "assets/scenes-v5/mushroom.webp",
+    "width": 1440,
+    "height": 810
+  },
+  {
+    "id": 28,
+    "category": "Gereksiz Ada Reklamı",
+    "group": "Hafif Cezalar",
+    "file": "assets/scenes-v5/end.webp",
+    "width": 1440,
+    "height": 810
+  },
+  {
+    "id": 29,
+    "category": "Gereksiz Ada Reklamı",
+    "group": "Hafif Cezalar",
+    "file": "assets/scenes-v5/autumn.webp",
+    "width": 1440,
+    "height": 810
+  },
+  {
+    "id": 30,
+    "category": "Yetkili Ekibinin İşine Karışma",
+    "group": "Hafif Cezalar",
+    "file": "assets/scenes-v5/canal.webp",
+    "width": 1440,
+    "height": 810
+  },
+  {
+    "id": 31,
+    "category": "Yetkili Ekibinin İşine Karışma",
+    "group": "Hafif Cezalar",
+    "file": "assets/scenes-v5/library.webp",
+    "width": 1440,
+    "height": 810
+  },
+  {
+    "id": 32,
+    "category": "Tehdit ve Şantaj Etme",
+    "group": "Hafif Cezalar",
+    "file": "assets/scenes-v5/volcano.webp",
+    "width": 1440,
+    "height": 810
+  },
+  {
+    "id": 33,
+    "category": "Tehdit ve Şantaj Etme",
+    "group": "Hafif Cezalar",
+    "file": "assets/zero-two-village-v4.webp",
+    "width": 1440,
+    "height": 810
+  },
+  {
+    "id": 34,
+    "category": "Kışkırtma",
+    "group": "Hafif Cezalar",
+    "file": "assets/zero-two-mine-v4.webp",
+    "width": 1440,
+    "height": 810
+  },
+  {
+    "id": 35,
+    "category": "Kışkırtma",
+    "group": "Hafif Cezalar",
+    "file": "assets/zero-two-cherry-v4.webp",
+    "width": 1440,
+    "height": 810
+  },
+  {
+    "id": 36,
+    "category": "Üst Yönetimden İtem / Para İstemek",
+    "group": "Hafif Cezalar",
+    "file": "assets/zero-two-nether-v4.webp",
+    "width": 1440,
+    "height": 810
+  },
+  {
+    "id": 37,
+    "category": "Üst Yönetimden İtem / Para İstemek",
+    "group": "Hafif Cezalar",
+    "file": "assets/scenes-v5/harbor.webp",
+    "width": 1440,
+    "height": 810
+  },
+  {
+    "id": 38,
+    "category": "Tartışma",
+    "group": "Kusurlu Cezalar",
+    "file": "assets/scenes-v5/snow.webp",
+    "width": 1440,
+    "height": 810
+  },
+  {
+    "id": 39,
+    "category": "Tartışma",
+    "group": "Kusurlu Cezalar",
+    "file": "assets/scenes-v5/desert.webp",
+    "width": 1440,
+    "height": 810
+  },
+  {
+    "id": 40,
+    "category": "Oyuncuları Örgütleme",
+    "group": "Kusurlu Cezalar",
+    "file": "assets/scenes-v5/underwater.webp",
+    "width": 1440,
+    "height": 810
+  },
+  {
+    "id": 41,
+    "category": "Oyuncuları Örgütleme",
+    "group": "Kusurlu Cezalar",
+    "file": "assets/scenes-v5/sky.webp",
+    "width": 1440,
+    "height": 810
+  },
+  {
+    "id": 42,
+    "category": "Link Paylaşımı (URL)",
+    "group": "Ağır Cezalar",
+    "file": "assets/scenes-v5/jungle.webp",
+    "width": 1440,
+    "height": 810
+  },
+  {
+    "id": 43,
+    "category": "Link Paylaşımı (URL)",
+    "group": "Ağır Cezalar",
+    "file": "assets/scenes-v5/mushroom.webp",
+    "width": 1440,
+    "height": 810
+  },
+  {
+    "id": 44,
+    "category": "Yetkili Gibi Davranma",
+    "group": "Ağır Cezalar",
+    "file": "assets/scenes-v5/end.webp",
+    "width": 1440,
+    "height": 810
+  },
+  {
+    "id": 45,
+    "category": "Yetkili Gibi Davranma",
+    "group": "Ağır Cezalar",
+    "file": "assets/scenes-v5/autumn.webp",
+    "width": 1440,
+    "height": 810
+  },
+  {
+    "id": 46,
+    "category": "Irkçılık, Din ve Siyaset",
+    "group": "Ağır Cezalar",
+    "file": "assets/scenes-v5/canal.webp",
+    "width": 1440,
+    "height": 810
+  },
+  {
+    "id": 47,
+    "category": "Irkçılık, Din ve Siyaset",
+    "group": "Ağır Cezalar",
+    "file": "assets/scenes-v5/library.webp",
+    "width": 1440,
+    "height": 810
   }
 ]

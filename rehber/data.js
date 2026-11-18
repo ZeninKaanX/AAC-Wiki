@@ -17,31 +17,31 @@ const guideData={
       "rows": [
         [
           "Sohbet kirletme",
-          "Spam, flood, harf uzatma, caps vb."
+          "Spam, flood, harf uzatma, caps vb. Tekrarları ve sohbetin ne kadar kaplandığını birlikte incele."
         ],
         [
           "Sohbeti amacı dışında kullanmak",
-          ""
+          "Sohbet kanalını kullanım amacı dışına taşıyan davranış. Mesajın gönderildiği kanalı ve konuşmanın devamını kontrol et."
         ],
         [
           "Gereksiz ada reklamı",
-          ""
+          "Ada reklamının sohbeti gereksiz yere meşgul etmesi. Başka sunucu reklamıyla karıştırma; onun özel kuralı farklıdır."
         ],
         [
           "Yetkili ekibinin işine karışma",
-          ""
+          "Yetkilinin yürüttüğü işleme müdahale etmek. Bir soru veya saygılı düzeltme talebiyle aynı değerlendirilmez."
         ],
         [
           "Tehdit ve şantaj etme",
-          ""
+          "Bir oyuncuyu korkutarak veya baskıyla bir şey yapmaya zorlamak. Önceki mesajlar ve varsa özel durumlar da incelenir."
         ],
         [
           "Kışkırtma",
-          ""
+          "Oyuncuyu veya sohbeti tartışmaya çekmeye yönelik davranış. Tepkiyi değil, olayın başlangıcını da incele."
         ],
         [
           "Üst yönetimden item / para istemek",
-          ""
+          "Üst yönetimden eşya ya da oyun parası talep etmek. Oyuncular arasındaki alışverişten ayrılır."
         ]
       ],
       "image": "assets/table-hafif-cezalar.webp"
@@ -61,22 +61,26 @@ const guideData={
       "rows": [
         [
           "Oyunculara hakaret",
-          ""
+          "Hakaretin hedefi oyuncudur. Hedef kişi Rehber veya başka bir yetkiliyse yetkiliye hakaret başlığına bak."
         ],
         [
           "Halk dilinde argo",
-          ""
+          "Sözü, hedefini ve bağlamını birlikte değerlendir. Aileye yönelik küfür veya küfür kısaltmasıyla aynı başlık değildir."
         ],
         [
           "Tartışma",
-          "Her iki tarafa da uygulanır."
+          "Her iki tarafa da uygulanır. Konuşmanın tamamını gör; taraflardan yalnızca birinin son mesajıyla karar verme."
         ],
         [
           "Oyuncuları örgütleme",
-          ""
+          "Oyuncuları topluca sorun çıkarmaya yönlendirme. Birlikte oynamaya davet etmekle aynı şey değildir."
+        ],
+        [
+          "Yetkili oyalama",
+          "Mesaj, sohbet, adereklam vb. Tek bir yardım sorusu yeterli değildir; tekrarları ve uyarı sonrası devamı incele."
         ]
       ],
-      "image": "assets/table-kusurlu-cezalar.webp"
+      "image": "assets/table-kusurlu-cezalar-v2.webp"
     },
     {
       "id": "agir",
@@ -90,43 +94,43 @@ const guideData={
       "rows": [
         [
           "Yetkili ekibine hakaret",
-          "",
+          "Mesajın yetkiliyi hedef aldığını ve hedef kişinin rolünü doğrula. Oyuncuya hakaret başlığından ayrılır.",
           "3 saat",
           "3h"
         ],
         [
           "Cinsel içerikli sohbet",
-          "",
+          "Cinsel içerikli mesajı çevresindeki konuşmayla değerlendir. Uygunsuz oyuncu adı için ayrıca özel isim kuralına bak.",
           "3 saat",
           "3h"
         ],
         [
           "Irkçılık, din ve siyaset ile ilgili sohbet",
-          "",
+          "İfadeyi bağlamıyla incele. Bir kimlik veya topluluk adının tek başına geçmesi ırkçılığı kanıtlamaz. Dinî / millî değerlere hakaret varsa üst yetkililere ilet.",
           "3 saat",
           "3h"
         ],
         [
           "Link paylaşımı (URL)",
-          "",
+          "Paylaşılan adresi ve bağlamı kontrol et. Başka sunucu reklamı veya sunucu adı paylaşımı için 24 saatlik özel reklam kuralına bak.",
           "3 saat",
           "3h"
         ],
         [
           "Yetkili gibi davranma",
-          "Örnek: “Ben yetkiliyim, bana güvenin.”",
+          "Yetkisi olmadığı hâlde kendini yetkili olarak tanıtma. Sözü gerçekten söyleyen kişinin rolünü doğrula.",
           "3 saat",
           "3h"
         ],
         [
           "Küfür / kısaltması ve iması",
-          "",
+          "Açık küfür, kısaltma ve ima bu başlıktadır. Aile bireylerini hedef alan küfür için ayrı 12 saatlik başlık vardır.",
           "6 saat",
           "6h"
         ],
         [
           "Ailevi küfür / kısaltması ve iması",
-          "",
+          "Aile bireylerini hedef alan küfür, kısaltma ve ima. Hedefi ve önceki mesajları birlikte kaydet.",
           "12 saat",
           "12h"
         ]
@@ -135,6 +139,12 @@ const guideData={
     }
   ],
   "rules": [
+    {
+      "id": "karar-sirasi",
+      "title": "Bir mesajı nasıl değerlendirebilirim?",
+      "tag": "Başlangıç",
+      "body": "<ol><li><strong>Konuşmanın tamamını gör.</strong> Önceki mesajları, mesajın yazıldığı kanalı ve kime söylendiğini kontrol et.</li><li><strong>Doğru başlığı seç.</strong> Oyuncuya hakaret ile yetkiliye hakaret; normal küfür ile ailevi küfür farklı sürelerdir.</li><li><strong>Özel durum var mı bak.</strong> Özel mesaj, ada sohbeti, reklam ve uygunsuz isim için aşağıdaki kuralları oku.</li><li><strong>Uyarı sırasını kontrol et.</strong> Hafif ve kusurlu cezalarda ilgili grubun basamaklarını uygula. Örneğin başlığındaki süre, gerekli şartlar oluştuktan sonraki mute süresidir.</li><li><strong>Komutu ve açıklamayı doğrula.</strong> Oyuncu adını, süreyi ve sebebi kontrol et; kanıtı sakla. Emin değilsen Usta Rehber’e danış.</li></ol>"
+    },
     {
       "id": "uyari",
       "title": "Uyarı ve işlem sırası",
@@ -287,7 +297,7 @@ const guideData={
     },
     {
       "id": 7,
-      "category": "Irkçılık",
+      "category": "Irkçılık, Din ve Siyaset",
       "group": "Ağır Cezalar",
       "file": "assets/examples/irkcilik-1.webp",
       "width": 271,
@@ -295,7 +305,7 @@ const guideData={
     },
     {
       "id": 8,
-      "category": "Irkçılık",
+      "category": "Irkçılık, Din ve Siyaset",
       "group": "Ağır Cezalar",
       "file": "assets/examples/irkcilik-2.webp",
       "width": 292,
@@ -303,7 +313,7 @@ const guideData={
     },
     {
       "id": 9,
-      "category": "Irkçılık",
+      "category": "Irkçılık, Din ve Siyaset",
       "group": "Ağır Cezalar",
       "file": "assets/examples/irkcilik-3.webp",
       "width": 148,
@@ -436,6 +446,182 @@ const guideData={
       "file": "assets/examples/yetkili-oyalama-3.webp",
       "width": 651,
       "height": 43
+    },
+    {
+      "id": 26,
+      "category": "Sohbeti Amacı Dışında Kullanmak",
+      "group": "Hafif Cezalar",
+      "file": "assets/scenes-v5/jungle.webp",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "id": 27,
+      "category": "Sohbeti Amacı Dışında Kullanmak",
+      "group": "Hafif Cezalar",
+      "file": "assets/scenes-v5/mushroom.webp",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "id": 28,
+      "category": "Gereksiz Ada Reklamı",
+      "group": "Hafif Cezalar",
+      "file": "assets/scenes-v5/end.webp",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "id": 29,
+      "category": "Gereksiz Ada Reklamı",
+      "group": "Hafif Cezalar",
+      "file": "assets/scenes-v5/autumn.webp",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "id": 30,
+      "category": "Yetkili Ekibinin İşine Karışma",
+      "group": "Hafif Cezalar",
+      "file": "assets/scenes-v5/canal.webp",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "id": 31,
+      "category": "Yetkili Ekibinin İşine Karışma",
+      "group": "Hafif Cezalar",
+      "file": "assets/scenes-v5/library.webp",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "id": 32,
+      "category": "Tehdit ve Şantaj Etme",
+      "group": "Hafif Cezalar",
+      "file": "assets/scenes-v5/volcano.webp",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "id": 33,
+      "category": "Tehdit ve Şantaj Etme",
+      "group": "Hafif Cezalar",
+      "file": "assets/zero-two-village-v4.webp",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "id": 34,
+      "category": "Kışkırtma",
+      "group": "Hafif Cezalar",
+      "file": "assets/zero-two-mine-v4.webp",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "id": 35,
+      "category": "Kışkırtma",
+      "group": "Hafif Cezalar",
+      "file": "assets/zero-two-cherry-v4.webp",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "id": 36,
+      "category": "Üst Yönetimden İtem / Para İstemek",
+      "group": "Hafif Cezalar",
+      "file": "assets/zero-two-nether-v4.webp",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "id": 37,
+      "category": "Üst Yönetimden İtem / Para İstemek",
+      "group": "Hafif Cezalar",
+      "file": "assets/scenes-v5/harbor.webp",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "id": 38,
+      "category": "Tartışma",
+      "group": "Kusurlu Cezalar",
+      "file": "assets/scenes-v5/snow.webp",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "id": 39,
+      "category": "Tartışma",
+      "group": "Kusurlu Cezalar",
+      "file": "assets/scenes-v5/desert.webp",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "id": 40,
+      "category": "Oyuncuları Örgütleme",
+      "group": "Kusurlu Cezalar",
+      "file": "assets/scenes-v5/underwater.webp",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "id": 41,
+      "category": "Oyuncuları Örgütleme",
+      "group": "Kusurlu Cezalar",
+      "file": "assets/scenes-v5/sky.webp",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "id": 42,
+      "category": "Link Paylaşımı (URL)",
+      "group": "Ağır Cezalar",
+      "file": "assets/scenes-v5/jungle.webp",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "id": 43,
+      "category": "Link Paylaşımı (URL)",
+      "group": "Ağır Cezalar",
+      "file": "assets/scenes-v5/mushroom.webp",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "id": 44,
+      "category": "Yetkili Gibi Davranma",
+      "group": "Ağır Cezalar",
+      "file": "assets/scenes-v5/end.webp",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "id": 45,
+      "category": "Yetkili Gibi Davranma",
+      "group": "Ağır Cezalar",
+      "file": "assets/scenes-v5/autumn.webp",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "id": 46,
+      "category": "Irkçılık, Din ve Siyaset",
+      "group": "Ağır Cezalar",
+      "file": "assets/scenes-v5/canal.webp",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "id": 47,
+      "category": "Irkçılık, Din ve Siyaset",
+      "group": "Ağır Cezalar",
+      "file": "assets/scenes-v5/library.webp",
+      "width": 1440,
+      "height": 810
     }
   ]
 };

@@ -457,5 +457,423 @@ const chatScenarios={
         "role": "staff"
       }
     ]
+  },
+  "26": {
+    "message": "ürün yazmayacağım, bu kanalı bütün gece şarkı sözleriyle dolduracağım",
+    "note": "Bu konuşma eğitim amacıyla oluşturulmuştur. Mesajın tamamını, hedefini ve uyarı geçmişini birlikte değerlendir.",
+    "context": [
+      "ticaret kanalında ne satıyorsunuz?",
+      "burası alım satım için, ilanını yazabilirsin."
+    ],
+    "speaker": "Raphaell",
+    "contextSpeakers": [
+      {
+        "name": "Lostaratorr",
+        "role": "player"
+      },
+      {
+        "name": "Shadow01",
+        "role": "player"
+      }
+    ]
+  },
+  "27": {
+    "message": "yardım sorusu yok, burada sadece maç muhabbeti yapmaya devam edeceğim",
+    "note": "Bu konuşma eğitim amacıyla oluşturulmuştur. Mesajın tamamını, hedefini ve uyarı geçmişini birlikte değerlendir.",
+    "context": [
+      "yardım kanalına sorunu yazabilirsin.",
+      "sorunumu çözdüm, teşekkürler."
+    ],
+    "speaker": "Raphaell",
+    "contextSpeakers": [
+      {
+        "name": "emircan3151",
+        "role": "player"
+      },
+      {
+        "name": "ShadowViper",
+        "role": "player"
+      }
+    ]
+  },
+  "28": {
+    "message": "adama gelin alışveriş var! (kısa aralıklarla tekrar)",
+    "note": "Bu konuşma eğitim amacıyla oluşturulmuştur. Mesajın tamamını, hedefini ve uyarı geçmişini birlikte değerlendir.",
+    "context": [
+      "ada dükkânının ilanını az önce gördük.",
+      "ilanları aralıklı paylaş, sohbeti kaplamasın."
+    ],
+    "speaker": "Raphaell",
+    "contextSpeakers": [
+      {
+        "name": "Lostaratorr",
+        "role": "player"
+      },
+      {
+        "name": "Shadow01",
+        "role": "player"
+      }
+    ]
+  },
+  "29": {
+    "message": "/adareklam — aynı ilanı yeniden gönderir",
+    "note": "Bu konuşma eğitim amacıyla oluşturulmuştur. Mesajın tamamını, hedefini ve uyarı geçmişini birlikte değerlendir.",
+    "context": [
+      "ada reklamını biraz önce de paylaştın.",
+      "sohbeti takip edemiyoruz, tekrar gönderme."
+    ],
+    "speaker": "Raphaell",
+    "contextSpeakers": [
+      {
+        "name": "emircan3151",
+        "role": "player"
+      },
+      {
+        "name": "ShadowViper",
+        "role": "player"
+      }
+    ]
+  },
+  "30": {
+    "message": "sen bakma rehber, cezayı ben belirlerim; herkes benim dediğimi yapsın",
+    "note": "Bu konuşma eğitim amacıyla oluşturulmuştur. Mesajın tamamını, hedefini ve uyarı geçmişini birlikte değerlendir.",
+    "context": [
+      "bu işlemi ilgili yetkili inceliyor.",
+      "konuyu inceliyorum, oyuncular beklesin lütfen."
+    ],
+    "speaker": "Raphaell",
+    "contextSpeakers": [
+      {
+        "name": "Lostaratorr",
+        "role": "player"
+      },
+      {
+        "name": "Shadow01",
+        "role": "staff"
+      }
+    ]
+  },
+  "31": {
+    "message": "incelemeyi bırak, hemen sustur şunu; bütün sohbete ben karar vereceğim",
+    "note": "Bu konuşma eğitim amacıyla oluşturulmuştur. Mesajın tamamını, hedefini ve uyarı geçmişini birlikte değerlendir.",
+    "context": [
+      "olayın önceki mesajlarını da ilettim.",
+      "kanıtları inceleyip karar vereceğim."
+    ],
+    "speaker": "Raphaell",
+    "contextSpeakers": [
+      {
+        "name": "emircan3151",
+        "role": "player"
+      },
+      {
+        "name": "ShadowViper",
+        "role": "staff"
+      }
+    ]
+  },
+  "32": {
+    "message": "bana para vermezsen seni asılsız şikâyetlerle uğraştıracağım",
+    "note": "Bu konuşma eğitim amacıyla oluşturulmuştur. Mesajın tamamını, hedefini ve uyarı geçmişini birlikte değerlendir.",
+    "context": [
+      "eşyanı satın almak istemiyorum.",
+      "istemiyorsan alışveriş yapmayabilirsiniz."
+    ],
+    "speaker": "Raphaell",
+    "contextSpeakers": [
+      {
+        "name": "Lostaratorr",
+        "role": "player"
+      },
+      {
+        "name": "Shadow01",
+        "role": "player"
+      }
+    ]
+  },
+  "33": {
+    "message": "eşyayı bedava vermezsen hakkında yalan yayacağım",
+    "note": "Bu konuşma eğitim amacıyla oluşturulmuştur. Mesajın tamamını, hedefini ve uyarı geçmişini birlikte değerlendir.",
+    "context": [
+      "alışveriş için anlaşamadık.",
+      "konuyu kapatalım, takas yapmayalım."
+    ],
+    "speaker": "Raphaell",
+    "contextSpeakers": [
+      {
+        "name": "emircan3151",
+        "role": "player"
+      },
+      {
+        "name": "ShadowViper",
+        "role": "player"
+      }
+    ]
+  },
+  "34": {
+    "message": "hadi cevap versene, herkesin önünde kavga et de görelim",
+    "note": "Bu konuşma eğitim amacıyla oluşturulmuştur. Mesajın tamamını, hedefini ve uyarı geçmişini birlikte değerlendir.",
+    "context": [
+      "tartışmayı kapattım, oyuna dönüyorum.",
+      "tamam, konuyu uzatmayalım."
+    ],
+    "speaker": "Raphaell",
+    "contextSpeakers": [
+      {
+        "name": "Lostaratorr",
+        "role": "player"
+      },
+      {
+        "name": "Shadow01",
+        "role": "player"
+      }
+    ]
+  },
+  "35": {
+    "message": "korktun mu, cevap ver de sohbeti yeniden karıştıralım",
+    "note": "Bu konuşma eğitim amacıyla oluşturulmuştur. Mesajın tamamını, hedefini ve uyarı geçmişini birlikte değerlendir.",
+    "context": [
+      "birlikte oyun oynamaya devam edelim.",
+      "tartışma çıkmasını istemiyorum."
+    ],
+    "speaker": "Raphaell",
+    "contextSpeakers": [
+      {
+        "name": "emircan3151",
+        "role": "player"
+      },
+      {
+        "name": "ShadowViper",
+        "role": "player"
+      }
+    ]
+  },
+  "36": {
+    "message": "admin bana bedava elmas ve oyun parası verir misin?",
+    "note": "Bu konuşma eğitim amacıyla oluşturulmuştur. Mesajın tamamını, hedefini ve uyarı geçmişini birlikte değerlendir.",
+    "context": [
+      "üst yönetim birazdan duyuru yapacak.",
+      "duyuruyu bekliyorum."
+    ],
+    "speaker": "Raphaell",
+    "contextSpeakers": [
+      {
+        "name": "Lostaratorr",
+        "role": "player"
+      },
+      {
+        "name": "Shadow01",
+        "role": "player"
+      }
+    ]
+  },
+  "37": {
+    "message": "admin ödülsüz de olur, hesabıma özel para gönderir misin?",
+    "note": "Bu konuşma eğitim amacıyla oluşturulmuştur. Mesajın tamamını, hedefini ve uyarı geçmişini birlikte değerlendir.",
+    "context": [
+      "etkinlik ödülleri duyuruda yazıyor.",
+      "ödül şartlarını oradan okuyabiliriz."
+    ],
+    "speaker": "Raphaell",
+    "contextSpeakers": [
+      {
+        "name": "emircan3151",
+        "role": "player"
+      },
+      {
+        "name": "ShadowViper",
+        "role": "player"
+      }
+    ]
+  },
+  "38": {
+    "message": "sen de susmayacaksın biliyorum, bütün gece tartışacağım seninle",
+    "note": "İki oyuncunun karşılıklı devam eden tartışmasını birlikte değerlendir. Tabloya göre işlem her iki tarafa da uygulanır.",
+    "context": [
+      "takas konusunda anlaşamadık, burada kapatalım.",
+      "hayır, son sözü ben söyleyeceğim; sen sus!"
+    ],
+    "speaker": "Raphaell",
+    "contextSpeakers": [
+      {
+        "name": "Lostaratorr",
+        "role": "player"
+      },
+      {
+        "name": "Shadow01",
+        "role": "player"
+      }
+    ]
+  },
+  "39": {
+    "message": "ben de her yazdığına karşılık vereceğim, bu tartışma bitmeyecek",
+    "note": "İki oyuncunun karşılıklı devam eden tartışmasını birlikte değerlendir. Tabloya göre işlem her iki tarafa da uygulanır.",
+    "context": [
+      "mesajları uzatmayalım, oyunumuza bakalım.",
+      "konuyu kapatmıyorum, cevap vermeye devam edeceğim."
+    ],
+    "speaker": "Raphaell",
+    "contextSpeakers": [
+      {
+        "name": "emircan3151",
+        "role": "player"
+      },
+      {
+        "name": "ShadowViper",
+        "role": "player"
+      }
+    ]
+  },
+  "40": {
+    "message": "herkes aynı anda sohbeti doldursun, kimse yardım soramasın",
+    "note": "Bu konuşma eğitim amacıyla oluşturulmuştur. Mesajın tamamını, hedefini ve uyarı geçmişini birlikte değerlendir.",
+    "context": [
+      "yardım isteyen oyuncular var.",
+      "sohbeti açık tutalım."
+    ],
+    "speaker": "Raphaell",
+    "contextSpeakers": [
+      {
+        "name": "Lostaratorr",
+        "role": "player"
+      },
+      {
+        "name": "Shadow01",
+        "role": "player"
+      }
+    ]
+  },
+  "41": {
+    "message": "toplanıp etkinliği bilerek bozalım, herkes engel olsun",
+    "note": "Bu konuşma eğitim amacıyla oluşturulmuştur. Mesajın tamamını, hedefini ve uyarı geçmişini birlikte değerlendir.",
+    "context": [
+      "etkinlik sırasını bekliyoruz.",
+      "sıramız gelince katılırız."
+    ],
+    "speaker": "Raphaell",
+    "contextSpeakers": [
+      {
+        "name": "emircan3151",
+        "role": "player"
+      },
+      {
+        "name": "ShadowViper",
+        "role": "player"
+      }
+    ]
+  },
+  "42": {
+    "message": "https://ornek.invalid/baglanti — buraya tıklayın",
+    "note": "Buradaki .invalid adresi yalnızca örnektir ve gerçek bir bağlantı değildir. Sunucu reklamı içeriyorsa özel reklam kuralını ayrıca kontrol et.",
+    "context": [
+      "aradığın açıklama kurallarda var.",
+      "tamam, oradan bakacağım."
+    ],
+    "speaker": "Raphaell",
+    "contextSpeakers": [
+      {
+        "name": "Lostaratorr",
+        "role": "player"
+      },
+      {
+        "name": "Shadow01",
+        "role": "player"
+      }
+    ]
+  },
+  "43": {
+    "message": "https://ornek.invalid/liste — liste bu adreste",
+    "note": "Buradaki .invalid adresi yalnızca örnektir ve gerçek bir bağlantı değildir. Sunucu reklamı içeriyorsa özel reklam kuralını ayrıca kontrol et.",
+    "context": [
+      "eşya fiyatını oyun içinden konuşalım.",
+      "pazardaki tabelada fiyatı görebilirsin."
+    ],
+    "speaker": "Raphaell",
+    "contextSpeakers": [
+      {
+        "name": "emircan3151",
+        "role": "player"
+      },
+      {
+        "name": "ShadowViper",
+        "role": "player"
+      }
+    ]
+  },
+  "44": {
+    "message": "ben yetkiliyim bana güvenin, dediklerimi yapmanız zorunlu",
+    "note": "Bu konuşma eğitim amacıyla oluşturulmuştur. Mesajın tamamını, hedefini ve uyarı geçmişini birlikte değerlendir.",
+    "context": [
+      "yanındaki rolde Oyuncu yazıyor.",
+      "rehberden yardım isteyeceğim."
+    ],
+    "speaker": "Raphaell",
+    "contextSpeakers": [
+      {
+        "name": "Lostaratorr",
+        "role": "player"
+      },
+      {
+        "name": "Shadow01",
+        "role": "player"
+      }
+    ]
+  },
+  "45": {
+    "message": "gizli adminim, yetkim görünmüyor; hesabını kontrol için bana ver",
+    "note": "Bu konuşma eğitim amacıyla oluşturulmuştur. Mesajın tamamını, hedefini ve uyarı geçmişini birlikte değerlendir.",
+    "context": [
+      "bu işlemi kim yapacak?",
+      "gerçek yetkiliyi bekleyelim."
+    ],
+    "speaker": "Raphaell",
+    "contextSpeakers": [
+      {
+        "name": "emircan3151",
+        "role": "player"
+      },
+      {
+        "name": "ShadowViper",
+        "role": "player"
+      }
+    ]
+  },
+  "46": {
+    "message": "din tartışmasını burada sürdürmeye devam edeceğim",
+    "note": "Dinle ilgili sohbet örneği. Dinî / millî değerlere yönelik hakaret ile aynı durum değildir; o durumda üst yetkililere ilet.",
+    "context": [
+      "sohbeti oyunla ilgili tutalım.",
+      "evet, oyun içi sorulara dönelim."
+    ],
+    "speaker": "Raphaell",
+    "contextSpeakers": [
+      {
+        "name": "Lostaratorr",
+        "role": "player"
+      },
+      {
+        "name": "Shadow01",
+        "role": "player"
+      }
+    ]
+  },
+  "47": {
+    "message": "bu kanalı siyaset tartışması için kullanacağım, konuyu kapatmayacağım",
+    "note": "Siyasetle ilgili sohbet örneği. Mesajın tamamını ve kanalın bağlamını değerlendir.",
+    "context": [
+      "sohbeti oyunla ilgili tutalım.",
+      "evet, oyun içi sorulara dönelim."
+    ],
+    "speaker": "Raphaell",
+    "contextSpeakers": [
+      {
+        "name": "Lostaratorr",
+        "role": "player"
+      },
+      {
+        "name": "Shadow01",
+        "role": "player"
+      }
+    ]
   }
 };

@@ -14,11 +14,11 @@
 <link rel="canonical" href="https://astralissaga.xyz/rehber/">
 <link rel="icon" href="assets/logo.png" type="image/png">
 <title>Rehber Wiki · AtlasOyuncu</title>
-<link rel="stylesheet" href="styles.css?v=11">
-<script defer src="data.js?v=2"></script>
+<link rel="stylesheet" href="styles.css?v=12">
+<script defer src="data.js?v=3"></script>
 <script defer src="backgrounds.js?v=2"></script>
-<script defer src="scenarios.js?v=6"></script>
-<script defer src="app.js?v=11"></script>
+<script defer src="scenarios.js?v=7"></script>
+<script defer src="app.js?v=12"></script>
 </head>
 <body>
 <a class="skip-link" href="#main">İçeriğe geç</a>
@@ -29,14 +29,14 @@
 <a href="#home" data-page="home"><i data-icon="home"></i>Başlangıç</a>
 <span class="nav-label">Sohbet yönetimi</span>
 <a href="#rules" data-page="rules"><i data-icon="book"></i>İşlem kuralları</a>
-<a href="#penalties" data-page="penalties"><i data-icon="shield"></i>Cezalar<span class="nav-count">18</span></a>
-<a href="#examples" data-page="examples"><i data-icon="image"></i>Örnekler<span class="nav-count">25</span></a>
+<a href="#penalties" data-page="penalties"><i data-icon="shield"></i>Cezalar<span class="nav-count">19</span></a>
+<a href="#examples" data-page="examples"><i data-icon="image"></i>Örnekler<span class="nav-count">47</span></a>
 <a href="#commands" data-page="commands"><i data-icon="command"></i>Komutlar</a>
 <span class="nav-label">Ekip düzeni</span>
 <a href="#team" data-page="team"><i data-icon="users"></i>Yetkili rehberi</a>
 <a href="#communication" data-page="communication"><i data-icon="message"></i>İletişim ve düzeltme</a>
 </nav>
-<div class="sidebar-signature"><span>E.V.</span><span class="signature-plus">+</span><span>Lost</span></div>
+<section id="wiki-tour-slot" class="wiki-tour" aria-label="Wiki kullanım videosu" hidden><div class="tour-heading"><span>WIKI NASIL KULLANILIR?</span><button id="expand-tour" type="button" aria-label="Kullanım videosunu büyüt">↗</button></div><video id="wiki-tour" muted loop playsinline controls preload="none" poster="assets/wiki-tour-poster.webp"><source src="assets/wiki-tour-v1.mp4" type="video/mp4"><track kind="captions" src="assets/wiki-tour-tr.vtt" srclang="tr" label="Türkçe"></video><p>Ceza ara · Örnek incele · Komut kopyala</p><button class="tour-watch" id="watch-tour" type="button">Kullanımı izle ↗</button></section><div class="sidebar-signature"><span>E.V.</span><span class="signature-plus">+</span><span>Lost</span></div>
 </aside>
 <div class="shell">
 <header class="topbar"><div class="breadcrumb"><button class="icon-button menu-toggle" id="menu-toggle" aria-label="Menüyü aç" aria-controls="sidebar" aria-expanded="false"><i data-icon="menu"></i></button><span class="breadcrumb-root">Rehber Wiki</span><span class="slash">/</span><span id="current-page">Başlangıç</span></div><div class="top-actions"><button class="motion-button" id="motion-toggle" type="button" aria-pressed="true">Hareketi durdur</button><button class="search-button" id="open-search"><i data-icon="search"></i><span>Rehberde ara…</span><kbd>Ctrl K</kbd></button></div></header>
@@ -44,7 +44,7 @@
 <footer><span>AtlasOyuncu <b>/</b> Rehber Wiki</span><span class="footer-signature"><span>E.V.</span><span class="signature-plus">+</span><span>Lost</span></span></footer>
 </div>
 <dialog id="search-dialog" class="search-dialog" aria-labelledby="search-title"><div class="dialog-top"><h2 id="search-title">Rehberde ara</h2><button class="icon-button" data-close="search-dialog" aria-label="Aramayı kapat">✕</button></div><div class="search-entry"><i data-icon="search"></i><input type="search" id="search-input" aria-label="Konu, ceza veya komut ara" placeholder="Konu, ceza veya komut ara…" autocomplete="off"></div><div id="search-results" class="search-results"></div></dialog>
-<dialog id="image-dialog" class="image-dialog" aria-labelledby="image-title"><div class="dialog-top"><h2 id="image-title">Örnek</h2><button class="icon-button" data-close="image-dialog" aria-label="Görseli kapat">✕</button></div><div class="lightbox-image"><img id="large-image" alt=""></div><div class="image-caption"><p id="image-caption"></p><a id="image-original" target="_blank" rel="noopener">Görseli ayrı aç ↗</a></div></dialog>
+<dialog id="tour-dialog" class="tour-dialog" aria-labelledby="tour-title"><div class="dialog-top"><h2 id="tour-title">Wiki nasıl kullanılır?</h2><button class="icon-button" data-close="tour-dialog" aria-label="Videoyu kapat">✕</button></div><video id="tour-large" controls playsinline preload="none" poster="assets/wiki-tour-poster.webp"><source src="assets/wiki-tour-v1.mp4" type="video/mp4"><track kind="captions" src="assets/wiki-tour-tr.vtt" srclang="tr" label="Türkçe"></video></dialog><dialog id="image-dialog" class="image-dialog" aria-labelledby="image-title"><div class="dialog-top"><h2 id="image-title">Örnek</h2><button class="icon-button" data-close="image-dialog" aria-label="Görseli kapat">✕</button></div><div class="lightbox-image"><img id="large-image" alt=""></div><div class="image-caption"><p id="image-caption"></p><a id="image-original" target="_blank" rel="noopener">Görseli ayrı aç ↗</a></div></dialog>
 <div class="toast" id="toast" role="status" hidden></div>
 </body>
 </html>
