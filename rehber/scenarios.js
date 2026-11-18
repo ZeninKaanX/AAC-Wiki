@@ -25,7 +25,7 @@ const chatScenarios={
     ]
   },
   "4": {
-    "message": "satılıktır\n[Hzsams'ın kara kıllı a'ına bastığım kılıç]",
+    "message": "satılıktır\n[apo'nun kara kıllı a'ına bastığım kılıç]",
     "note": "Görseldeki satış mesajı ve eşya adı birlikte aktarılmıştır. Eşya adındaki ifadeyi de sohbet bağlamıyla değerlendir.",
     "context": [
       "portalı işaretleyen oldu mu?",
@@ -177,13 +177,17 @@ const chatScenarios={
     ]
   },
   "23": {
-    "message": "siyahi ajanlar bunu bizden saklıyor",
+    "message": "Rehber Evrendeki kütle çekimi en yüksek cisim karadelik ise evreni neden çekmiyor?\nRehber siyahi ajanlar bunu bizden saklıyor",
     "note": "Tek bir soru veya alakasız mesaj tek başına yetkili oyalamayı kanıtlamaz. Tekrarları, bağlamı ve uyarı sonrasında devam edilip edilmediğini değerlendir.",
     "context": [
       "pagodaya çıkış hangi tarafta?",
       "sağdaki merdivenlerden çıkılıyor."
     ],
-    "speaker": "Raphaell"
+    "speaker": "Raphaell",
+    "messages": [
+      "Rehber Evrendeki kütle çekimi en yüksek cisim karadelik ise evreni neden çekmiyor?",
+      "Rehber siyahi ajanlar bunu bizden saklıyor"
+    ]
   },
   "24": {
     "message": "lan rehber (×4)\nnapion aşkim (×8)",
