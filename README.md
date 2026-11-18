@@ -26,7 +26,7 @@ Altı kaydın ses izi iki geçişli loudnorm ile yaklaşık −23 LUFS seviyesin
 
 `#pc` sayfası Windows/Linux indirmelerini, sekiz kullanım adımını, gerçek uygulama ekranlarını, eşleşme gerekçelerini, kapsam uyarılarını ve JSON dışa aktarmayı açıklar. Eşleşmelerin AAC tarafından değerlendirilmesi gerektiği notu korunur. Sayfa menü, ana sayfa, uygulamalar, PC süreci ve mobil rehberden erişilebilir; aramaya eklenmiştir.
 
-AtlasAC 0.3.29 uygulama arşivleri, Windows/Linux otomatik testleri ve paket bütünlüğü kontrolü geçen dağıtımlardan hazırlanmıştır. İndirmeler GitHub Releases üzerinden yapılır ve tek HTML içinde uygulama dosyaları bulunmaz. `atlasac-pc-0.3.29` sürümündeki SHA256SUMS.txt indirme bütünlüğünü doğrulamak içindir.
+AtlasAC 0.3.30 uygulama arşivleri, Windows/Linux otomatik testleri ve paket bütünlüğü kontrolü geçen dağıtımlardan hazırlanmıştır. İndirmeler GitHub Releases üzerinden yapılır ve tek HTML içinde uygulama dosyaları bulunmaz. `atlasac-pc-0.3.30` sürümündeki SHA256SUMS.txt indirme bütünlüğünü doğrulamak içindir.
 
 ## Mobil rehber ve güncellemeler
 
