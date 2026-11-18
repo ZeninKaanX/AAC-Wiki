@@ -6,6 +6,16 @@ const chatScenarios={
     "context": [
       "pazara nereden gidiliyor?",
       "/pazar yazabilirsin."
+    ],
+    "contextSpeakers": [
+      {
+        "name": "Lostaratorr",
+        "role": "player"
+      },
+      {
+        "name": "emircan3151",
+        "role": "player"
+      }
     ]
   },
   "2": {
@@ -14,6 +24,16 @@ const chatScenarios={
     "context": [
       "kazmam kırılmak üzere, yedek var mı?",
       "girişteki sandığa bir tane bıraktım."
+    ],
+    "contextSpeakers": [
+      {
+        "name": "Raphaell",
+        "role": "player"
+      },
+      {
+        "name": "emircan3151",
+        "role": "player"
+      }
     ]
   },
   "3": {
@@ -22,6 +42,16 @@ const chatScenarios={
     "context": [
       "şu tepenin yanına ev yapabilir miyim?",
       "claim sınırını kontrol edip yapabilirsin."
+    ],
+    "contextSpeakers": [
+      {
+        "name": "Raphaell",
+        "role": "player"
+      },
+      {
+        "name": "Lostaratorr",
+        "role": "player"
+      }
     ]
   },
   "4": {
@@ -30,6 +60,16 @@ const chatScenarios={
     "context": [
       "portalı işaretleyen oldu mu?",
       "koordinatları not aldım."
+    ],
+    "contextSpeakers": [
+      {
+        "name": "Raphaell",
+        "role": "player"
+      },
+      {
+        "name": "Lostaratorr",
+        "role": "player"
+      }
     ]
   },
   "5": {
@@ -38,6 +78,16 @@ const chatScenarios={
     "context": [
       "bu tarlayı beraber büyütelim mi?",
       "olur, su kanallarını ben açayım."
+    ],
+    "contextSpeakers": [
+      {
+        "name": "Raphaell",
+        "role": "player"
+      },
+      {
+        "name": "Lostaratorr",
+        "role": "player"
+      }
     ]
   },
   "6": {
@@ -46,6 +96,16 @@ const chatScenarios={
     "context": [
       "raylar hangi tünele çıkıyor?",
       "sağdaki geçit ana madene çıkıyor."
+    ],
+    "contextSpeakers": [
+      {
+        "name": "Lostaratorr",
+        "role": "player"
+      },
+      {
+        "name": "emircan3151",
+        "role": "player"
+      }
     ]
   },
   "7": {
@@ -54,6 +114,16 @@ const chatScenarios={
     "context": [
       "kiraz fidanı düşüren oldu mu?",
       "bende iki tane var, birini verebilirim."
+    ],
+    "contextSpeakers": [
+      {
+        "name": "Raphaell",
+        "role": "player"
+      },
+      {
+        "name": "emircan3151",
+        "role": "player"
+      }
     ]
   },
   "8": {
@@ -62,6 +132,16 @@ const chatScenarios={
     "context": [
       "köprüyü hangi blokla yapalım?",
       "yanmayan blok kullanalım."
+    ],
+    "contextSpeakers": [
+      {
+        "name": "Raphaell",
+        "role": "player"
+      },
+      {
+        "name": "Lostaratorr",
+        "role": "player"
+      }
     ]
   },
   "9": {
@@ -70,6 +150,16 @@ const chatScenarios={
     "context": [
       "pazar sandığını buraya koyabilir miyim?",
       "yolu kapatmayan bir yer seçebilirsin."
+    ],
+    "contextSpeakers": [
+      {
+        "name": "Raphaell",
+        "role": "player"
+      },
+      {
+        "name": "Lostaratorr",
+        "role": "player"
+      }
     ]
   },
   "10": {
@@ -78,6 +168,16 @@ const chatScenarios={
     "context": [
       "elması demir kazmayla kırabilir miyim?",
       "evet, demir veya daha iyi kazma kullan."
+    ],
+    "contextSpeakers": [
+      {
+        "name": "Raphaell",
+        "role": "player"
+      },
+      {
+        "name": "Lostaratorr",
+        "role": "player"
+      }
     ]
   },
   "11": {
@@ -86,6 +186,16 @@ const chatScenarios={
     "context": [
       "çatının rengi nasıl olmuş?",
       "köşelere merdiven eklersen güzel durur."
+    ],
+    "contextSpeakers": [
+      {
+        "name": "Lostaratorr",
+        "role": "player"
+      },
+      {
+        "name": "emircan3151",
+        "role": "player"
+      }
     ]
   },
   "12": {
@@ -94,30 +204,70 @@ const chatScenarios={
     "context": [
       "Nether’da yatak kullanmayalım değil mi?",
       "evet, burada yatak patlar."
+    ],
+    "contextSpeakers": [
+      {
+        "name": "Raphaell",
+        "role": "player"
+      },
+      {
+        "name": "emircan3151",
+        "role": "player"
+      }
     ]
   },
   "13": {
     "message": "ShadowViper köpüşüm 2 kişilik ses gel",
-    "note": "Yetkiliyi veya ekibi aşağılayan hakaret. Ağır ceza tablosunda 3 saat.",
+    "note": "Yetkiliyi veya ekibi aşağılayan hakaret. Ağır ceza tablosunda 3 saat. Bu canlandırmada ShadowViper Rehber, mesajı yazan emircan3151 ise Oyuncu rolündedir.",
     "context": [
       "spawn’a hangi komutla dönülüyor?",
       "/spawn yazabilirsin."
+    ],
+    "contextSpeakers": [
+      {
+        "name": "Raphaell",
+        "role": "player"
+      },
+      {
+        "name": "ShadowViper",
+        "role": "staff"
+      }
     ]
   },
   "14": {
     "message": "rehber m a l sınız açtım kapatmacammm",
-    "note": "Yetkiliyi veya ekibi aşağılayan hakaret. Ağır ceza tablosunda 3 saat.",
+    "note": "Yetkiliyi veya ekibi aşağılayan hakaret. Ağır ceza tablosunda 3 saat. Bu canlandırmada emircan3151 Rehber, mesajı yazan Shadow01 ise Oyuncu rolündedir.",
     "context": [
       "envanter doldu, sandık kuralım mı?",
       "girişte boş bir sandık var."
+    ],
+    "contextSpeakers": [
+      {
+        "name": "Raphaell",
+        "role": "player"
+      },
+      {
+        "name": "emircan3151",
+        "role": "staff"
+      }
     ]
   },
   "15": {
     "message": "zyxperBTW la ben bu Lostaratorr kadar esek görmedim",
-    "note": "Yetkiliyi veya ekibi aşağılayan hakaret. Ağır ceza tablosunda 3 saat.",
+    "note": "Yetkiliyi veya ekibi aşağılayan hakaret. Ağır ceza tablosunda 3 saat. Bu canlandırmada Lostaratorr Rehber, mesajı yazan ShadowViper ise Oyuncu rolündedir.",
     "context": [
       "derenin üstüne köprü yapıyorum.",
       "yolu da köprüye bağlayalım."
+    ],
+    "contextSpeakers": [
+      {
+        "name": "Raphaell",
+        "role": "player"
+      },
+      {
+        "name": "Lostaratorr",
+        "role": "staff"
+      }
     ]
   },
   "16": {
@@ -126,6 +276,16 @@ const chatScenarios={
     "context": [
       "meşalesi olan var mı?",
       "dönüş yoluna birkaç tane bıraktım."
+    ],
+    "contextSpeakers": [
+      {
+        "name": "Lostaratorr",
+        "role": "player"
+      },
+      {
+        "name": "emircan3151",
+        "role": "player"
+      }
     ]
   },
   "17": {
@@ -134,6 +294,16 @@ const chatScenarios={
     "context": [
       "çeşmenin etrafını taşla kaplıyorum.",
       "merdivenleri açık bırakırsan geçiş rahat olur."
+    ],
+    "contextSpeakers": [
+      {
+        "name": "Raphaell",
+        "role": "player"
+      },
+      {
+        "name": "emircan3151",
+        "role": "player"
+      }
     ]
   },
   "18": {
@@ -142,15 +312,36 @@ const chatScenarios={
     "context": [
       "bu katmanda demir bulabilir miyim?",
       "duvarlardaki cevherleri de kontrol et."
+    ],
+    "contextSpeakers": [
+      {
+        "name": "Raphaell",
+        "role": "player"
+      },
+      {
+        "name": "Lostaratorr",
+        "role": "player"
+      }
     ]
   },
   "19": {
-    "message": "rehber sen hiç osurdun mu yada sıçtın mı",
+    "message": "Shadow01 sen hiç osurdun mu yada sıçtın mı",
     "note": "Argo ifade içeren mesaj. Bağlamı okuyup kusurlu ceza basamaklarını kontrol et.",
     "context": [
       "tapınağın bahçesine çiçek ekiyorum.",
       "girişe doğru bir yol da bırakalım."
-    ]
+    ],
+    "contextSpeakers": [
+      {
+        "name": "Raphaell",
+        "role": "player"
+      },
+      {
+        "name": "Shadow01",
+        "role": "player"
+      }
+    ],
+    "speaker": "emircan3151"
   },
   "20": {
     "message": "sünepe salak bir çocuksun",
@@ -158,6 +349,16 @@ const chatScenarios={
     "context": [
       "lavın yanındaki geçidi kapattım.",
       "iyi olmuş, diğer köprüden geçebiliriz."
+    ],
+    "contextSpeakers": [
+      {
+        "name": "Raphaell",
+        "role": "player"
+      },
+      {
+        "name": "Lostaratorr",
+        "role": "player"
+      }
     ]
   },
   "21": {
@@ -166,6 +367,16 @@ const chatScenarios={
     "context": [
       "şu boş dükkân kimin?",
       "sahibini tabelasından kontrol edebilirsin."
+    ],
+    "contextSpeakers": [
+      {
+        "name": "Lostaratorr",
+        "role": "player"
+      },
+      {
+        "name": "emircan3151",
+        "role": "player"
+      }
     ]
   },
   "22": {
@@ -174,11 +385,21 @@ const chatScenarios={
     "context": [
       "maden asansörü çalışıyor mu?",
       "evet, alt kattaki düğmeyi kullan."
+    ],
+    "contextSpeakers": [
+      {
+        "name": "Raphaell",
+        "role": "player"
+      },
+      {
+        "name": "emircan3151",
+        "role": "player"
+      }
     ]
   },
   "23": {
     "message": "Rehber Evrendeki kütle çekimi en yüksek cisim karadelik ise evreni neden çekmiyor?\nRehber siyahi ajanlar bunu bizden saklıyor",
-    "note": "Tek bir soru veya alakasız mesaj tek başına yetkili oyalamayı kanıtlamaz. Tekrarları, bağlamı ve uyarı sonrasında devam edilip edilmediğini değerlendir.",
+    "note": "Tek bir soru veya alakasız mesaj tek başına yetkili oyalamayı kanıtlamaz. Tekrarları, bağlamı ve uyarı sonrasında devam edilip edilmediğini değerlendir. Bu canlandırmada Lostaratorr Rehber, mesajı yazan Raphaell ise Oyuncu rolündedir.",
     "context": [
       "pagodaya çıkış hangi tarafta?",
       "sağdaki merdivenlerden çıkılıyor."
@@ -187,24 +408,54 @@ const chatScenarios={
     "messages": [
       "Rehber Evrendeki kütle çekimi en yüksek cisim karadelik ise evreni neden çekmiyor?",
       "Rehber siyahi ajanlar bunu bizden saklıyor"
+    ],
+    "contextSpeakers": [
+      {
+        "name": "emircan3151",
+        "role": "player"
+      },
+      {
+        "name": "Lostaratorr",
+        "role": "staff"
+      }
     ]
   },
   "24": {
     "message": "lan rehber (×4)\nnapion aşkim (×8)",
-    "note": "Yardım talebini açıklaması istendiği halde yetkiliyi tekrar tekrar meşgul etme. Önce uyarı sürecini değerlendir.",
+    "note": "Yardım talebini açıklaması istendiği halde yetkiliyi tekrar tekrar meşgul etme. Önce uyarı sürecini değerlendir. Bu canlandırmada ShadowViper Rehber, mesajı yazan emircan3151 ise Oyuncu rolündedir.",
     "context": [
       "kaleye giden köprü nerede?",
       "büyük kapının karşısında."
     ],
-    "speaker": "emircan3151"
+    "speaker": "emircan3151",
+    "contextSpeakers": [
+      {
+        "name": "Raphaell",
+        "role": "player"
+      },
+      {
+        "name": "ShadowViper",
+        "role": "staff"
+      }
+    ]
   },
   "25": {
     "message": "Rehber Karadeliklerin kütleçekimi evrendeki herşeyden büyükse evreni neden çekmiyor ._.",
-    "note": "Tek bir soru veya alakasız mesaj tek başına yetkili oyalamayı kanıtlamaz. Tekrarları, bağlamı ve uyarı sonrasında devam edilip edilmediğini değerlendir.",
+    "note": "Tek bir soru veya alakasız mesaj tek başına yetkili oyalamayı kanıtlamaz. Tekrarları, bağlamı ve uyarı sonrasında devam edilip edilmediğini değerlendir. Bu canlandırmada Shadow01 Rehber, mesajı yazan Raphaell ise Oyuncu rolündedir.",
     "context": [
       "surları dolaşınca eve döneceğim.",
       "tamam, meydanda görüşürüz."
     ],
-    "speaker": "Raphaell"
+    "speaker": "Raphaell",
+    "contextSpeakers": [
+      {
+        "name": "Lostaratorr",
+        "role": "player"
+      },
+      {
+        "name": "Shadow01",
+        "role": "staff"
+      }
+    ]
   }
 };
