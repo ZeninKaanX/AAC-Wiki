@@ -51,4 +51,4 @@ const ambientScenes=[
     "poster": "assets/ambient/marin-edit-v1.webp"
   }
 ];
-function chooseAmbientScene(key){let last;try{last=localStorage.getItem(key);}catch{}const choices=ambientScenes.filter(s=>s.name!==last);const scene=choices[Math.floor(Math.random()*choices.length)];try{localStorage.setItem(key,scene.name);}catch{}return scene;}
+function chooseAmbientScene(key,names){let last;try{last=localStorage.getItem(key);}catch{}const pool=names?ambientScenes.filter(s=>names.includes(s.name)):ambientScenes;const choices=pool.filter(s=>s.name!==last);const scene=choices[Math.floor(Math.random()*choices.length)];try{localStorage.setItem(key,scene.name);}catch{}return scene;}
