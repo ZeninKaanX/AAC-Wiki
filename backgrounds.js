@@ -44,6 +44,11 @@ const ambientScenes=[
     "name": "girl",
     "file": "assets/ambient/girl-v1.mp4",
     "poster": "assets/ambient/girl-v1.webp"
+  },
+  {
+    "name": "marin-edit",
+    "file": "assets/ambient/marin-edit-v1.mp4",
+    "poster": "assets/ambient/marin-edit-v1.webp"
   }
 ];
 function chooseAmbientScene(key){let last;try{last=localStorage.getItem(key);}catch{}const choices=ambientScenes.filter(s=>s.name!==last);const scene=choices[Math.floor(Math.random()*choices.length)];try{localStorage.setItem(key,scene.name);}catch{}return scene;}

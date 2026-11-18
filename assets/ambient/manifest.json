@@ -43,5 +43,10 @@
     "name": "girl",
     "file": "assets/ambient/girl-v1.mp4",
     "poster": "assets/ambient/girl-v1.webp"
+  },
+  {
+    "name": "marin-edit",
+    "file": "assets/ambient/marin-edit-v1.mp4",
+    "poster": "assets/ambient/marin-edit-v1.webp"
   }
 ]
