@@ -440,7 +440,7 @@ const chatScenarios={
     ]
   },
   "25": {
-    "message": "Rehber Karadeliklerin kütleçekimi evrendeki herşeyden büyükse evreni neden çekmiyor ._.",
+    "message": "Rehber tost makinesine Minecraft kursam shader açar mı?",
     "note": "Tek bir soru veya alakasız mesaj tek başına yetkili oyalamayı kanıtlamaz. Tekrarları, bağlamı ve uyarı sonrasında devam edilip edilmediğini değerlendir. Bu canlandırmada Shadow01 Rehber, mesajı yazan Raphaell ise Oyuncu rolündedir.",
     "context": [
       "surları dolaşınca eve döneceğim.",
