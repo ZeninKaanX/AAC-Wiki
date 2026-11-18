@@ -3,6 +3,7 @@
  const endpoint='https://xnhuoxgmnbzfjshcrpdv.supabase.co/functions/v1/wiki-support';
  let token=location.hash.slice(1);
  const message=document.getElementById('admin-message'),content=document.getElementById('admin-content'),list=document.getElementById('feedback-list');
+ document.querySelector('.skip-link').addEventListener('click',event=>{event.preventDefault();const main=document.getElementById('admin-main');main.focus();main.scrollIntoView({block:'start'});});
  const categories={'eksik-bilgi':'Eksik bilgi','hatali-bilgi':'Hatalı bilgi','arac-hatasi':'Araç / form hatası','video-gorsel':'Video / görsel','gorunum':'Görünüm / mobil','oneri':'Öneri','diger':'Diğer'};
  const statuses={'yeni':'Yeni','inceleniyor':'İnceleniyor','planlandi':'Planlandı','cozuldu':'Çözüldü','uygulanmadi':'Uygulanmadı'};
  let offset=0,total=0,busy=false,controller,authorized=false;
