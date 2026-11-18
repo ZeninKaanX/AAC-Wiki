@@ -46,3 +46,6 @@ html{overflow-y:scroll}main{width:100%;max-width:1500px;padding:36px 40px 48px}.
 @media(max-width:760px){.example-pager button{width:36px;font-size:22px}.example-title h2{font-size:16px}}
 
 .scene-lightbox{position:relative;isolation:isolate}.scene-lightbox .example-pager button{width:54px}.duration-grid>div code{margin:0}.example-position{min-width:36px;text-align:right}
+
+/* Keep example arrows clear over the image, including hover. */
+.example-pager button,.example-pager .example-prev,.example-pager .example-next,.example-pager button:hover,.example-pager button:focus-visible{background:transparent}
