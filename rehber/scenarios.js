@@ -97,7 +97,7 @@ const chatScenarios={
     ]
   },
   "13": {
-    "message": "Lostaratorr köpüşüm 2 kişilik ses gel",
+    "message": "ShadowViper köpüşüm 2 kişilik ses gel",
     "note": "Yetkiliyi veya ekibi aşağılayan hakaret. Ağır ceza tablosunda 3 saat.",
     "context": [
       "spawn’a hangi komutla dönülüyor?",
