@@ -12,7 +12,7 @@ const guideData={
         "Sözlü uyarı",
         "Warn",
         "Sözlü uyarı",
-        "Temp mute"
+        "Mute"
       ],
       "rows": [
         [
