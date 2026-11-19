@@ -27,3 +27,5 @@ body{isolation:isolate}.ocean{background:#071726}.ocean video,.sea-shade,.sea-ra
 
 /* Atlas game crests: a common ocean shield with a distinct symbol per mode. */
 .sidebar .nav-group[data-nav-group]:not([data-nav-group=client]) .nav-emblem{width:38px;height:40px;border:0;background:none;overflow:visible}.nav-emblem .mode-emblem{width:36px;height:36px;object-fit:contain;filter:drop-shadow(0 2px 3px #0005);transition:transform .2s,filter .2s}.nav-group summary:hover .mode-emblem{transform:translateY(-1px);filter:drop-shadow(0 2px 5px #5ab5ee55)}.sidebar .nav-group.contains-active .mode-emblem{filter:drop-shadow(0 0 5px #6bceff44)}
+
+.illustrated-cover.split-cover{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.cover-half{position:relative;min-width:0;height:100%;overflow:hidden}.cover-half+ .cover-half{border-left:1px solid #b9e8ff99}.cover-half img{object-position:center}.cover-half>span{position:absolute;top:10px;left:9px;padding:4px 7px;border-radius:4px;background:#061828d9;color:#e5f5ff;font-size:9px;line-height:1.4;pointer-events:none}
