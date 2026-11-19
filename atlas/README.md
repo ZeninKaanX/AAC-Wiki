@@ -22,3 +22,11 @@ Görsellerin büyük kopyaları `assets/scenes`, küçük önizlemeleri `assets/
 ## Doğrulama
 
 Başlangıç ve altı oyun modu, komut araması ve sayfalama, kategori filtreleri, global arama, galeri kenar düğmeleri ve klavye kullanımı, mobil taşma ve menü kaydırması tarayıcıda kontrol edilmiştir.
+
+## Görsellerle anlatım
+
+Görseller artık rehber adımlarındaki `sections[].figures` alanına bağlanır. Her görsel, bir `photo` kimliği ve o adımı açıklayan `caption` taşır. Yakınlaştırıcı yalnızca açık rehberin görselleri arasında geçiş yapar. Eski `#places` bağlantıları resimli konu rehberlerine yönlenir.
+
+Client ayarları ve ilk bağlantı için resmî dokümantasyondaki ekran görüntülerinin yerel kopyaları kullanılır. Kaynak sayfaları içerik verisinde saklanır. ZIP’teki tüm öğretici görseller en az bir ilgili adımda kullanılmıştır; üç afiş ana sayfada korunur.
+
+Komutlar önce oyun, sonra konu kategorisiyle açılır. Toplu bütün-oyun listesi yoktur. Sol gezinmede Client ve altı oyun modu tek satırlık açılır başlıklardır. Deniz videosu, ışık ve kabarcıklar hareket düğmesine ve azaltılmış hareket tercihine uyar; video sekme arka plandayken durur.
