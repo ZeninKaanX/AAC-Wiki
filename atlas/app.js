@@ -6,7 +6,7 @@
  const e=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const normalize=s=>String(s).toLocaleLowerCase('tr-TR').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/ı/g,'i');
  const modeName=id=>D.modes.find(m=>m.id===id)?.name||({general:'Lobi',posters:'Afişler',client:'Atlas Client'}[id]||'Genel');
- const groupName=(mode,group)=>mode==='towny'?({'Cf':'Coin flip','Plot':'Arsalar ve izinler','Town':'Kasaba yönetimi','RTPQ':'RTP düelloları','Siege':'Kuşatma','Trap':'Trap bölgeleri','Ulus':'Ulus yönetimi'}[group]||group):group;
+ const groupName=(mode,group)=>mode==='towny'?({'Cf':'Coin flip','Plot':'Arsalar ve izinler','Town':'Kasaba yönetimi','RTPQ':'RTP düelloları','Siege':'Kuşatma','Trap':'Trap bölgeleri','Ulus':'Ulus yönetimi','Kese':'Kese ve altın','Reklam':'Kasaba reklamları','Diğer':'Görevler, market ve ödüller'}[group]||group):group;
  const poster=name=>D.posters.find(p=>p.title.includes(name));
  const copyButton=text=>`<button class="copy-command" data-copy="${e(text)}" aria-label="${e(text)} komutunu kopyala"><code>${e(text)}</code>${icon('copy')}</button>`;
  const button=(label,href,secondary=false)=>`<a class="button${secondary?' secondary':''}" href="${e(href)}">${e(label)} ${icon('arrow')}</a>`;
