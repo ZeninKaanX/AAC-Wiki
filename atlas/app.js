@@ -21,15 +21,11 @@
   {id:'eea9fc381834',label:'TOWNY DÜNYASINDAN',pos:'72% 47%'},
   {id:'2385f8902720',label:'TOWNY DÜNYASINDAN',pos:'65% 42%'},
   {id:'f15791b3df0e',label:'TOWNY DÜNYASINDAN',pos:'60% 50%'},
-  {id:'towny-siege-view',label:'TOWNY · KUŞATMA',pos:'60% 45%'},
+  {id:'218d10b2a983',label:'TOWNY DÜNYASINDAN',pos:'58% 46%'},
+  {id:'towny-siege-view',label:'TOWNY DÜNYASINDAN',pos:'65% 48%'},
   {id:'box-nav-atlantis',label:'BOXPVP · ATLANTİS',pos:'60% 45%'},
-  {id:'f01ebf4b1dc3',label:'BOXPVP · OLİMPUS',pos:'60% 48%'},
-  {id:'3b212862519b',label:'BOXPVP · OLİMPUS',pos:'62% 45%'},
-  {id:'smp-worlds-building',label:'SMP DÜNYASINDAN',pos:'62% 48%'},
-  {id:'sky-mobarena-wide',label:'SKYBLOCK DÜNYASINDAN',pos:'60% 48%'},
-  {id:'576dd545bbae',label:'SKYBLOCK DÜNYASINDAN',pos:'62% 46%'},
-  {id:'a8572f5d8ab0',label:'PİLLARS LOBİSİ',pos:'60% 48%'},
-  {id:'3a741476af45',label:'ATLASOYUNCU LOBİSİ',pos:'60% 48%'}
+  {id:'sky-sprinkler-field',label:'SKYBLOCK DÜNYASINDAN',pos:'58% 55%'},
+  {id:'4a66202dd4bd',label:'PVP ARENASI',pos:'58% 45%'}
  ];
  function pickHeroBanner(){
   const list=HERO_BANNERS.map(b=>({b,p:D.photos.find(x=>x.id===b.id)})).filter(x=>x.p);
