@@ -30,9 +30,31 @@
  ];
  function contributorsGrid(){return `<div class="contributors-grid">${CONTRIBUTORS.map(c=>`<div class="contributor-card${c.mode==='ui'?' is-featured':''}"><div class="contributor-head"><span class="contributor-icon">${icon(c.icon)}</span><div><span class="eyebrow">KATKIDA BULUNANLAR</span><h3>${c.href?`<a href="${c.href}">${e(c.role)} ↗</a>`:e(c.role)}</h3></div></div><div class="contributor-tags">${c.names.map(n=>`<span class="contributor-badge">${e(n)}</span>`).join('')}</div></div>`).join('')}</div>`;}
  function contributorsPage(){return heading('ATLAS WİKİ EKİBİ','Katkıda bulunanlar','Atlas Wiki içeriklerini, oyun içi ekran görüntülerini, istemci rehberlerini ve arayüz tasarımını hazırlayan ekip.')+contributorsGrid();}
+ const HERO_BANNERS=[
+  {id:'eea9fc381834',label:'TOWNY DÜNYASINDAN',pos:'72% 47%'},
+  {id:'2385f8902720',label:'TOWNY DÜNYASINDAN',pos:'65% 42%'},
+  {id:'f15791b3df0e',label:'TOWNY DÜNYASINDAN',pos:'60% 50%'},
+  {id:'towny-siege-view',label:'TOWNY · KUŞATMA',pos:'60% 45%'},
+  {id:'box-nav-atlantis',label:'BOXPVP · ATLANTİS',pos:'60% 45%'},
+  {id:'f01ebf4b1dc3',label:'BOXPVP · OLİMPUS',pos:'60% 48%'},
+  {id:'3b212862519b',label:'BOXPVP · OLİMPUS',pos:'62% 45%'},
+  {id:'smp-worlds-building',label:'SMP DÜNYASINDAN',pos:'62% 48%'},
+  {id:'sky-mobarena-wide',label:'SKYBLOCK DÜNYASINDAN',pos:'60% 48%'},
+  {id:'576dd545bbae',label:'SKYBLOCK DÜNYASINDAN',pos:'62% 46%'},
+  {id:'a8572f5d8ab0',label:'PİLLARS LOBİSİ',pos:'60% 48%'},
+  {id:'3a741476af45',label:'ATLASOYUNCU LOBİSİ',pos:'60% 48%'}
+ ];
+ function pickHeroBanner(){
+  const list=HERO_BANNERS.map(b=>({b,p:D.photos.find(x=>x.id===b.id)})).filter(x=>x.p);
+  let last='';try{last=sessionStorage.getItem('atlas-hero-last')||'';}catch{}
+  const pool=list.length>1?list.filter(x=>x.b.id!==last):list;
+  const pick=pool[Math.floor(Math.random()*pool.length)]||list[0];
+  try{if(pick)sessionStorage.setItem('atlas-hero-last',pick.b.id);}catch{}
+  return pick;
+ }
  function home(){
- const dragon=poster('Ejderha'),dede=poster('Dede'),spawn=poster('Spawn');
- return `<section class="hero"><img decoding="async" class="hero-image" src="${dragon.src}" width="${dragon.width}" height="${dragon.height}" alt="Towny dünyasındaki ejderha yapısı" fetchpriority="high"><div class="hero-copy"><span class="eyebrow">ATLASOYUNCU · OYUNCU REHBERİ</span><h1>AtlasOyuncu<br><em>oyun rehberi.</em></h1><p>Sunucuya nasıl girilir, komutlar ne işe yarar?<br>Oynadığın modu seç; anlatımları ve örnekleri bul.</p><div class="hero-actions">${button('Sunucuya nasıl girilir?','#guide/join')}${button('Oyun modları','#modes',true)}</div></div><span class="hero-footer">TOWNY DÜNYASINDAN</span></section>
+ const hero=pickHeroBanner(),heroImg=hero?hero.p:poster('Ejderha'),heroLabel=hero?hero.b.label:'TOWNY DÜNYASINDAN',heroPos=hero?hero.b.pos:'72% 47%',dede=poster('Dede'),spawn=poster('Spawn');
+ return `<section class="hero"><img decoding="async" class="hero-image" src="${heroImg.src}" width="${heroImg.width}" height="${heroImg.height}" style="object-position:${heroPos}" alt="${e(heroImg.title||'AtlasOyuncu dünyasından görünüm')}" fetchpriority="high"><div class="hero-copy"><span class="eyebrow">ATLASOYUNCU · OYUNCU REHBERİ</span><h1>AtlasOyuncu<br><em>oyun rehberi.</em></h1><p>Sunucuya nasıl girilir, komutlar ne işe yarar?<br>Oynadığın modu seç; anlatımları ve örnekleri bul.</p><div class="hero-actions">${button('Sunucuya nasıl girilir?','#guide/join')}${button('Oyun modları','#modes',true)}</div></div><span class="hero-footer">${e(heroLabel)}</span></section>
  <div class="mode-strip" aria-label="Oyun modları">${D.modes.map(m=>`<a href="#modes/${m.id}">${icon(m.icon)}${m.name}</a>`).join('')}</div>
  ${section('Nereden başlamak istersin?','Yeni başlayanlar için bağlantı bilgileri, komutlar ve resimli anlatımlar.')}
  <div class="journeys">${[['arrow','01','Atlas’a ilk kez mi geldin?','Bağlan, hesabını oluştur ve ilk oyununu seç.','#guide/join','Başlangıç rehberi'],['code','02','Bir komut mu arıyorsun?','Oyun moduna göre filtrele, bulduğun komutu kopyala.','#commands','Komutlara bak'],['image','03','Bir adımda mı takıldın?','Oyun içi menülerin ne işe yaradığını görsellerle öğren.','#illustrated','Resimli anlatımları aç']].map(j=>`<a class="journey" href="${j[4]}"><div class="journey-top">${icon(j[0])}<span>${j[1]}</span></div><h3>${j[2]}</h3><p>${j[3]}</p><span class="text-link">${j[5]} →</span></a>`).join('')}</div>
