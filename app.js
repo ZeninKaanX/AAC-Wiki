@@ -301,7 +301,7 @@ const modPenalties=[
   ],
   [
     "Storage ESP",
-    3
+    5
   ],
   [
     "Cave Finder",
@@ -330,7 +330,10 @@ const modPenalties=[
 ];
 const visualInfoMods=new Set(['Anti-Invisibility','Chest Finder','Storage ESP','Cave Finder','X-Ray','Freecam']);
 const inGameUsageMods=new Set([...visualInfoMods,'Schematica Printer','Litematica Easy Place']);
-const penaltyBody=`<p>Listede yer alan modlar için aşağıdaki uzaklaştırma sürelerini uygula.</p><p class="visual-mod-rule"><strong>Görüntü ve bilgi modları:</strong> Freecam, ESP, X-Ray ve benzeri modlar yalnızca kontrolde görüldüğü için ban uygulanmaz. Oyunda kullanım tespit edildiğinde ilgili modun tablodaki uzaklaştırma süresi uygulanır.</p><p class="visual-mod-rule"><strong>Schematica Printer ve Litematica Easy Place:</strong> Sadece kontrolde mod veya dosyasının bulunması ceza için yeterli değildir. <strong>Oyunda kullanım tespiti gerekir.</strong> Kullanım tespit edildiğinde her ikisi için de <strong>3 gün</strong> uzaklaştırma uygulanır.</p><table class="penalty-table"><caption>Yasaklı modların uzaklaştırma süreleri</caption><thead><tr><th scope="col">Yasaklı mod</th><th scope="col">Uzaklaştırma</th></tr></thead><tbody>${modPenalties.map(([name,days])=>`<tr><th scope="row"><span>${escapeHTML(name)}</span>${inGameUsageMods.has(name)?'<small class="penalty-condition">Oyunda kullanım tespiti gerekir</small>':''}</th><td><strong>${days} gün</strong></td></tr>`).join('')}</tbody></table><div class="client-penalty"><strong>Diğer hile clientleri: 30 gün</strong><p>Wurst, Meteor ve bu listede ayrı süre belirtilmeyen diğer hile clientleri 30 gün uzaklaştırma sebebidir.</p></div>`;
+const directBanMods=modPenalties.filter(([name])=>!inGameUsageMods.has(name));
+const visualUsageMods=modPenalties.filter(([name])=>inGameUsageMods.has(name));
+const renderPenaltyRows=list=>list.map(([name,days])=>`<tr><th scope="row"><span>${escapeHTML(name)}</span>${inGameUsageMods.has(name)?'<small class="penalty-condition">Gözle görme / oyunda kullanım tespiti gerekir</small>':''}</th><td><strong>${days} gün</strong></td></tr>`).join('');
+const penaltyBody=`<p>Sunucumuzda aşağıda belirtilen modların ve hile özelliklerinin kullanılması yasaktır. Tespit durumunda ilgili uzaklaştırma süresi uygulanır.</p><h3>Kontrolde tespiti yeterli yasaklı modlar</h3><p>Aşağıdaki modların PC kontrolünde veya oyunda tespit edilmesi doğrudan uzaklaştırma sebebidir.</p><table class="penalty-table"><caption>Kontrolde doğrudan ceza uygulanan yasaklı modlar</caption><thead><tr><th scope="col">Yasaklı mod</th><th scope="col">Uzaklaştırma</th></tr></thead><tbody>${renderPenaltyRows(directBanMods)}</tbody></table><h3>Gözle görme / oyunda kullanım tespiti gereken modlar</h3><p class="visual-mod-rule"><strong>Görüntü ve bilgi modları:</strong> Freecam, Storage ESP, Chest Finder, Cave Finder, Anti-Invisibility ve X-Ray yalnızca kontrolde görüldüğü için ban uygulanmaz. Oyunda kullanım gözle tespit edildiğinde tablodaki uzaklaştırma süresi uygulanır.</p><p class="visual-mod-rule"><strong>Schematica Printer ve Litematica Easy Place:</strong> Sadece kontrolde mod veya dosyasının bulunması ceza için yeterli değildir. <strong>Oyunda kullanım tespiti gerekir.</strong> Kullanım tespit edildiğinde her ikisi için de <strong>3 gün</strong> uzaklaştırma uygulanır.</p><table class="penalty-table"><caption>Oyunda gözle görme / kullanım tespiti gereken modlar</caption><thead><tr><th scope="col">Yasaklı mod</th><th scope="col">Uzaklaştırma</th></tr></thead><tbody>${renderPenaltyRows(visualUsageMods)}</tbody></table><p class="visual-mod-rule"><strong>Önemli not:</strong> Yukarıda belirtilen modlar dışında kalan, listede adı geçmeyen diğer modların kullanımı serbesttir. Yasaklı modlardan herhangi birinin kullanıldığının tespit edilmesi durumunda belirtilen uzaklaştırma cezası uygulanacaktır.</p><div class="client-penalty"><strong>Diğer hile clientleri: 30 gün</strong><p>Wurst, Meteor ve bu listede ayrı süre belirtilmeyen diğer hile clientleri 30 gün uzaklaştırma sebebidir.</p></div>`;
 const guides=[
   {
     id:'team',title:'Üst yetkililer ve AAC kadrosu',
