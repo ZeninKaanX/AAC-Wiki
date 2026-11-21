@@ -559,7 +559,7 @@ window.ATLAS_DATA = {
       "mode": "boxpvp",
       "group": "Bölgeler ve savaş",
       "command": "/koruma",
-      "description": "Pvpnizi açıp kapatır.",
+      "description": "Başlangıç dünyasında PvP’yi açıp kapatmaya yarar.",
       "source": "zip"
     },
     {
@@ -580,7 +580,7 @@ window.ATLAS_DATA = {
       "mode": "boxpvp",
       "group": "Bölgeler ve savaş",
       "command": "/olimpus",
-      "description": "Olimpus yerine götürür.",
+      "description": "Olimpus bölgesine götürür.",
       "source": "zip"
     },
     {
@@ -3400,7 +3400,7 @@ window.ATLAS_DATA = {
     {
       "mode": "skyblock",
       "command": "/bal",
-      "description": "Sikke bakiyesini gösterir; oyuncu adı belirtirsen o oyuncunun bakiyesini gösterir.",
+      "description": "Sikke bakiyesini gösterir.",
       "source": "feedback",
       "group": "Ekonomi ve satış"
     },
@@ -3414,7 +3414,7 @@ window.ATLAS_DATA = {
     {
       "mode": "skyblock",
       "command": "/baltop",
-      "description": "Sikke bakiyesi en yüksek 8 oyuncuyu gösterir.",
+      "description": "Sikke bakiyesi en yüksek oyuncuları listeler.",
       "source": "feedback",
       "group": "Ekonomi ve satış"
     },
@@ -3539,6 +3539,13 @@ window.ATLAS_DATA = {
     },
     {
       "mode": "skyblock",
+      "command": "/qs help",
+      "description": "QuickShop yardımını gösterir.",
+      "source": "feedback",
+      "group": "Sandık marketi"
+    },
+    {
+      "mode": "skyblock",
       "command": "/qs browse",
       "description": "Sunucudaki aktif sandık marketlerini gösterir.",
       "source": "feedback",
@@ -3562,13 +3569,6 @@ window.ATLAS_DATA = {
       "mode": "skyblock",
       "command": "/qs find",
       "description": "Belirli bir türde en yakındaki marketi bulur.",
-      "source": "feedback",
-      "group": "Sandık marketi"
-    },
-    {
-      "mode": "skyblock",
-      "command": "/qs help",
-      "description": "QuickShop yardımını gösterir.",
       "source": "feedback",
       "group": "Sandık marketi"
     },
@@ -3613,6 +3613,13 @@ window.ATLAS_DATA = {
       "description": "Baktığın marketin yetkili personellerini listeler.",
       "source": "feedback",
       "group": "Sandık marketi"
+    },
+    {
+      "mode": "skyblock",
+      "group": "Işınlanma ve bölgeler",
+      "command": "/warp",
+      "description": "Işınlanılabilecek bölgeler menüsünü açar.",
+      "source": "docs"
     },
     {
       "mode": "skyblock",
@@ -3778,7 +3785,7 @@ window.ATLAS_DATA = {
     {
       "mode": "skyblock",
       "command": "/şişele [miktar]",
-      "description": "Mevcut XP’ni belirttiğin miktarda XP şişesine dönüştürüp envanterine verir (VIP özelliği değildir, tüm oyuncular kullanabilir).",
+      "description": "Mevcut XP’ni belirttiğin miktarda XP şişesine dönüştürüp envanterine verir.",
       "source": "feedback",
       "group": "Üretim ve geliştirme"
     },
