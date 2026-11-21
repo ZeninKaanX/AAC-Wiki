@@ -4271,6 +4271,34 @@ window.ATLAS_DATA = {
       "command": "/balıkçı",
       "description": "Balıkçı menüsünü açar.",
       "source": "docs"
+    },
+    {
+      "mode": "smp",
+      "group": "Oyuncu ve ayarlar",
+      "command": "/bounty",
+      "description": "Bounty menüsünü ve en yüksek kelle ödülüne sahip oyuncuların sıralamasını açar.",
+      "source": "docs"
+    },
+    {
+      "mode": "smp",
+      "group": "Oyuncu ve ayarlar",
+      "command": "/rtpq status",
+      "description": "RTPQ savaş kuyruğundaki mevcut sıranı gösterir.",
+      "source": "docs"
+    },
+    {
+      "mode": "smp",
+      "group": "Işınlanma ve ev",
+      "command": "/warp kasalar",
+      "description": "Tüm kasaların bulunduğu kasa alanına ışınlar.",
+      "source": "docs"
+    },
+    {
+      "mode": "smp",
+      "group": "Ekonomi ve sipariş",
+      "command": "/atlasparcası",
+      "description": "Mevcut Atlas Parçası bakiyeni gösterir.",
+      "source": "docs"
     }
   ],
   "guides": [
@@ -7807,6 +7835,450 @@ window.ATLAS_DATA = {
       "source": null,
       "hubGroup": "Bölgeler ve ödüller",
       "coverCommand": "/rtc"
+    },
+    {
+      "id": "smp-team",
+      "title": "SMP · Takım sistemi ve sıralamalar",
+      "mode": "smp",
+      "category": "SMP",
+      "coverPhotos": [
+        {
+          "photo": "smp-team-menu",
+          "label": "Takım Menüsü"
+        },
+        {
+          "photo": "smp-team-ranks",
+          "label": "Savaş Sıralamaları"
+        }
+      ],
+      "summary": "Takım kurma, genel takım ayarları ve öldürme, bakiye ile üye sayısına göre savaş sıralamaları.",
+      "sections": [
+        {
+          "title": "Takım menüsü ve takım kurma",
+          "text": "/takım komutu genel takım ayarlarını açar. Takım Kur seçeneğine tıkladıktan sonra kurmak istediğin takımın adını sohbete yazabilir, vazgeçmek istersen iptal yazarak işlemi durdurabilirsin.",
+          "commands": [
+            "/takım"
+          ],
+          "figures": [
+            {
+              "photo": "smp-team-menu",
+              "caption": "Takım Menüsü: Takım Kur ve Savaş Sıralamaları seçenekleri."
+            },
+            {
+              "photo": "smp-team-create",
+              "caption": "Takım Kur: Tıklayıp sohbete takım adını yazarak kendi takımını oluşturabilirsin."
+            }
+          ]
+        },
+        {
+          "title": "Savaş sıralamaları ve en fazla öldürme",
+          "text": "Savaş Sıralamaları ekranından sunucudaki en güçlü takımları görebilirsin. En Fazla Kan Döken bölümü, en çok öldürme yapan ilk 10 takımı ve her takımın toplam öldürme istatistiğini gösterir.",
+          "commands": [],
+          "figures": [
+            {
+              "photo": "smp-team-rank-btn",
+              "caption": "Takım menüsünden Savaş Sıralamaları bölümüne geçiş."
+            },
+            {
+              "photo": "smp-team-ranks",
+              "caption": "Takım Savaş Sıralamaları: Öldürme, bakiye ve üye sayısı kategorileri."
+            },
+            {
+              "photo": "smp-team-kills-btn",
+              "caption": "En Fazla Kan Döken sekmesi."
+            },
+            {
+              "photo": "smp-team-kills-list",
+              "caption": "En çok öldürme yapan ilk 10 takım listesi."
+            },
+            {
+              "photo": "smp-team-kills-top1",
+              "caption": "Takım kafalarının üzerine gelerek etiket ve toplam öldürme sayısını inceleyebilirsin."
+            }
+          ]
+        },
+        {
+          "title": "En zengin ve en kalabalık takımlar",
+          "text": "En Zengin Takımlar bölümü en yüksek bakiyeye sahip ilk 10 takımı, En Kalabalık Takımlar bölümü ise en fazla oyuncuya sahip ilk 10 takımı listeler.",
+          "commands": [],
+          "figures": [
+            {
+              "photo": "smp-team-rich-btn",
+              "caption": "En Zengin Takımlar sekmesi."
+            },
+            {
+              "photo": "smp-team-rich-list",
+              "caption": "Bakiyeye göre ilk 10 takım listesi."
+            },
+            {
+              "photo": "smp-team-members-btn",
+              "caption": "En Kalabalık Takımlar sekmesi."
+            },
+            {
+              "photo": "smp-team-members-list",
+              "caption": "Üye sayısına göre ilk 10 takım listesi."
+            },
+            {
+              "photo": "smp-team-members-top1",
+              "caption": "Bir takımın üzerine gelerek mevcut üye sayısını görebilirsin."
+            }
+          ]
+        }
+      ],
+      "source": null,
+      "related": [
+        "smp-bounty-rtpq",
+        "smp-kits"
+      ]
+    },
+    {
+      "id": "smp-bounty-rtpq",
+      "title": "SMP · Bounty ve RTPQ düello kuyruğu",
+      "mode": "smp",
+      "category": "SMP",
+      "coverPhotos": [
+        {
+          "photo": "smp-bounty-menu",
+          "label": "Bounty"
+        },
+        {
+          "photo": "smp-rtpq-join",
+          "label": "RTPQ"
+        }
+      ],
+      "summary": "Bounty (kelle ödülü) sıralaması, oyuncu arama ve RTPQ rastgele PvP kuyruğu kullanımı.",
+      "sections": [
+        {
+          "title": "Bounty menüsü ve oyuncu arama",
+          "text": "/bounty menüsü en yüksek kelle ödülüne sahip oyuncuları ve sıralamalarını gösterir. Sol alttaki Ara tabelasına tıklayarak belirli bir oyuncunun ödülünü hızlıca arayabilir, /bounty add ile oyuncuların kellesine ödül koyabilirsin.",
+          "commands": [
+            "/bounty",
+            "/bounty add [oyuncu adı]"
+          ],
+          "figures": [
+            {
+              "photo": "smp-bounty-menu",
+              "caption": "Bounty menüsü: aktif kelle ödülleri ve sıralama."
+            },
+            {
+              "photo": "smp-bounty-search",
+              "caption": "Ara seçeneğiyle istediğin oyuncuyu doğrudan sorgulayabilirsin."
+            }
+          ]
+        },
+        {
+          "title": "RTPQ rastgele PvP kuyruğu",
+          "text": "/rtpq komutu rastgele bir bölgede PvP atmak için savaş kuyruğuna katılmanı sağlar. Kuyruktaki sıranı /rtpq status ile görebilir, kuyruktan çıkmak için /rtpq leave yazabilirsin.",
+          "commands": [
+            "/rtpq",
+            "/rtpq status",
+            "/rtpq leave"
+          ],
+          "figures": [
+            {
+              "photo": "smp-rtpq-join",
+              "caption": "/rtpq ile kuyruğa giriş bildirimi."
+            },
+            {
+              "photo": "smp-rtpq-status",
+              "caption": "/rtpq status ile kuyruktaki sıranı kontrol edebilirsin."
+            },
+            {
+              "photo": "smp-rtpq-leave",
+              "caption": "/rtpq leave ile kuyruktan ayrılma bildirimi."
+            }
+          ]
+        }
+      ],
+      "source": null,
+      "related": [
+        "smp-team",
+        "smp-kits"
+      ]
+    },
+    {
+      "id": "smp-kits",
+      "title": "SMP · Kitler ve VIP kit içerikleri",
+      "mode": "smp",
+      "category": "SMP",
+      "coverPhotos": [
+        {
+          "photo": "smp-kits-menu",
+          "label": "Kitler"
+        },
+        {
+          "photo": "smp-kit-sponsor",
+          "label": "Sponsor Kit"
+        }
+      ],
+      "summary": "/kit menüsü ve VIP, VIP+, MVİP, Atlas ile Sponsor kitlerinde sunulan tüm ekipmanlar.",
+      "sections": [
+        {
+          "title": "Kitler menüsü",
+          "text": "/kit yazarak erişebileceğin tüm kitleri tek ekranda görebilir, rütbene uygun kitlerin içeriğini inceleyip alabilirsin.",
+          "commands": [
+            "/kit",
+            "/vip",
+            "/vipsüre"
+          ],
+          "figures": [
+            {
+              "photo": "smp-kits-menu",
+              "caption": "Kitler menüsü: rütbelere göre ayrılmış tüm kitler."
+            }
+          ]
+        },
+        {
+          "title": "VIP ve VIP+ kit içerikleri",
+          "text": "VIP ve VIP+ kitleri elmas zırh seti, ölümsüzlük totemleri, end kristalleri, tecrübe iksirleri ve savaş malzemeleri sunar.",
+          "commands": [],
+          "figures": [
+            {
+              "photo": "smp-kit-vip",
+              "caption": "VIP Kit içeriği."
+            },
+            {
+              "photo": "smp-kit-vipplus",
+              "caption": "VIP+ Kit içeriği."
+            }
+          ]
+        },
+        {
+          "title": "MVİP, Atlas ve Sponsor kit içerikleri",
+          "text": "Üst rütbelerde totem, kristal, altın elma, ender incisi ve patlayıcı savaş malzemeleri artar; Sponsor kiti tam Netherite zırh seti ve yüksek miktarda totem içerir.",
+          "commands": [],
+          "figures": [
+            {
+              "photo": "smp-kit-mvip",
+              "caption": "MVİP Kit içeriği."
+            },
+            {
+              "photo": "smp-kit-atlas",
+              "caption": "Atlas Kit içeriği."
+            },
+            {
+              "photo": "smp-kit-sponsor",
+              "caption": "Sponsor Kit içeriği."
+            }
+          ]
+        }
+      ],
+      "source": null,
+      "related": [
+        "smp-bounty-rtpq",
+        "smp-crates"
+      ]
+    },
+    {
+      "id": "smp-sell-delivery",
+      "title": "SMP · Satış, teslimat ve spawner mağazası",
+      "mode": "smp",
+      "category": "SMP",
+      "coverPhotos": [
+        {
+          "photo": "smp-sell-confirm",
+          "label": "Satış Menüsü"
+        },
+        {
+          "photo": "smp-delivery-info",
+          "label": "Teslimat Etkinliği"
+        }
+      ],
+      "summary": "/sat ile eşya satma, sezonluk teslimat etkinliği ödülleri ve Atlas Parçası spawner mağazası.",
+      "sections": [
+        {
+          "title": "Eşya satışı (/sat)",
+          "text": "/sat komutu eşyalarını değerinde hızlıca satmanı sağlar. Açılan Satış menüsüne satmak istediğin eşyaları yerleştir ve sağ alttaki yeşil Sat paneline tıklayarak işlemi onayla.",
+          "commands": [
+            "/sat",
+            "/sellmulti",
+            "/worth"
+          ],
+          "figures": [
+            {
+              "photo": "smp-sell-menu",
+              "caption": "/sat ile açılan boş satış penceresi."
+            },
+            {
+              "photo": "smp-sell-confirm",
+              "caption": "Eşyaları koyduktan sonra sağ alttaki Sat düğmesinden toplam tutarı görüp satabilirsin."
+            }
+          ]
+        },
+        {
+          "title": "Teslimat etkinliği ve sezon ödülleri",
+          "text": "/teslimat her sezon yenilenen hedef ve sıralama etkinliğidir. Teslimat Yap bölümünde kategoriye sol tıklayarak envanterindeki eşyaları teslim edebilir ve hedef ödüllerini toplayabilirsin. Sezon sonu sıralama ödülleri: 1. 300 Site Kredisi + 30 Bin Sikke, 2. 200 Site Kredisi + 20 Bin Sikke, 3. 100 Site Kredisi + 10 Bin Sikke.",
+          "commands": [
+            "/teslimat"
+          ],
+          "figures": [
+            {
+              "photo": "smp-delivery-menu",
+              "caption": "Teslimat ana menüsü: Teslimat Yap, Bilgi ve Sıralama."
+            },
+            {
+              "photo": "smp-delivery-submit",
+              "caption": "Teslimat Yap seçeneğiyle eşya teslim edip hedef ödüllerini alabilirsin."
+            },
+            {
+              "photo": "smp-delivery-info",
+              "caption": "Bilgi ekranı: sezon kuralları, kalan süre ve sezon sonu ödülleri."
+            },
+            {
+              "photo": "smp-delivery-rank-btn",
+              "caption": "Sıralama düğmesiyle kategori liderlerini açabilirsin."
+            },
+            {
+              "photo": "smp-delivery-rank-list",
+              "caption": "Tarım Kategorisi teslimat sıralaması."
+            }
+          ]
+        },
+        {
+          "title": "Atlas Parçası ile spawner alma",
+          "text": "/market üzerinden Atlas Parçası seçeneğine tıklayarak Atlas Parçası ile satın alınabilen spawnerları ve özel araçları görebilirsin. Mevcut Atlas Parçası bakiyeni /atlasparcası komutuyla kontrol edebilirsin.",
+          "commands": [
+            "/market",
+            "/atlasparcası",
+            "/atlasparcası balance"
+          ],
+          "figures": [
+            {
+              "photo": "smp-shop-piece-btn",
+              "caption": "Sunucu Mağazası içinde Atlas Parçası sekmesi."
+            },
+            {
+              "photo": "smp-shop-spawners",
+              "caption": "Atlas Parçası mağazasındaki spawner ve özel araçlar."
+            },
+            {
+              "photo": "smp-shop-spider-sp",
+              "caption": "Örnek spawner alış fiyatı ve detay görünümü."
+            },
+            {
+              "photo": "smp-piece-balance",
+              "caption": "/atlasparcası komutuyla mevcut bakiyeni görüntüleme."
+            }
+          ]
+        }
+      ],
+      "source": null,
+      "related": [
+        "smp-pieces",
+        "smp-crates"
+      ]
+    },
+    {
+      "id": "smp-crates",
+      "title": "SMP · Kasalar ve kasa içerikleri",
+      "mode": "smp",
+      "category": "SMP",
+      "coverPhotos": [
+        {
+          "photo": "smp-crates-overview",
+          "label": "Kasa Alanı"
+        },
+        {
+          "photo": "smp-crate-legend-loot",
+          "label": "Efsanevi Kasa"
+        }
+      ],
+      "summary": "/warp kasalar alanındaki Ödül, Spawner, Atlas, Efsanevi ve Şans kasalarının tam içerik listeleri.",
+      "sections": [
+        {
+          "title": "Kasa alanına ulaşım",
+          "text": "/warp kasalar komutuyla tüm kasaların bulunduğu alana gidebilirsin. Kasalara sol tıklayarak içeriği inceleyebilir, anahtarın varsa sağ tıklayarak açabilirsin.",
+          "commands": [
+            "/warp kasalar"
+          ],
+          "figures": [
+            {
+              "photo": "smp-crates-overview",
+              "caption": "SMP kasa alanı: Ödül, Spawner, Atlas, Efsanevi ve Şans kasaları."
+            }
+          ]
+        },
+        {
+          "title": "Ödül Kasası",
+          "text": "İçeriği: Keskinlik 1 Ganimet 2 Elmas Kılıç, Servet 1 Verimlilik 2 Elmas Kazma, Koruma 1 Solungaç 2 Elmas Kask, Koruma 1 Elmas Göğüslük, Koruma 1 Çevik Gizlilik 2 Elmas Pantolon, Koruma 1 Tüy Düşüşü 2 Derin Koşucu 2 Elmas Bot.",
+          "commands": [],
+          "figures": [
+            {
+              "photo": "smp-crate-reward-view",
+              "caption": "Ödül Kasası."
+            },
+            {
+              "photo": "smp-crate-reward-loot",
+              "caption": "Ödül Kasası içerik ekranı."
+            }
+          ]
+        },
+        {
+          "title": "Spawner Kasası",
+          "text": "İçeriği: Domuz, İnek, Zombi, İskelet, Örümcek, Zombi Piglin, Blaze ve Demir Golem spawnerları.",
+          "commands": [],
+          "figures": [
+            {
+              "photo": "smp-crate-spawner-view",
+              "caption": "Spawner Kasası."
+            },
+            {
+              "photo": "smp-crate-spawner-loot",
+              "caption": "Spawner Kasası içerik ekranı."
+            }
+          ]
+        },
+        {
+          "title": "Atlas Kasası",
+          "text": "İçeriği: Atlas Matkap (+26 Kazım Verimliliği), Atlas Kürek (+26 Kazım Verimliliği), Atlas Uçma Tüyü, Atlas Lav Kovası, Atlas Roket (uçuş süresi 1), Atlas Ağaç Kesici (+26 Kazım Verimliliği), Atlas Su Kovası ve Atlas Satış Baltası.",
+          "commands": [],
+          "figures": [
+            {
+              "photo": "smp-crate-atlas-view",
+              "caption": "Atlas Kasası."
+            },
+            {
+              "photo": "smp-crate-atlas-loot",
+              "caption": "Atlas Kasası içerik ekranı."
+            }
+          ]
+        },
+        {
+          "title": "Efsanevi Kasa",
+          "text": "İçeriği: Ejder Kask, Ejder Göğüslük, Ejder Pantolon, Ejder Bot, Ejder Balta, Ejder Kazma, Ejder Kılıç; Atlas Kask, Atlas Göğüslük, Atlas Pantolon, Atlas Bot, Atlas Kılıç, Atlas Arbalet ve Atlas Elitra.",
+          "commands": [],
+          "figures": [
+            {
+              "photo": "smp-crate-legend-view",
+              "caption": "Efsanevi Kasa."
+            },
+            {
+              "photo": "smp-crate-legend-loot",
+              "caption": "Efsanevi Kasa içerik ekranı."
+            }
+          ]
+        },
+        {
+          "title": "Şans Kasası",
+          "text": "İçeriği: 1500 Sikke, Patlayıcı Anında Sağlık 2, Patlayıcı Hız 2, Patlayıcı Kuvvet 2, Patlayıcı Ateş Direnci, Ölümsüzlük Totemi, Ender İncisi, Altın Elma, Atlas Matkap, Atlas Kürek, Atlas Ağaç Kesici, End Kristali, Diriltici, Elmas Kılıç (Keskinlik 2 Kırılmazlık 2), Elmas Kazma (Verimlilik 2 Kırılmazlık 2), Elmas Balta (Verimlilik 2 Kırılmazlık 2), Elmas Kask (Koruma 2 Solungaç 2), Elmas Göğüslük (Koruma 2), Elmas Pantolon (Koruma 2 Çevik Gizlilik 2), Elmas Bot (Koruma 2 Tüy Düşüşü 2 Derin Koşucu 2) ve 100 Atlas Parçası.",
+          "commands": [],
+          "figures": [
+            {
+              "photo": "smp-crate-luck-view",
+              "caption": "Şans Kasası."
+            },
+            {
+              "photo": "smp-crate-luck-loot",
+              "caption": "Şans Kasası içerik ekranı."
+            }
+          ]
+        }
+      ],
+      "source": null,
+      "related": [
+        "smp-places",
+        "smp-kits"
+      ]
     }
   ],
   "photos": [
@@ -10025,6 +10497,456 @@ window.ATLAS_DATA = {
       "menu": false,
       "description": "Mob Arena: zararsız hayvanların ve tehlikeli yaratıkların doğduğu ganimet ve XP alanı.",
       "guide": "sky-worlds"
+    },
+    {
+      "id": "smp-team-menu",
+      "mode": "smp",
+      "title": "Takım Menüsü",
+      "description": "Genel takım ayarları ve menü seçenekleri.",
+      "src": "assets/scenes/smp-team-menu.webp",
+      "width": 395,
+      "height": 372,
+      "thumb": "assets/scenes/smp-team-menu.webp"
+    },
+    {
+      "id": "smp-team-create",
+      "mode": "smp",
+      "title": "Takım Kur",
+      "description": "Takım kurma seçeneği; tıkladıktan sonra takım adını sohbete yazabilirsin.",
+      "src": "assets/scenes/smp-team-create.webp",
+      "width": 575,
+      "height": 397,
+      "thumb": "assets/scenes/smp-team-create.webp"
+    },
+    {
+      "id": "smp-team-rank-btn",
+      "mode": "smp",
+      "title": "Savaş Sıralamaları",
+      "description": "Sunucunun en güçlü takımlarını görüntüleme seçeneği.",
+      "src": "assets/scenes/smp-team-rank-btn.webp",
+      "width": 747,
+      "height": 395,
+      "thumb": "assets/scenes/smp-team-rank-btn.webp"
+    },
+    {
+      "id": "smp-team-ranks",
+      "mode": "smp",
+      "title": "Takım Savaş Sıralamaları",
+      "description": "Öldürme, bakiye ve üye sayısına göre takım sıralamaları menüsü.",
+      "src": "assets/scenes/smp-team-ranks.webp",
+      "width": 368,
+      "height": 352,
+      "thumb": "assets/scenes/smp-team-ranks.webp"
+    },
+    {
+      "id": "smp-team-kills-btn",
+      "mode": "smp",
+      "title": "En Fazla Kan Döken",
+      "description": "En çok öldürme yapan ilk 10 takımı listeleyen sekme.",
+      "src": "assets/scenes/smp-team-kills-btn.webp",
+      "width": 588,
+      "height": 357,
+      "thumb": "assets/scenes/smp-team-kills-btn.webp"
+    },
+    {
+      "id": "smp-team-kills-list",
+      "mode": "smp",
+      "title": "Öldürme Sıralaması",
+      "description": "En çok öldürme yapan takımların listesi.",
+      "src": "assets/scenes/smp-team-kills-list.webp",
+      "width": 390,
+      "height": 477,
+      "thumb": "assets/scenes/smp-team-kills-list.webp"
+    },
+    {
+      "id": "smp-team-kills-top1",
+      "mode": "smp",
+      "title": "Takım Öldürme Detayı",
+      "description": "Sıralamadaki bir takımın etiket ve toplam öldürme bilgisi.",
+      "src": "assets/scenes/smp-team-kills-top1.webp",
+      "width": 361,
+      "height": 462,
+      "thumb": "assets/scenes/smp-team-kills-top1.webp"
+    },
+    {
+      "id": "smp-team-rich-btn",
+      "mode": "smp",
+      "title": "En Zengin Takımlar",
+      "description": "En çok paraya sahip ilk 10 takımı listeleyen sekme.",
+      "src": "assets/scenes/smp-team-rich-btn.webp",
+      "width": 507,
+      "height": 362,
+      "thumb": "assets/scenes/smp-team-rich-btn.webp"
+    },
+    {
+      "id": "smp-team-rich-list",
+      "mode": "smp",
+      "title": "Bakiye Sıralaması",
+      "description": "En zengin takımların listesi.",
+      "src": "assets/scenes/smp-team-rich-list.webp",
+      "width": 360,
+      "height": 453,
+      "thumb": "assets/scenes/smp-team-rich-list.webp"
+    },
+    {
+      "id": "smp-team-members-btn",
+      "mode": "smp",
+      "title": "En Kalabalık Takımlar",
+      "description": "En fazla oyuncuya sahip ilk 10 takımı listeleyen sekme.",
+      "src": "assets/scenes/smp-team-members-btn.webp",
+      "width": 767,
+      "height": 358,
+      "thumb": "assets/scenes/smp-team-members-btn.webp"
+    },
+    {
+      "id": "smp-team-members-list",
+      "mode": "smp",
+      "title": "Üye Sayısı Sıralaması",
+      "description": "En kalabalık takımların listesi.",
+      "src": "assets/scenes/smp-team-members-list.webp",
+      "width": 367,
+      "height": 457,
+      "thumb": "assets/scenes/smp-team-members-list.webp"
+    },
+    {
+      "id": "smp-team-members-top1",
+      "mode": "smp",
+      "title": "Takım Üye Detayı",
+      "description": "Sıralamadaki bir takımın toplam üye sayısı görünümü.",
+      "src": "assets/scenes/smp-team-members-top1.webp",
+      "width": 365,
+      "height": 462,
+      "thumb": "assets/scenes/smp-team-members-top1.webp"
+    },
+    {
+      "id": "smp-bounty-menu",
+      "mode": "smp",
+      "title": "Bounty Menüsü",
+      "description": "En yüksek kelle ödülüne sahip oyuncular ve sıralamaları.",
+      "src": "assets/scenes/smp-bounty-menu.webp",
+      "width": 360,
+      "height": 455,
+      "thumb": "assets/scenes/smp-bounty-menu.webp"
+    },
+    {
+      "id": "smp-bounty-search",
+      "mode": "smp",
+      "title": "Bounty Oyuncu Arama",
+      "description": "Ara tabelasıyla istediğin oyuncunun ödülünü hızlıca arayabilirsin.",
+      "src": "assets/scenes/smp-bounty-search.webp",
+      "width": 387,
+      "height": 483,
+      "thumb": "assets/scenes/smp-bounty-search.webp"
+    },
+    {
+      "id": "smp-kits-menu",
+      "mode": "smp",
+      "title": "Kitler Menüsü",
+      "description": "/kit komutuyla açılan tüm kitlerin listesi.",
+      "src": "assets/scenes/smp-kits-menu.webp",
+      "width": 362,
+      "height": 418,
+      "thumb": "assets/scenes/smp-kits-menu.webp"
+    },
+    {
+      "id": "smp-kit-vip",
+      "mode": "smp",
+      "title": "VIP Kit İçeriği",
+      "description": "VIP kitinde sunulan zırh, totem ve savaş eşyaları.",
+      "src": "assets/scenes/smp-kit-vip.webp",
+      "width": 361,
+      "height": 290,
+      "thumb": "assets/scenes/smp-kit-vip.webp"
+    },
+    {
+      "id": "smp-kit-vipplus",
+      "mode": "smp",
+      "title": "VIP+ Kit İçeriği",
+      "description": "VIP+ kitinde sunulan eşyalar.",
+      "src": "assets/scenes/smp-kit-vipplus.webp",
+      "width": 352,
+      "height": 285,
+      "thumb": "assets/scenes/smp-kit-vipplus.webp"
+    },
+    {
+      "id": "smp-kit-mvip",
+      "mode": "smp",
+      "title": "MVİP Kit İçeriği",
+      "description": "MVİP kitinde sunulan eşyalar.",
+      "src": "assets/scenes/smp-kit-mvip.webp",
+      "width": 382,
+      "height": 272,
+      "thumb": "assets/scenes/smp-kit-mvip.webp"
+    },
+    {
+      "id": "smp-kit-atlas",
+      "mode": "smp",
+      "title": "Atlas Kit İçeriği",
+      "description": "Atlas kitinde sunulan eşyalar.",
+      "src": "assets/scenes/smp-kit-atlas.webp",
+      "width": 360,
+      "height": 277,
+      "thumb": "assets/scenes/smp-kit-atlas.webp"
+    },
+    {
+      "id": "smp-kit-sponsor",
+      "mode": "smp",
+      "title": "Sponsor Kit İçeriği",
+      "description": "Sponsor kitinde sunulan Netherite zırh, totem ve savaş eşyaları.",
+      "src": "assets/scenes/smp-kit-sponsor.webp",
+      "width": 361,
+      "height": 281,
+      "thumb": "assets/scenes/smp-kit-sponsor.webp"
+    },
+    {
+      "id": "smp-rtpq-join",
+      "mode": "smp",
+      "title": "RTPQ Kuyruğa Katılma",
+      "description": "/rtpq yazıldığında savaş kuyruğuna giriş bildirimi.",
+      "src": "assets/scenes/smp-rtpq-join.webp",
+      "width": 723,
+      "height": 75,
+      "thumb": "assets/scenes/smp-rtpq-join.webp"
+    },
+    {
+      "id": "smp-rtpq-leave",
+      "mode": "smp",
+      "title": "RTPQ Kuyruktan Ayrılma",
+      "description": "/rtpq leave komutuyla kuyruktan çıkış bildirimi.",
+      "src": "assets/scenes/smp-rtpq-leave.webp",
+      "width": 332,
+      "height": 30,
+      "thumb": "assets/scenes/smp-rtpq-leave.webp"
+    },
+    {
+      "id": "smp-rtpq-status",
+      "mode": "smp",
+      "title": "RTPQ Sıra Durumu",
+      "description": "/rtpq status komutuyla mevcut kuyruk sıranı görüntüleme.",
+      "src": "assets/scenes/smp-rtpq-status.webp",
+      "width": 601,
+      "height": 42,
+      "thumb": "assets/scenes/smp-rtpq-status.webp"
+    },
+    {
+      "id": "smp-sell-menu",
+      "mode": "smp",
+      "title": "Satış Menüsü",
+      "description": "/sat komutuyla açılan satış ekranı.",
+      "src": "assets/scenes/smp-sell-menu.webp",
+      "width": 361,
+      "height": 453,
+      "thumb": "assets/scenes/smp-sell-menu.webp"
+    },
+    {
+      "id": "smp-sell-confirm",
+      "mode": "smp",
+      "title": "Satış Onayı",
+      "description": "Eşyaları yerleştirip sağ alttaki yeşil cam panelden anında satabilirsin.",
+      "src": "assets/scenes/smp-sell-confirm.webp",
+      "width": 731,
+      "height": 355,
+      "thumb": "assets/scenes/smp-sell-confirm.webp"
+    },
+    {
+      "id": "smp-delivery-menu",
+      "mode": "smp",
+      "title": "Teslimat Ana Menüsü",
+      "description": "/teslimat menüsünde Teslimat Yap, Bilgi ve Sıralama seçenekleri.",
+      "src": "assets/scenes/smp-delivery-menu.webp",
+      "width": 360,
+      "height": 162,
+      "thumb": "assets/scenes/smp-delivery-menu.webp"
+    },
+    {
+      "id": "smp-delivery-submit",
+      "mode": "smp",
+      "title": "Teslimat Yap",
+      "description": "Eşya teslim etmek ve hedef ödüllerini almak için kullanılan seçenek.",
+      "src": "assets/scenes/smp-delivery-submit.webp",
+      "width": 447,
+      "height": 362,
+      "thumb": "assets/scenes/smp-delivery-submit.webp"
+    },
+    {
+      "id": "smp-delivery-info",
+      "mode": "smp",
+      "title": "Teslimat Bilgisi ve Ödüller",
+      "description": "Sezonluk teslimat etkinliği kuralları ve sezon sonu ödülleri.",
+      "src": "assets/scenes/smp-delivery-info.webp",
+      "width": 635,
+      "height": 506,
+      "thumb": "assets/scenes/smp-delivery-info.webp"
+    },
+    {
+      "id": "smp-delivery-rank-btn",
+      "mode": "smp",
+      "title": "Teslimat Sıralaması",
+      "description": "Teslimat yapan oyuncuların sıralamasına geçiş düğmesi.",
+      "src": "assets/scenes/smp-delivery-rank-btn.webp",
+      "width": 671,
+      "height": 337,
+      "thumb": "assets/scenes/smp-delivery-rank-btn.webp"
+    },
+    {
+      "id": "smp-delivery-rank-list",
+      "mode": "smp",
+      "title": "Tarım Kategorisi Sıralaması",
+      "description": "Sezon boyunca en çok teslimat yapan oyuncuların sıralaması.",
+      "src": "assets/scenes/smp-delivery-rank-list.webp",
+      "width": 750,
+      "height": 360,
+      "thumb": "assets/scenes/smp-delivery-rank-list.webp"
+    },
+    {
+      "id": "smp-shop-piece-btn",
+      "mode": "smp",
+      "title": "Sunucu Mağazası · Atlas Parçası",
+      "description": "/market içinde Atlas Parçası mağazası sekmesi.",
+      "src": "assets/scenes/smp-shop-piece-btn.webp",
+      "width": 667,
+      "height": 337,
+      "thumb": "assets/scenes/smp-shop-piece-btn.webp"
+    },
+    {
+      "id": "smp-shop-spawners",
+      "mode": "smp",
+      "title": "Atlas Parçası Spawner Marketi",
+      "description": "Atlas Parçası ile satın alınabilen spawner ve özel eşyalar.",
+      "src": "assets/scenes/smp-shop-spawners.webp",
+      "width": 366,
+      "height": 176,
+      "thumb": "assets/scenes/smp-shop-spawners.webp"
+    },
+    {
+      "id": "smp-shop-spider-sp",
+      "mode": "smp",
+      "title": "Spawner Fiyat ve Detayı",
+      "description": "Atlas Parçası mağazasındaki örnek spawner alış fiyatı.",
+      "src": "assets/scenes/smp-shop-spider-sp.webp",
+      "width": 537,
+      "height": 337,
+      "thumb": "assets/scenes/smp-shop-spider-sp.webp"
+    },
+    {
+      "id": "smp-piece-balance",
+      "mode": "smp",
+      "title": "Atlas Parçası Bakiyesi",
+      "description": "/atlasparcası komutuyla mevcut bakiyeni görebilirsin.",
+      "src": "assets/scenes/smp-piece-balance.webp",
+      "width": 332,
+      "height": 20,
+      "thumb": "assets/scenes/smp-piece-balance.webp"
+    },
+    {
+      "id": "smp-crates-overview",
+      "mode": "smp",
+      "title": "SMP Kasa Alanı",
+      "description": "/warp kasalar ile ulaşılabilen tüm kasaların genel görünümü.",
+      "src": "assets/scenes/smp-crates-overview.webp",
+      "width": 1024,
+      "height": 363,
+      "thumb": "assets/scenes/smp-crates-overview.webp"
+    },
+    {
+      "id": "smp-crate-reward-view",
+      "mode": "smp",
+      "title": "Ödül Kasası",
+      "description": "Ödül Kasası konumu; sol tıkla içeriği incele, sağ tıkla aç.",
+      "src": "assets/scenes/smp-crate-reward-view.webp",
+      "width": 941,
+      "height": 812,
+      "thumb": "assets/scenes/smp-crate-reward-view.webp"
+    },
+    {
+      "id": "smp-crate-reward-loot",
+      "mode": "smp",
+      "title": "Ödül Kasası İçeriği",
+      "description": "Ödül Kasasından çıkabilen büyülü elmas set ve araçlar.",
+      "src": "assets/scenes/smp-crate-reward-loot.webp",
+      "width": 345,
+      "height": 231,
+      "thumb": "assets/scenes/smp-crate-reward-loot.webp"
+    },
+    {
+      "id": "smp-crate-spawner-view",
+      "mode": "smp",
+      "title": "Spawner Kasası",
+      "description": "Spawner Kasası konumu.",
+      "src": "assets/scenes/smp-crate-spawner-view.webp",
+      "width": 908,
+      "height": 895,
+      "thumb": "assets/scenes/smp-crate-spawner-view.webp"
+    },
+    {
+      "id": "smp-crate-spawner-loot",
+      "mode": "smp",
+      "title": "Spawner Kasası İçeriği",
+      "description": "Domuz, İnek, Zombi, İskelet, Örümcek, Zombi Piglin, Blaze ve Demir Golem spawnerları.",
+      "src": "assets/scenes/smp-crate-spawner-loot.webp",
+      "width": 356,
+      "height": 228,
+      "thumb": "assets/scenes/smp-crate-spawner-loot.webp"
+    },
+    {
+      "id": "smp-crate-atlas-view",
+      "mode": "smp",
+      "title": "Atlas Kasası",
+      "description": "Atlas Kasası konumu.",
+      "src": "assets/scenes/smp-crate-atlas-view.webp",
+      "width": 947,
+      "height": 777,
+      "thumb": "assets/scenes/smp-crate-atlas-view.webp"
+    },
+    {
+      "id": "smp-crate-atlas-loot",
+      "mode": "smp",
+      "title": "Atlas Kasası İçeriği",
+      "description": "Atlas Matkap, Atlas Kürek, Uçma Tüyü, Lav/Su Kovası, Roket, Ağaç Kesici ve Satış Baltası.",
+      "src": "assets/scenes/smp-crate-atlas-loot.webp",
+      "width": 366,
+      "height": 440,
+      "thumb": "assets/scenes/smp-crate-atlas-loot.webp"
+    },
+    {
+      "id": "smp-crate-legend-view",
+      "mode": "smp",
+      "title": "Efsanevi Kasa",
+      "description": "Efsanevi Kasa konumu.",
+      "src": "assets/scenes/smp-crate-legend-view.webp",
+      "width": 992,
+      "height": 851,
+      "thumb": "assets/scenes/smp-crate-legend-view.webp"
+    },
+    {
+      "id": "smp-crate-legend-loot",
+      "mode": "smp",
+      "title": "Efsanevi Kasa İçeriği",
+      "description": "Ejder ve Atlas zırh/silah setleri, Atlas Arbalet ve Atlas Elitra.",
+      "src": "assets/scenes/smp-crate-legend-loot.webp",
+      "width": 400,
+      "height": 445,
+      "thumb": "assets/scenes/smp-crate-legend-loot.webp"
+    },
+    {
+      "id": "smp-crate-luck-view",
+      "mode": "smp",
+      "title": "Şans Kasası",
+      "description": "Şans Kasası konumu.",
+      "src": "assets/scenes/smp-crate-luck-view.webp",
+      "width": 1024,
+      "height": 800,
+      "thumb": "assets/scenes/smp-crate-luck-view.webp"
+    },
+    {
+      "id": "smp-crate-luck-loot",
+      "mode": "smp",
+      "title": "Şans Kasası İçeriği",
+      "description": "Sikke, patlayıcı iksirler, totem, Atlas araçları, elmas set ve 100 Atlas Parçası.",
+      "src": "assets/scenes/smp-crate-luck-loot.webp",
+      "width": 350,
+      "height": 248,
+      "thumb": "assets/scenes/smp-crate-luck-loot.webp"
     }
   ],
   "posters": [
