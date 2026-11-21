@@ -9369,7 +9369,7 @@ window.ATLAS_DATA = {
       "title": "Pillars oyun içi görünüm",
       "area": "Oyun İçi",
       "src": "assets/scenes/pillars-in-game-v2.webp",
-      "thumb": "assets/scenes/pillars-in-game.webp",
+      "thumb": "assets/scenes/pillars-in-game-v2.webp",
       "width": 1024,
       "height": 576,
       "menu": false,
