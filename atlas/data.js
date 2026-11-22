@@ -4440,6 +4440,17 @@ window.ATLAS_DATA = {
               "caption": "Atlas Client giriş ekranı: Kullanıcı Adı, Şifre ve Kayıt Ol seçenekleri."
             }
           ]
+        },
+        {
+          "title": "Yenilenen başlatıcı ana sayfası",
+          "text": "Giriş yaptıktan sonra açılan ana sayfadan tek tıkla OYNA diyerek sunucuya katılabilir, SkyBlock, Towny, SMP ve BoxPvP sunucu durumlarını görebilir, çevrimiçi arkadaşlarını takip edebilir, Yardım Merkezi üzerinden destek talebi oluşturabilir ve cüzdan bakiyeni yönetebilirsin.",
+          "commands": [],
+          "figures": [
+            {
+              "photo": "client-launcher-home",
+              "caption": "Yenilenen Atlas Client başlatıcı ekranı: sunucular, arkadaşlar, yardım merkezi ve cüzdan."
+            }
+          ]
         }
       ],
       "source": "https://docs.atlasoyuncu.com/atlas-client/nasil-giris-yapilir",
@@ -4514,8 +4525,45 @@ window.ATLAS_DATA = {
       "category": "Atlas Client",
       "mode": null,
       "source": null,
-      "summary": "Emote sistemi, HD skin ve HD pelerin desteği, isim çerçeveleri, sunucu sohbeti ve destek talebi takibi.",
+      "summary": "%15 daha ucuz alış ve %15 daha pahalıya satış avantajı, oyun içi menü, hızlı erişim çarkı, duraklatma ekranı, emote, HD skin ve pelerinler.",
       "sections": [
+        {
+          "title": "Atlas Client %15 market avantajı",
+          "text": "Atlas Client kullanarak sunucuya giren oyuncular oyun içi marketlerde %15 daha ucuz alış ve %15 daha pahalıya satış avantajından yararlanır. Market eşyalarının üzerine geldiğinde bu avantajı doğrudan görebilirsin.",
+          "commands": [],
+          "figures": [
+            {
+              "photo": "client-market-bonus",
+              "caption": "Atlas Client kullanıcılarına özel %15 daha ucuz alış ve %15 daha pahalıya satış avantajı."
+            }
+          ]
+        },
+        {
+          "title": "Oyun içi Atlas Client menüsü",
+          "text": "Oyun içinden açılan Atlas Client arayüzü ile Modlar, Kozmetikler (skin, pelerin, emote ve isim çerçeveleri), Sohbet (arkadaşlar, mesajlar ve gruplar), Profiller, Genel ayarlar, Destek ve HUD Düzenle bölümlerine tek ekrandan erişebilirsin.",
+          "commands": [],
+          "figures": [
+            {
+              "photo": "client-ingame-menu",
+              "caption": "Oyun içi Atlas Client ana menüsü: Modlar, Kozmetikler, Sohbet, Profiller, Genel ve Destek."
+            }
+          ]
+        },
+        {
+          "title": "Hızlı erişim çarkı ve duraklatma menüsü",
+          "text": "Hızlı Erişim çarkı üzerinden Ayarlar, Sohbet, Oy Ver, Mağaza ve Çıkış kısayollarına saniyeler içinde ulaşabilir; yenilenen ESC duraklatma menüsünden Arayüz Değiştir, İstatistikler, Hızlı Erişim ve Mod Listesi ekranlarını açabilirsin.",
+          "commands": [],
+          "figures": [
+            {
+              "photo": "client-radial-menu",
+              "caption": "Hızlı Erişim çarkı: Ayarlar, Sohbet, Oy Ver, Mağaza ve Çıkış."
+            },
+            {
+              "photo": "client-pause-menu",
+              "caption": "Atlas Client duraklatma (ESC) menüsü."
+            }
+          ]
+        },
         {
           "title": "Emote sistemi",
           "text": "Atlas Client’ın sunduğu Emote sistemi sayesinde oyun içerisinde kendini farklı şekillerde ifade edebilirsin. İstemci içerisindeki hazır emote seçeneklerinden dilediğini kullanabilir veya kendi emote’larını ekleyerek standart hareketlerin ötesinde kendi tarzını yansıtabilirsin.",
@@ -4557,6 +4605,16 @@ window.ATLAS_DATA = {
         "client",
         "client-mods",
         "join"
+      ],
+      "coverPhotos": [
+        {
+          "photo": "client-ingame-menu",
+          "label": "Oyun İçi Menü"
+        },
+        {
+          "photo": "client-market-bonus",
+          "label": "%15 Market Avantajı"
+        }
       ]
     },
     {
@@ -10947,6 +11005,56 @@ window.ATLAS_DATA = {
       "width": 350,
       "height": 248,
       "thumb": "assets/scenes/smp-crate-luck-loot.webp"
+    },
+    {
+      "id": "client-launcher-home",
+      "mode": "client",
+      "title": "Atlas Client Ana Sayfa",
+      "description": "Yenilenen Atlas Client başlatıcı ekranı: sunucu kısayolları, çevrimiçi arkadaşlar, yardım merkezi ve cüzdan.",
+      "src": "assets/scenes/client-launcher-home.webp",
+      "thumb": "assets/scenes/client-launcher-home.webp",
+      "width": 1024,
+      "height": 660
+    },
+    {
+      "id": "client-ingame-menu",
+      "mode": "client",
+      "title": "Atlas Client Oyun İçi Menü",
+      "description": "Modlar, Kozmetikler, Sohbet, Profiller, Genel ayarlar, Destek ve HUD Düzenle ekranı.",
+      "src": "assets/scenes/client-ingame-menu.webp",
+      "thumb": "assets/scenes/client-ingame-menu.webp",
+      "width": 1024,
+      "height": 693
+    },
+    {
+      "id": "client-radial-menu",
+      "mode": "client",
+      "title": "Hızlı Erişim Çarkı",
+      "description": "Ayarlar, Sohbet, Oy Ver, Mağaza ve Çıkış kısayollarına hızlı geçiş sağlayan dairesel menü.",
+      "src": "assets/scenes/client-radial-menu.webp",
+      "thumb": "assets/scenes/client-radial-menu.webp",
+      "width": 533,
+      "height": 519
+    },
+    {
+      "id": "client-pause-menu",
+      "mode": "client",
+      "title": "Oyun Duraklatma Menüsü",
+      "description": "ESC menüsü: Oyuna Dön, Ayarlar, Arayüz Değiştir, İstatistikler, Hızlı Erişim ve Mod Listesi.",
+      "src": "assets/scenes/client-pause-menu.webp",
+      "thumb": "assets/scenes/client-pause-menu.webp",
+      "width": 492,
+      "height": 393
+    },
+    {
+      "id": "client-market-bonus",
+      "mode": "client",
+      "title": "Atlas Client %15 Market Avantajı",
+      "description": "Atlas Client kullanıcılarına özel %15 daha ucuz alış ve %15 daha pahalıya satış avantajı.",
+      "src": "assets/scenes/client-market-bonus.webp",
+      "thumb": "assets/scenes/client-market-bonus.webp",
+      "width": 683,
+      "height": 401
     }
   ],
   "posters": [
