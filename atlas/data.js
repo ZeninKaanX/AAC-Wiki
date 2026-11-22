@@ -4465,49 +4465,49 @@ window.ATLAS_DATA = {
       "id": "client-mods",
       "title": "Atlas Client · Ayarlar ve modlar",
       "category": "Atlas Client",
-      "summary": "Mod arama, tek tıkla mod etkinleştirme, maksimum FPS ve görüş mesafesi (Render Distance) ayarları.",
+      "summary": "Mod Yöneticisi, Modrinth üzerinden Mod Keşfet ve Tam Ekran, Görüş Mesafesi (Chunks) ile Maximum FPS ayarları.",
       "sections": [
         {
-          "title": "1. Ayar simgesini aç",
-          "text": "Client ana ekranında sağdaki ayar simgesine tıkla. İlk görselde kırmızı işaretle gösterilen yerden başlayabilirsin.",
+          "title": "1. Ana sayfadan Modlar veya Ayarlar bölümünü aç",
+          "text": "Atlas Client’ı açtığında sol menüde yer alan MODLAR sekmesinden mod yöneticisine, AYARLAR sekmesinden ise Minecraft ve Launcher performans ayarlarına ulaşabilirsin.",
           "commands": [],
           "figures": [
             {
-              "photo": "official-599d1a1d0d9b",
-              "caption": "Ana ekran: kırmızı işaretin gösterdiği ayar simgesini aç."
+              "photo": "client-mods-home",
+              "caption": "Atlas Client ana sayfası: sol menüde Modlar ve Ayarlar sekmeleri."
             }
           ]
         },
         {
-          "title": "2. Minecraft görüntü ayarlarını düzenle",
-          "text": "Ayarlar bölümünden oyun performansını ve görüntü deneyimini kişiselleştirebilirsin. Maksimum FPS değerini belirleyebilir, görüş mesafeni (Render Distance / Chunk) cihazına göre ayarlayabilirsin.",
+          "title": "2. Mod Yöneticisi ile modları aç veya kapat",
+          "text": "MOD YÖNETİCİSİ ekranında yüklü modlarını arayabilir, sağındaki anahtarla tek tıklamayla aktif veya pasif yapabilirsin. Yeni mod eklemek için sağ üstteki Keşfet düğmesine tıkla; düzenlemelerin bitince yeşil Kaydet düğmesiyle değişiklikleri uygula.",
           "commands": [],
           "figures": [
             {
-              "photo": "official-cc315a64c8eb",
-              "caption": "Minecraft sekmesi: chunk ve FPS ayarları; solda Modlar bağlantısı."
+              "photo": "client-mods-manager",
+              "caption": "Mod Yöneticisi: Modlarım listesi, Keşfet düğmesi ve Kaydet seçeneği."
             }
           ]
         },
         {
-          "title": "3. Modları aç veya kapat",
-          "text": "Atlas Client içerisindeki mod arama ve yönetim bölümünü kullanarak istediğin modu kolayca bulabilir, sağındaki anahtarla tek tıklamayla etkinleştirebilir veya kapatabilirsin.",
+          "title": "3. Mod Keşfet (Modrinth) ile yeni modlar yükle",
+          "text": "MOD KEŞFET bölümünden Modrinth üzerindeki modları, kaynak paketlerini ve shaderları kategori ve popülerliğe göre filtreleyip tek tıkla yükleyebilir, favorilerine ekleyebilir veya birden fazla modu seçip Seçilenleri Yükle ile kurabilirsin.",
           "commands": [],
           "figures": [
             {
-              "photo": "official-2669100bdb5d",
-              "caption": "Modlar sekmesi: her modun sağındaki anahtarla durumunu değiştir."
+              "photo": "client-mods-discover",
+              "caption": "Mod Keşfet: Modrinth üzerinden mod, kaynak paketi ve shader arama ekranı."
             }
           ]
         },
         {
-          "title": "4. Launcher ayarlarını kaydet",
-          "text": "Launcher sekmesindeki seçenekleri kontrol et. Düzenlemelerin bitince sol alttaki Kaydet düğmesine bas.",
+          "title": "4. Minecraft ve Launcher ayarlarını kaydet",
+          "text": "AYARLAR bölümünde Tam Ekran, Görüş Mesafesi (Chunks) ve Maximum FPS değerlerini cihazına göre düzenleyebilir, üstten Launcher sekmesine geçerek başlatıcı ayarlarını kontrol edebilirsin. İşlemin bitince sağ üstteki yeşil Kaydet düğmesine bas.",
           "commands": [],
           "figures": [
             {
-              "photo": "official-657de9e5ce68",
-              "caption": "Launcher sekmesi: işlemin sonunda sol alttaki Kaydet düğmesini kullan."
+              "photo": "client-mods-settings",
+              "caption": "Ayarlar: Tam Ekran, Görüş Mesafesi (Chunks), Maximum FPS ve Kaydet düğmesi."
             }
           ]
         }
@@ -4517,6 +4517,16 @@ window.ATLAS_DATA = {
       "related": [
         "client",
         "client-features"
+      ],
+      "coverPhotos": [
+        {
+          "photo": "client-mods-manager",
+          "label": "Mod Yöneticisi"
+        },
+        {
+          "photo": "client-mods-settings",
+          "label": "Ayarlar"
+        }
       ]
     },
     {
@@ -11037,6 +11047,46 @@ window.ATLAS_DATA = {
       "thumb": "assets/scenes/client-market-bonus.webp",
       "width": 683,
       "height": 401
+    },
+    {
+      "id": "client-mods-home",
+      "mode": "client",
+      "title": "Atlas Client Ana Sayfa",
+      "description": "Sol menüden Modlar ve Ayarlar bölümlerine hızlıca geçiş yapabilirsin.",
+      "src": "assets/scenes/client-mods-home.webp",
+      "thumb": "assets/scenes/client-mods-home.webp",
+      "width": 1024,
+      "height": 660
+    },
+    {
+      "id": "client-mods-manager",
+      "mode": "client",
+      "title": "Mod Yöneticisi",
+      "description": "Yüklü modları sağdaki anahtardan tek tıkla açıp kapatabilir, Keşfet sekmesinden yeni modlar bulup Kaydet ile uygulayabilirsin.",
+      "src": "assets/scenes/client-mods-manager.webp",
+      "thumb": "assets/scenes/client-mods-manager.webp",
+      "width": 976,
+      "height": 633
+    },
+    {
+      "id": "client-mods-discover",
+      "mode": "client",
+      "title": "Mod Keşfet (Modrinth)",
+      "description": "Modrinth üzerinden yeni modlar, kaynak paketleri ve shaderlar arayıp tek tıkla yükleyebilirsin.",
+      "src": "assets/scenes/client-mods-discover.webp",
+      "thumb": "assets/scenes/client-mods-discover.webp",
+      "width": 1024,
+      "height": 661
+    },
+    {
+      "id": "client-mods-settings",
+      "mode": "client",
+      "title": "Ayarlar · Minecraft ve Launcher",
+      "description": "Tam Ekran, Görüş Mesafesi (Chunks) ve Maximum FPS ayarlarını düzenleyip sağ üstteki Kaydet düğmesiyle saklayabilirsin.",
+      "src": "assets/scenes/client-mods-settings.webp",
+      "thumb": "assets/scenes/client-mods-settings.webp",
+      "width": 1024,
+      "height": 664
     }
   ],
   "posters": [
