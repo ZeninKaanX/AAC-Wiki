@@ -4528,8 +4528,8 @@ window.ATLAS_DATA = {
       "summary": "%15 daha ucuz alış ve %15 daha pahalıya satış avantajı, oyun içi menü, hızlı erişim çarkı, duraklatma ekranı, emote, HD skin ve pelerinler.",
       "sections": [
         {
-          "title": "Atlas Client %15 market avantajı",
-          "text": "Atlas Client kullanarak sunucuya giren oyuncular oyun içi marketlerde %15 daha ucuz alış ve %15 daha pahalıya satış avantajından yararlanır. Market eşyalarının üzerine geldiğinde bu avantajı doğrudan görebilirsin.",
+          "title": "Atlas Client kullanıcılarına özel ekonomik avantajlar (%15)",
+          "text": "Atlas Client yalnızca kozmetik ve kullanım kolaylığı sunmakla kalmaz; sunucuda alışveriş yaparken de özel fiyat avantajları sağlar. Örneğin SkyBlock Farm Market üzerinden ürün satın alırken %15 daha ucuz alışveriş yapabilir, elindeki ürünleri satarken %15 daha yüksek satış fiyatından yararlanabilirsin.",
           "commands": [],
           "figures": [
             {
@@ -4539,19 +4539,19 @@ window.ATLAS_DATA = {
           ]
         },
         {
-          "title": "Oyun içi Atlas Client menüsü",
-          "text": "Oyun içinden açılan Atlas Client arayüzü ile Modlar, Kozmetikler (skin, pelerin, emote ve isim çerçeveleri), Sohbet (arkadaşlar, mesajlar ve gruplar), Profiller, Genel ayarlar, Destek ve HUD Düzenle bölümlerine tek ekrandan erişebilirsin.",
+          "title": "Ana menü ve kolay erişim",
+          "text": "Oyun içinden açılan Atlas Client ana menüsünde altı ana bölüm bulunur: Modlar (mod arama, inceleme ve etkinleştirme), Kozmetikler (skin, pelerin, emote ve isim çerçeveleri), Sohbet (arkadaşlar, mesajlar ve gruplar), Profiller (farklı ayar düzenlerini kaydetme ve değiştirme), Genel (görünüm, kontroller ve genel ayarlar) ve Destek (yardım alma ve talep takibi). Alt kısımdaki HUD Düzenle, Oy Ver ve Mağaza düğmeleriyle ilgili ekranlara tek tıkla ulaşabilirsin.",
           "commands": [],
           "figures": [
             {
               "photo": "client-ingame-menu",
-              "caption": "Oyun içi Atlas Client ana menüsü: Modlar, Kozmetikler, Sohbet, Profiller, Genel ve Destek."
+              "caption": "Oyun içi Atlas Client ana menüsü: Modlar, Kozmetikler, Sohbet, Profiller, Genel, Destek ve HUD Düzenle."
             }
           ]
         },
         {
           "title": "Hızlı erişim çarkı ve duraklatma menüsü",
-          "text": "Hızlı Erişim çarkı üzerinden Ayarlar, Sohbet, Oy Ver, Mağaza ve Çıkış kısayollarına saniyeler içinde ulaşabilir; yenilenen ESC duraklatma menüsünden Arayüz Değiştir, İstatistikler, Hızlı Erişim ve Mod Listesi ekranlarını açabilirsin.",
+          "text": "Hızlı Erişim çarkı üzerinden Ayarlar, Sohbet, Oy Ver, Mağaza ve Çıkış kısayollarına saniyeler içinde ulaşabilir; yenilenen ESC duraklatma menüsünden Oyuna Dön, Ayarlar, Arayüz Değiştir, İstatistikler, Hızlı Erişim ve Mod Listesi ekranlarını açabilirsin.",
           "commands": [],
           "figures": [
             {
@@ -4565,38 +4565,20 @@ window.ATLAS_DATA = {
           ]
         },
         {
-          "title": "Emote sistemi",
-          "text": "Atlas Client’ın sunduğu Emote sistemi sayesinde oyun içerisinde kendini farklı şekillerde ifade edebilirsin. İstemci içerisindeki hazır emote seçeneklerinden dilediğini kullanabilir veya kendi emote’larını ekleyerek standart hareketlerin ötesinde kendi tarzını yansıtabilirsin.",
+          "title": "Genel ayarlar ve HUD düzenleme",
+          "text": "Genel bölümünden istemcinin görünümünü, kontrollerini ve diğer ayarlarını değiştirebilir; performans ve görüntü seçeneklerinden maksimum FPS değerini ve görüş mesafeni (Render Distance) ayarlayabilirsin. HUD Düzenle özelliği ile oyun ekranındaki tüm arayüz öğelerini kendi kullanım alışkanlıklarına göre konumlandırabilirsin.",
           "commands": [],
           "figures": []
         },
         {
-          "title": "HD Skin desteği",
-          "text": "Atlas Client sayesinde kendi HD skinlerini ekleyebilir ve karakterine çok daha ayrıntılı bir görünüm kazandırabilirsin. Kendi skinlerini herhangi bir sınırlamayla karşılaşmadan kullanarak oyun içerisindeki tarzını tamamen kendine göre belirleyebilirsin.",
+          "title": "Kozmetik sistemi (Emote, HD Skin, HD Pelerin ve İsim Çerçeveleri)",
+          "text": "Kozmetikler bölümünden hazır emote seçeneklerini kullanabilir veya kendi emote’larını ekleyebilir; kendi HD skinlerini ve HD pelerinlerini sınırlama olmadan yükleyebilir, oyuncu ismine özel isim çerçeveleri seçerek kendi tarzını oluşturabilirsin.",
           "commands": [],
           "figures": []
         },
         {
-          "title": "HD Pelerin sistemi",
-          "text": "İstemci tarafından sunulan hazır HD pelerinleri kullanabilir veya kendi özel pelerinlerini ekleyebilirsin. Tarzına uygun bir pelerin seçerek karakterinin görünümünü tamamlayabilirsin.",
-          "commands": [],
-          "figures": []
-        },
-        {
-          "title": "İsim çerçeveleri",
-          "text": "Atlas Client’ın sunduğu isim çerçeveleri sayesinde oyun içerisindeki oyuncu ismine farklı ve özel bir görünüm kazandırabilir, sunulan çerçeve seçenekleri arasından dilediğini tercih ederek görünümünü tamamlayabilirsin.",
-          "commands": [],
-          "figures": []
-        },
-        {
-          "title": "Sohbet sistemi",
-          "text": "Atlas Client üzerinden sunucu sohbetine doğrudan erişebilir ve oyun içerisindeki mesajları takip edebilirsin. Bu özellik sayesinde sunucudaki gelişmelerden haberdar olabilir, diğer oyuncularla iletişimini istemci üzerinden sürdürebilirsin.",
-          "commands": [],
-          "figures": []
-        },
-        {
-          "title": "Destek talepleri",
-          "text": "Sunucuda oluşturduğun destek taleplerini takip etmek için farklı bölümlere gitmene gerek kalmadan, daha önce açtığın destek taleplerini ve güncel durumlarını doğrudan Atlas Client üzerinden görüntüleyip yönetebilirsin.",
+          "title": "Sohbet ve destek sistemi",
+          "text": "Sohbet bölümünden arkadaşlarınla iletişim kurabilir, mesajlarını ve sunucu sohbetini takip edebilirsin. Destek bölümünden ise daha önce oluşturduğun destek taleplerini ve güncel durumlarını farklı sayfalara gitmeden doğrudan Atlas Client üzerinden görüntüleyip yönetebilirsin.",
           "commands": [],
           "figures": []
         }
@@ -11031,10 +11013,10 @@ window.ATLAS_DATA = {
       "mode": "client",
       "title": "Hızlı Erişim Çarkı",
       "description": "Ayarlar, Sohbet, Oy Ver, Mağaza ve Çıkış kısayollarına hızlı geçiş sağlayan dairesel menü.",
-      "src": "assets/scenes/client-radial-menu.webp",
-      "thumb": "assets/scenes/client-radial-menu.webp",
-      "width": 533,
-      "height": 519
+      "src": "assets/scenes/client-radial-menu-v2.webp",
+      "thumb": "assets/scenes/client-radial-menu-v2.webp",
+      "width": 760,
+      "height": 520
     },
     {
       "id": "client-pause-menu",
