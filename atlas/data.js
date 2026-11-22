@@ -4233,6 +4233,13 @@ window.ATLAS_DATA = {
     {
       "mode": "towny",
       "group": "Başlangıç",
+      "command": "/pay [oyuncu adı] [miktar]",
+      "description": "Oyuncuya para (sikke) gönderir.",
+      "source": "docs"
+    },
+    {
+      "mode": "towny",
+      "group": "Başlangıç",
       "command": "/takas [oyuncu adı]",
       "description": "Oyuncuya güvenli takas isteği gönderir.",
       "source": "docs"
@@ -4638,9 +4645,10 @@ window.ATLAS_DATA = {
         },
         {
           "title": "Temel oyuncu komutları",
-          "text": "Bakiyeni /bal ile kontrol edebilir, /takas ile oyuncularla güvenli takas yapabilir, /tpa, /tpaccept ve /tpacancel ile ışınlanma isteklerini yönetebilir, /şişele ile tecrübe seviyeni şişeleyebilirsin.",
+          "text": "Bakiyeni /bal ile kontrol edebilir, /pay ile oyunculara para gönderebilir, /takas ile güvenli takas yapabilir, /tpa, /tpaccept ve /tpacancel ile ışınlanma isteklerini yönetebilir, /şişele ile tecrübe seviyeni şişeleyebilirsin.",
           "commands": [
             "/bal",
+            "/pay [oyuncu adı] [miktar]",
             "/takas [oyuncu adı]",
             "/tpa [oyuncu adı]",
             "/tpaccept",
