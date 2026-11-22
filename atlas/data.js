@@ -5948,6 +5948,48 @@ window.ATLAS_DATA = {
       "related": []
     },
     {
+      "id": "credit-payment",
+      "title": "Kredi yükledim gelmedi & ödeme hatası",
+      "category": "Destek",
+      "mode": null,
+      "source": "https://atlasoyuncu.com/",
+      "summary": "Kredi yükleme sırasında dikkat edilmesi gerekenler, askıda kalan ödemelerin iadesi ve PayTR erişim hatası çözümü.",
+      "sections": [
+        {
+          "title": "Kredi yüklerken dikkat edilmesi gerekenler",
+          "text": "Kredi yükleme işlemini sorunsuz tamamlamak için ödeme ekranında iken sayfayı yenilememeli ve ödeme ekranını kapatıp geri açmamalısın. Bu adımları eksiksiz uyguladığında kredin sorunsuz bir şekilde hesabına aktarılır. Aksi durumda hesabından para çekilse dahi kredin hesabına gelmez ve ödeme askıda kalır.",
+          "commands": [],
+          "figures": [
+            {
+              "photo": "support-credit-pay",
+              "caption": "Kredi Yükle ekranı: ödeme yöntemleri ve hata çözüm bağlantısı."
+            }
+          ]
+        },
+        {
+          "title": "Askıda kalan ödemelerin iadesi",
+          "text": "Askıda kalan ödemelerin para iadeleri bankaların iade süreçlerine göre değişiklik gösterir; ancak tutar eninde sonunda bankan tarafından hesabına geri iade edilir.",
+          "commands": [],
+          "figures": []
+        },
+        {
+          "title": "PayTR ödeme hatası çözümü (Erişim reddedildi)",
+          "text": "Ödeme sırasında 'atlasoyuncu.com ana makinesine erişim reddedildi' hatası alıyorsan: 1) Klavyende Windows + R tuşlarına aynı anda basarak Çalıştır penceresini aç. 2) Açılan pencereye ncpa.cpl yaz ve Tamam’a tıkla. 3) Kullandığın İnternet Adaptörüne (Wi-Fi veya Ethernet) sağ tıkla ve Özellikler’i seç. 4) İnternet Protokolü Sürüm 6 (TCP/IPv6) kutucuğunun işaretini kaldır ve Tamam’a tıkla.",
+          "commands": [],
+          "figures": [
+            {
+              "photo": "support-paytr-ipv6",
+              "caption": "PayTR erişim hatası çözümü: ncpa.cpl üzerinden TCP/IPv6 işaretini kaldırma."
+            }
+          ]
+        }
+      ],
+      "related": [
+        "purchase",
+        "password"
+      ]
+    },
+    {
       "id": "purchase",
       "title": "Aldığım ürün gelmedi",
       "category": "Destek",
@@ -11087,6 +11129,26 @@ window.ATLAS_DATA = {
       "thumb": "assets/scenes/client-mods-settings.webp",
       "width": 1024,
       "height": 664
+    },
+    {
+      "id": "support-credit-pay",
+      "mode": "general",
+      "title": "Kredi Yükle ekranı",
+      "description": "Ödeme yöntemleri ve ödeme sırasında hata alanlar için yardım bağlantısı.",
+      "src": "assets/scenes/support-credit-pay.webp",
+      "thumb": "assets/scenes/support-credit-pay.webp",
+      "width": 751,
+      "height": 608
+    },
+    {
+      "id": "support-paytr-ipv6",
+      "mode": "general",
+      "title": "PayTR Ödeme Hatası Çözümü",
+      "description": "TCP/IPv6 işaretini kaldırarak erişim reddedildi hatasını çözme adımları.",
+      "src": "assets/scenes/support-paytr-ipv6.webp",
+      "thumb": "assets/scenes/support-paytr-ipv6.webp",
+      "width": 798,
+      "height": 941
     }
   ],
   "posters": [
