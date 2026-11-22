@@ -5951,7 +5951,7 @@ window.ATLAS_DATA = {
           "commands": []
         }
       ],
-      "source": "https://docs.atlasoyuncu.com/destek-ve-bilgilendirme/sifremi-unuttum",
+      "source": "https://atlasoyuncu.com/forgot-password/",
       "mode": null,
       "related": []
     },
