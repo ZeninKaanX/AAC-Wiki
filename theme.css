@@ -84,3 +84,6 @@ body{background:#080e18;font-size:14px;-webkit-font-smoothing:antialiased}
 
 /* Keep every navigation item reachable on short and mobile screens. */
 .sidebar{height:100vh;height:100dvh;overflow-y:auto;overflow-x:hidden;overscroll-behavior-y:contain;-webkit-overflow-scrolling:touch;touch-action:pan-y;padding-bottom:max(20px,env(safe-area-inset-bottom))}.sidebar>*{flex-shrink:0}
+
+/* Browser-based interview laboratory. */
+.interview-info{display:flex;gap:18px;align-items:center;border:1px solid #35546f;border-radius:8px;background:#11283d;padding:15px 20px;margin-bottom:20px}.interview-info>span{font-size:9px;letter-spacing:.1em;color:#9ad9ed;white-space:nowrap}.interview-info p{font-size:12px;line-height:1.8;margin:0;color:#b6cce2}.interview-frame{width:100%;height:1100px;border:1px solid #385a78;border-radius:12px;background:#070f1d;display:block}@media(max-width:650px){.interview-info{display:block}.interview-info p{margin-top:8px;font-size:11px}.interview-frame{height:1150px}}
