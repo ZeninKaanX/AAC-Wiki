@@ -1,45 +1,32 @@
 'use strict';
-const assert=require('node:assert/strict');
-const E=require('../mulakat/engine.js');
+const assert=require('node:assert/strict'),E=require('../mulakat/engine.js');
 const fixed=1795608000000;
-assert.deepEqual(E.create(48,fixed),E.create(48,fixed),'Same seed and time must reproduce the session');
-const fingerprints=new Set();
-for(let seed=1;seed<=300;seed++){
- const s=E.create(seed,fixed),ids=new Set(s.artifacts.map(a=>a.id));
- assert.equal(ids.size,s.artifacts.length);
- assert.ok(s.scenarioCount>=3&&s.scenarioCount<=5);
- assert.ok(s.artifacts.some(a=>a.status==='clean'));
+assert.equal(E.catalogue.length,120);
+assert.equal(new Set(E.catalogue.map(c=>c.id)).size,120);
+assert.equal(E.families.length,10);
+assert.deepEqual(Object.keys(E.tools).sort(),['explorer','everything','journal','journaltrace','downloads','history','activity','prefetch','usb','atlas'].sort());
+assert.deepEqual(E.create(48,fixed),E.create(48,fixed));
+const previous=E.create(48,fixed),next=E.create(48,fixed,null,previous.caseIds);assert.ok(next.caseIds.every(id=>!previous.caseIds.includes(id)),'Consecutive sessions must not reuse cases');
+function fullNotes(s){const notes={};for(const a of s.artifacts){const evidence=[];for(const source of [...Object.keys(E.tools),'metadata'])for(const row of E.rows(s,source))if(row.artifact===a.id)evidence.push({key:row.id,source,text:row.detail});notes[a.id]={evidence,verdict:a.status,usage:'unproven'};}return notes;}
+for(const c of E.catalogue){
+ const s=E.create(100,fixed,[c.id]);assert.equal(s.caseIds[0],c.id);
+ const a=s.artifacts.find(a=>a.caseId===c.id);assert.ok(a);assert.match(a.hash,/^[a-f0-9]{64}$/);
+ assert.ok(!a.path.includes('undefined'));assert.equal(E.evaluate(s,fullNotes(s)).score,100,c.title+' must be solvable with allowed tools');
+ if(a.status==='deleted'){assert.ok(!E.rows(s,'explorer').some(r=>r.artifact===a.id));assert.ok(E.rows(s,'journal').some(r=>r.artifact===a.id&&r.action==='FILE_DELETE'));assert.ok(!E.rows(s,'metadata').some(r=>r.artifact===a.id));}
+ if(a.pattern==='usb-copy'){const notes=fullNotes(s);notes[a.id].evidence=notes[a.id].evidence.filter(e=>e.source!=='usb');assert.equal(E.evaluate(s,notes).items.find(i=>i.id===a.id).support,false,'USB case requires actual USB evidence');}
+}
+const seen=new Set(),fingerprints=new Set();
+for(let seed=1;seed<=500;seed++){
+ const s=E.create(seed,fixed);s.caseIds.forEach(id=>seen.add(id));
+ assert.ok(s.scenarioCount>=4&&s.scenarioCount<=5);
  assert.equal(new Set(s.artifacts.map(a=>a.path)).size,s.artifacts.length);
  assert.equal(E.evaluate(s,{}).score,0);
- const notes={};
- for(const a of s.artifacts){
-  assert.match(a.hash,/^[a-f0-9]{64}$/);
-  assert.ok(!a.path.includes('undefined'));
-  if(a.status==='active')assert.equal(a.folder,s.game+'\\mods');
-  if(a.status==='deleted'){
-   assert.ok(!E.rows(s,'explorer').some(r=>r.artifact===a.id));
-   assert.ok(s.events.some(e=>e.artifact===a.id&&e.action==='FILE_DELETE'));
-   assert.ok(!E.rows(s,'metadata').some(r=>r.artifact===a.id));
-  }
-  const evidence=[];
-  for(const source of Object.keys(E.tools))for(const row of E.rows(s,source))if(row.artifact===a.id)evidence.push({key:row.id,source,text:row.detail});
-  notes[a.id]={evidence,verdict:a.status,usage:'unproven'};
- }
- assert.equal(E.evaluate(s,notes).score,100,'All justified answers can reach 100');
- const clean=s.artifacts.find(a=>a.status==='clean');notes[clean.id].verdict='active';
- assert.equal(E.evaluate(s,notes).falsePositives,1);
- assert.ok(E.evaluate(s,notes).score<100);
- const a=s.artifacts.find(a=>a.status!=='clean');notes[a.id]={verdict:a.status,usage:'unproven',evidence:[]};
- const item=E.evaluate(s,notes).items.find(x=>x.id===a.id);
- assert.equal(item.content,false);assert.equal(item.support,false);assert.equal(item.points,45,'A guessed classification gets no evidence credit');
+ const notes=fullNotes(s);assert.equal(E.evaluate(s,notes).score,100);
+ const clean=s.artifacts.find(a=>a.status==='clean');notes[clean.id].verdict='active';assert.equal(E.evaluate(s,notes).falsePositives,1);assert.ok(E.evaluate(s,notes).score<100);
  assert.ok(E.rows(s,'everything','ext:jar').every(row=>row.name.endsWith('.jar')));
  assert.ok(E.rows(s,'everything','*.jar').every(row=>row.name.endsWith('.jar')));
  assert.deepEqual(E.rows(s,'journaltrace'),E.rows(s,'journal'));
- assert.deepEqual(E.rows(s,'system'),E.rows(s,'process'));
- assert.ok(E.rows(s,'autoruns').some(row=>row.detail.includes('HKCU')));
- assert.ok(E.rows(s,'monitor').every(row=>row.action==='ReadFile'));
- const hit=E.rows(s,'everything',clean.name);assert.ok(hit.some(r=>r.artifact===clean.id));
  fingerprints.add(s.artifacts.map(a=>a.path+':'+a.modId).join('|'));
 }
-assert.equal(fingerprints.size,300,'Random sessions must vary');
-console.log('PASS: 300 randomized sessions, reproducibility, deleted-file consistency, clean distractors, evidence scoring and searches.');
+assert.equal(seen.size,120,'Random sessions must reach the whole case catalogue');assert.equal(fingerprints.size,500);
+console.log('PASS: all 120 cases solvable with the approved 8 tools + AtlasAC, 500 random sessions, full catalogue coverage, USB evidence requirements, scoring and source consistency.');

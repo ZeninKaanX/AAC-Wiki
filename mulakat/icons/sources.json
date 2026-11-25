@@ -1,0 +1,90 @@
+[
+  {
+    "tool": "everything",
+    "sourceFile": "everything.exe",
+    "sha256": "f191f756996a14a11e5445fa7103d302efd510cf2fbf920e6c0c8ed51d512e36",
+    "resource": "PE RT_GROUP_ICON [14, 101, 1033]",
+    "size": [
+      256,
+      256
+    ]
+  },
+  {
+    "tool": "downloads",
+    "sourceFile": "BrowserDownloadsView.exe",
+    "sha256": "a187fd0bb96a0e84407cf397485d32c54f5d2b50140f65b5efed9bdc89330ab5",
+    "resource": "PE RT_GROUP_ICON [14, 101, 1037]",
+    "size": [
+      32,
+      32
+    ]
+  },
+  {
+    "tool": "history",
+    "sourceFile": "BrowsingHistoryView.exe",
+    "sha256": "7287cced60719dec6506e95ca6f752664fb5439607d8f795a35fc3c92b83fc81",
+    "resource": "PE RT_GROUP_ICON [14, 101, 1037]",
+    "size": [
+      32,
+      32
+    ]
+  },
+  {
+    "tool": "activity",
+    "sourceFile": "LastActivityView.exe",
+    "sha256": "af86dc3f76d39b67b967a3b714e9e70ed43eec8d3871e9691cb45d84372b53fb",
+    "resource": "PE RT_GROUP_ICON [14, 101, 1037]",
+    "size": [
+      32,
+      32
+    ]
+  },
+  {
+    "tool": "prefetch",
+    "sourceFile": "WinPrefetchView.exe",
+    "sha256": "ccde97bb6fc523a56f17625ac7f9f3858247e7df439451423c5e2688793bdf9a",
+    "resource": "PE RT_GROUP_ICON [14, 101, 1037]",
+    "size": [
+      48,
+      48
+    ]
+  },
+  {
+    "tool": "usb",
+    "sourceFile": "USBDeview.exe",
+    "sha256": "57f7cedd6bc0be6adc9a4816a5893bc42fd0c6b05ee993fe24e86d36975e0c20",
+    "resource": "PE RT_GROUP_ICON [14, 101, 1037]",
+    "size": [
+      32,
+      32
+    ]
+  },
+  {
+    "tool": "journal",
+    "sourceFile": "journal-tool.exe",
+    "sha256": "8226b5885ea94def0a895da5a98fdcbd826da231a0eaded5bfa380a84cf8d0d9",
+    "resource": "PE RT_GROUP_ICON [14, 'named', 0]",
+    "size": [
+      256,
+      256
+    ]
+  },
+  {
+    "tool": "atlas",
+    "sourceFile": "AtlasAC.exe",
+    "sourceURL": "https://files.fm/u/ej9ctd4vg3w89ays",
+    "sha256": "15668e80c9b7c045684042bbf5dd7f6fc443b44872e2f7983d3dde4420698dcb",
+    "resource": "[14, 1, 0]",
+    "size": [
+      256,
+      256
+    ]
+  },
+  {
+    "tool": "journaltrace",
+    "sourceFile": "JournalTrace.exe",
+    "sha256": "46873781a5c80ea676f0ed8024b31423f22918d9f4723aba49b22c8e597ec0e6",
+    "resource": null,
+    "note": "Bu .NET EXE dosyasında yerel RT_GROUP_ICON yok. Başka uygulamanın logosu kullanılmaz; arayüzde genel uygulama simgesi gösterilir."
+  }
+]
