@@ -13,3 +13,7 @@ Gerçek şüpheli dosya, hile kodu, gerçek kişi bilgisi veya Windows sanal mak
 Testler: `node tests/interview-engine.cjs` (repo kökünden). 300 tohum, puanlama, yeniden üretilebilirlik, temiz örnekler ve silinmiş dosya tutarlılığı doğrulanır. Tarayıcı testinde iki bağımsız sekme, kanıt toplama, arama, içerik açma, oturum sürdürme, sonuç ve mobil düzen kontrol edildi.
 
 Duvar kâğıdı yerleşik imagegen ile bu proje için üretildi. Üretim tarifi: 16:9 Minecraft Viking kalesi, karlı fiyort, gece ve hafif kuzey ışıkları; Atlas lacivert/buz mavisi/altın paleti; sağda taş işçiliği ve sıcak fenerler, ortada masaüstü pencerelerine uygun sakin alan; yazı, logo ve karakter yok.
+
+Araç listesi Atlas Lab yerel kurulum envanteriyle eşleştirildi: Journal-Tool / JournalTrace, BrowserDownloadsView, BrowsingHistoryView, LastActivityView, USBDeview, WinPrefetchView, Everything, Process Explorer / System Informer, Process Monitor, Autoruns, Detect It Easy, Luyten ve RedLotus Mod Analyzer. Arama / filtre / sıralama / CSV, işlem komut satırı, başlangıç girdisi, imza ve arşiv metaverisi okuma sanal veri üzerinde çalışır. Gerçek EXE süreçleri çalıştırılmaz. Everything için *.jar, ext:jar;bin, path:, dm:today ve OR sorguları desteklenir. Luyten ekranı sanal arşiv girdilerini gösterir; gerçek Java decompiler değildir.
+
+Logo: yerleşik imagegen ile sağlanan AtlasOyuncu Viking maskotu temel alınarak, aynı yüz ve mavi/gümüş/altın renkler ve kış şapkası korunarak ATLAS LAB alt markası üretildi. Soyut monogram taslakları kullanılmadı.

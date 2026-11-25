@@ -32,6 +32,12 @@ for(let seed=1;seed<=300;seed++){
  const a=s.artifacts.find(a=>a.status!=='clean');notes[a.id]={verdict:a.status,usage:'unproven',evidence:[]};
  const item=E.evaluate(s,notes).items.find(x=>x.id===a.id);
  assert.equal(item.content,false);assert.equal(item.support,false);assert.equal(item.points,45,'A guessed classification gets no evidence credit');
+ assert.ok(E.rows(s,'everything','ext:jar').every(row=>row.name.endsWith('.jar')));
+ assert.ok(E.rows(s,'everything','*.jar').every(row=>row.name.endsWith('.jar')));
+ assert.deepEqual(E.rows(s,'journaltrace'),E.rows(s,'journal'));
+ assert.deepEqual(E.rows(s,'system'),E.rows(s,'process'));
+ assert.ok(E.rows(s,'autoruns').some(row=>row.detail.includes('HKCU')));
+ assert.ok(E.rows(s,'monitor').every(row=>row.action==='ReadFile'));
  const hit=E.rows(s,'everything',clean.name);assert.ok(hit.some(r=>r.artifact===clean.id));
  fingerprints.add(s.artifacts.map(a=>a.path+':'+a.modId).join('|'));
 }
