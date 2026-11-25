@@ -33,7 +33,7 @@ Resmî davranış kaynakları: [Everything arama sözdizimi](https://www.voidtoo
 
 Dosya veya ilgili kayıt yanındaki **Buldum** doğrudan kaydeder. Form, durum seçimi, kaynak kontrol listesi veya gerekçe zorunlu değildir. Aynı dosyanın farklı araçlarda tekrar işaretlenmesi tek bulgu sayılır. Bulduklarım panelinden geri alınır. Doğru olup olmadığı bitirene kadar gösterilmez.
 
-Sonuç: doğru bulunan / toplam şüpheli vaka, kaçırılanlar ve yanlış işaretlenen temiz dosyalar. Doğru vakalar eşit değerdedir; her temiz dosya işaretlemesi 10 puan düşürür, alt sınır 0. Eski ayrıntılı `evaluate` motoru test/uyumluluk için durur; kullanıcı akışı `evaluateFound` kullanır. Eklenen 90 olağan oyuncu dosyasını tek tek sınıflandırmak gerekmez; yanlış işaretlenirlerse değerlendirmeye girerler.
+Sonuç: doğru bulunan / toplam şüpheli vaka, kaçırılanlar ve yanlış işaretlenen temiz dosyalar. Doğru vakalar eşit değerdedir; her temiz dosya işaretlemesi 10 puan düşürür, alt sınır 0. Eski ayrıntılı `evaluate` motoru test/uyumluluk için durur; kullanıcı akışı `evaluateFound` kullanır. Oturuma göre değişen yüzlerce olağan oyuncu dosyasını tek tek sınıflandırmak gerekmez; yanlış işaretlenirlerse değerlendirmeye girerler.
 
 `cases.js`: 10 doğrulanmış istemci/eklenti ailesi × 12 kayıt akışı = 120 benzersiz vaka. Bu sayı 120 ayrı hile istemcisi anlamına gelmez. Her oturumda 4–5 vaka seçilir; önceki oturumun vaka kimlikleri hemen tekrarlanmaz. Ad, oyuncu, profil, yollar, olay zamanları ve sıranın yanı sıra normal dosyalar değişir. USB vakası yalnız aygıt bağlantısı ve dosya zamanını karşılaştırır; zaman yakınlığı aktarım veya kullanım kanıtı değildir. Dosya içerikleri/hash'ler eğitim verisidir.
 
@@ -50,3 +50,5 @@ Her sekme bağımsız `sessionStorage` oturumudur; aynı anda farklı kişiler k
 - `python tests/interview-findings.py`: klasör ağacı, Everything, doğrudan Buldum/tekilleştirme/geri alma, Properties, Prefetch, History Advanced Options, JournalTrace sürücü-tarama-layout-search, USB kapsamı, AtlasAC, sonuç ve mobil taşma.
 
 Python tarayıcı testleri Firefox gerektirir; kişisel açık tarayıcı profilini kullanmaz.
+
+Normal ortam: tarihli ekran görüntüleri, 2–4 dünya ve bölge verileri, gerçek bağımlılık adları, okul/kişisel belgeler, resimler, indirmeler, kaynak paketleri, Edge profili/önbelleği, Discord ve başlatıcı günlükleri, geçici dosyalar. Sayılar, seçimler, tarihler ve boyutlar seed ile değişir. Tarayıcı ve indirme kaynaklarında da normal kayıtlar bulunur. Tüm kişisel içerik sentetiktir.

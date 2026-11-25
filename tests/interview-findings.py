@@ -38,6 +38,14 @@ try:
  cmd('WebDriver:Navigate',{'url':'http://127.0.0.1:8769/mulakat/'})
  time.sleep(.4)
  js("document.querySelector('[data-action=new]').click();document.querySelector('[data-tool=everything]').click();return true")
+ first_session=js("return JSON.parse(sessionStorage.getItem('atlas-interview-v1')).session")
+ assert len([a for a in first_session['artifacts'] if a.get('context')])>=300
+ assert js("return [...document.querySelectorAll('.desktop-shortcuts [data-tool]')].map(e=>e.dataset.tool).sort().join(',')")==','.join(sorted(['explorer','everything','journal','journaltrace','downloads','history','activity','prefetch','usb','atlas']))
+ cmd('WebDriver:Refresh');time.sleep(.3)
+ assert js("return JSON.parse(sessionStorage.getItem('atlas-interview-v1')).session.seed")==first_session['seed']
+ js("document.querySelector('[data-action=resume]').click();return true")
+ shot=cmd('WebDriver:TakeScreenshot',{'full':False})['value'];Path('/tmp/lab-persona-desktop.png').write_bytes(base64.b64decode(shot))
+ js("document.querySelector('.desktop-shortcuts [data-tool=everything]').click();return true")
  assert js("return document.querySelectorAll('.window-active tbody tr').length>80 && !document.querySelector('.tools-sidebar') && document.documentElement.scrollHeight===innerHeight")
  def search(text):
   return js("const e=document.getElementById('tool-query');e.value="+json.dumps(text)+";e.dispatchEvent(new Event('input',{bubbles:true}));return true")
@@ -128,7 +136,11 @@ try:
  cmd('WebDriver:Navigate',{'url':'http://127.0.0.1:8769/mulakat/'});time.sleep(.3)
  js("document.querySelector('[data-action=new]').click();document.querySelector('[data-tool=everything]').click();return true")
  assert js("return document.documentElement.scrollWidth<=innerWidth && document.documentElement.scrollHeight===innerHeight")
- print('PASS: mobile viewport and new randomized session.',flush=True)
+ new_session=js("return JSON.parse(sessionStorage.getItem('atlas-interview-v1')).session")
+ assert new_session['seed']!=first_session['seed']
+ assert not set(new_session['caseIds']) & set(first_session['caseIds'])
+ assert sorted(a['path'] for a in new_session['artifacts'] if a.get('context'))!=sorted(a['path'] for a in first_session['artifacts'] if a.get('context'))
+ print('PASS: all desktop applications, refresh preserves session, mobile viewport and new randomized session.',flush=True)
 finally:
  if s:
   try:cmd('Marionette:Quit',{'flags':['eForceQuit']})
