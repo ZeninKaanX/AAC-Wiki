@@ -1,41 +1,52 @@
-# Atlas Lab — tarayıcı kontrol mülakatı
+# Atlas Lab — Windows kontrol eğitimi
 
-Wiki: `#interview`. Doğrudan giriş: `/mulakat/`.
+Wiki girişi `#interview`, doğrudan masaüstü `/mulakat/`. Laboratuvar dar iframe yerine ayrı sekmede tüm ekranı kullanır.
 
-## Kapsam
+## Kapsam ve uygulamalar
 
-Kullanıcının son belirttiği AAC RAR paketindeki sekiz araç kullanılır: Everything, Journal-Tool, JournalTrace, BrowserDownloadsView, BrowsingHistoryView, LastActivityView, USBDeview, WinPrefetchView. AtlasAC ek olarak tarama ve dosya/arşiv incelemesi sağlar. Dosya Gezgini sanal masaüstünün parçasıdır. Process Explorer, Process Monitor, Autoruns, System Informer, Luyten, Detect It Easy, RedLotus ve ayrı Mod Inspector uygulaması bu sürümde yer almaz.
+Kullanıcının paketindeki sekiz araç: Everything, Journal-Tool, JournalTrace, BrowserDownloadsView, BrowsingHistoryView, LastActivityView, USBDeview, WinPrefetchView. AtlasAC ve işletim sistemi Dosya Gezgini eklenir. Başka inceleme aracı menüye eklenmez.
 
-Programlar tarayıcıdaki eğitim verileri üzerinde çalışır; gerçek EXE dosyaları veya bir oyuncunun bilgisayarı çalıştırılmaz / taranmaz. Everything için düz arama, *.jar, ext:jar;bin, path:, dm:today ve OR; kaynaklarda işlem/zaman filtresi, sıralama ve CSV; AtlasAC'de tarama, metaveri ve iç arşiv girdileri vardır. Manifest veya temiz alt girdi, şüpheli mod kimliğini doğrulama puanı sağlamaz.
+Bu, tarayıcıda çalışan eğitim uyarlamasıdır. Gerçek Windows, EXE veya bir oyuncunun bilgisayarı çalıştırılmaz/taranmaz. Uygulamaların bütün sürümlerindeki bütün özelliklerin birebir portu değildir; aşağıdaki kontrol akışları oturumun sanal dosya ve kayıtlarında uygulanır. Yeni sistemin doğrulaması, EXE'lerin tarayıcıda çalıştığı iddiasına dayanmaz.
 
-## Vakalar
+## Referans incelemesi
 
-`cases.js`: 120 benzersiz vaka kimliği, 10 doğrulanmış istemci/eklenti kimliği, 12 farklı kanıt akışı. Rastgele ad varyasyonları vaka sayısı olarak sayılmaz. Akışlar konum, görünürlük, arşiv derinliği, indirme, USB kaynak/hedef/hash, kopya, yeniden adlandırma zinciri ve silme/güncelleme olaylarıyla farklılaşır. Her oturumda 4–5 vaka ve temiz dikkat dağıtıcılar seçilir. Hemen önceki oturumun vaka kimlikleri tekrar seçilmez. Metaveri kimlikleri yerel Atlas Lab örnekleri ve cases.js içindeki resmi kaynak bağlantılarından doğrulandı. Dosyalar, hash değerleri ve zamanlar eğitim için üretilir; gerçek tespit imzası veya oyun içi kullanım kanıtı değildir.
+25 Kasım'da asıl Windows diskine dokunmadan ayrı qcow2 katmanı açıldı. Gerçek uygulamalarda BrowserDownloadsView ana ekranı/Properties, BrowsingHistoryView açılış Advanced Options, WinPrefetchView iki panel, USBDeview aygıt alanları, LastActivityView alanları, JournalTrace Drive Select → Scan → Layout → Data Grid → Name araması ve Easy Journal Viewer açılışı gözle incelendi. Everything daha önce aynı yöntemle canlı açılıp karşılaştırıldı. AtlasAC düzeni yerel `Atlas-AC/atlasac/desktop.py` build_scan/build_results kodu ve gerçek wiki kullanım görüntülerinden alındı. İnceleme VM'si kapatıldı; geçici yazma katmanı silindi. Özel Windows ekran görüntüleri, Windows dosyaları ve uygulama EXE'leri siteye eklenmedi.
 
-Her vaka için sınıflandırma %35, içerik/silme kaydı %25, konum %15, destekleyen kayıt %15, kullanım ayrımı %10. USB vakasında USB ve Journal birlikte gerekir. Serbest yazı otomatik puanlanmaz. Son puan örneklerin ortalamasıdır.
+Resmî davranış kaynakları: [Everything arama sözdizimi](https://www.voidtools.com/support/everything/searching/), [BrowserDownloadsView](https://www.nirsoft.net/utils/web_browser_downloads_view.html), [BrowsingHistoryView](https://www.nirsoft.net/utils/browsing_history_view.html), [WinPrefetchView](https://www.nirsoft.net/utils/win_prefetch_view.html).
 
-## Orijinal görseller
+## Uygulanan akışlar
 
-Oluşturulan Atlas Lab logosu kaldırıldı. Logo, kullanıcının sağladığı orijinal yılbaşı AtlasOyuncu görselidir. Araç simgeleri yerel orijinal EXE kaynaklarından çıkarıldı. AtlasAC simgesi kullanıcının https://files.fm/u/ej9ctd4vg3w89ays bağlantısındaki AtlasAC.exe dosyasından çıkarıldı. Kaynak dosya SHA-256 ve PE kaynak bilgileri `icons/sources.json` içinde. JournalTrace.exe dosyasında yerel uygulama simgesi kaynağı bulunmadığından genel uygulama simgesi gösterilir; başka bir ürünün logosuyla değiştirilmez. EXE dosyaları yayımlanmaz.
+- Windows düzeninde Başlat, görev çubuğu, Çalıştır, bağımsız ve aynı anda açık pencereler; taşıma, kenardan boyutlandırma, büyütme/küçültme, geri açma. Kanıt alanı sürekli ekranı daraltmaz.
+- Dosya Gezgini: sürücü/klasör ağacı, adres, üst klasör, geri/ileri, mevcut ve gizli dosyalar, alt klasörde arama. Çalıştır ve adres çubuğu `%appdata%`, `%localappdata%`, `%userprofile%`, `shell:downloads` gibi sanal yolları çözer.
+- Everything: klasik açık yüzey ve kendi menüleri, dosya/klasör listesi, ad/yol/boyut/tarih sütunları, sütun genişliği, sıralama, `*.jar`, `ext:jar;bin`, `!`, `|`/OR, `file:`, `folder:`, `name:`, `path:`, `size:` ve `dm:` temel aramaları; arama yer imleri. Desteklenmeyen gelişmiş sözdizimi tam Everything motoru olarak sunulmaz.
+- Journal-Tool: gerçek Easy Journal Viewer'a göre koyu mavi yüzey, altı renkli işlem filtresi, yol/işlem/tarih, 15 kayıtlık sayfalama, arama. Klasör simgesi kaydın kendi yolunu açar.
+- JournalTrace: Drive → Select, sürücü bilgisi/Select, Scan, All done, Layout → Data Grid / Directory Tree. Data Grid, Search'e basınca USN/Name/Date/Reason/Directory alanlarında arar. Clear aramayı kaldırır. Journal-Tool ile aynı arayüz kullanılmaz.
+- BrowserDownloadsView: dosyanın indirildiği ilk ad ve yol korunur. Yeniden adlandırılmış gizli hedefe otomatik atlanmaz. Download URL 1/2/3, Web Page URL, Start/End Time ve boyut alanları, klasik Properties ve kaynak dosya klasörü vardır.
+- BrowsingHistoryView: açılış Advanced Options; zaman, URL dahil/hariç ve Edge/profil seçimi; seçime göre yüklenen geçmiş; URL/Title/Visit Time/Visit Count/Browser/Profile alanları. Simülasyonda temsil edilen kaynak Edge profilidir.
+- WinPrefetchView: üst panelde Prefetch kayıtları; seçilen kaydın yüklediği dosyalar alt panelde. Kayıt, belirli bir modun oyunda kullanıldığı anlamına getirilmez.
+- USBDeview: aygıt/bağlantı/sürücü/seri/registry zamanı alanları. Dosya aktarımı, kaynak-hedef hash veya dosya kopyalama günlüğü uydurulmaz. Aygıt satırı doğrudan hile bulgusu diye işaretlenmez.
+- LastActivityView: Action Time/Description/Filename/Full Path/More Information/Extension/Data Source alanları. Java programının çalışması, belirli bir JAR'ın oyun içinde kullanıldığı iddiasına çevrilmez.
+- NirSoft düzeninde Properties, Find, Quick Filter, seçili kayıtlar, CSV, çoklu seçim. Araçlara göre kayıt açma davranışı ayrıdır; her çift tık AtlasAC'ye gönderilmez.
+- AtlasAC: özgün arka plan/logo; Tarama/Sonuçlar, eğitim kapsamı onayı, durdurma, arka planda tamamlanma, sonuç arama, dosya indeksi/kapsam, JSON, tarama verisini silme, dosya/arşiv ayrıntısı. Eşleşme, cevap anahtarındaki doğru/yanlış etiketinden değil sanal dosyanın bilinen mod kimliğinden üretilir.
 
-Duvar kâğıdı Atlas teması için imagegen ile üretildi: karlı Minecraft Viking kalesi, koyu mavi fiyort, buz mavisi / altın fenerler ve hafif kuzey ışıkları. Yazı veya logo içermez.
+## Buldum ve değerlendirme
 
-## Oturumlar ve test
+Dosya veya ilgili kayıt yanındaki **Buldum** doğrudan kaydeder. Form, durum seçimi, kaynak kontrol listesi veya gerekçe zorunlu değildir. Aynı dosyanın farklı araçlarda tekrar işaretlenmesi tek bulgu sayılır. Bulduklarım panelinden geri alınır. Doğru olup olmadığı bitirene kadar gösterilmez.
 
-Her sekme kendi sessionStorage kaydını kullanır. Yenileme sonrası devam edilebilir; sekme kapanınca ilerleme kaybolabilir. Farklı adaylar ortak sunucu durumu paylaşmaz. Sonuç JSON indirilebilir. Bu istemci taraflı eğitimdir; gizli cevap anahtarı / sunucuda doğrulanan resmî sınav güvenliği sağlamaz.
+Sonuç: doğru bulunan / toplam şüpheli vaka, kaçırılanlar ve yanlış işaretlenen temiz dosyalar. Doğru vakalar eşit değerdedir; her temiz dosya işaretlemesi 10 puan düşürür, alt sınır 0. Eski ayrıntılı `evaluate` motoru test/uyumluluk için durur; kullanıcı akışı `evaluateFound` kullanır. Eklenen 90 olağan oyuncu dosyasını tek tek sınıflandırmak gerekmez; yanlış işaretlenirlerse değerlendirmeye girerler.
 
-`node tests/interview-engine.cjs`: 120 vakanın tamamının izinli araçlarla çözülebilmesi, 500 rastgele oturum, tüm vaka havuzuna erişim, peş peşe tekrar etmeme, kaynak ve puan tutarlılığı test edilir. Tarayıcıda tarama, arşiv içeriği/manifest ayrımı, kanıt toplama, filtreleme, bağımsız iki sekme, yenileme sonrası devam, sonuç ve mobil düzen kontrol edildi.
+`cases.js`: 10 doğrulanmış istemci/eklenti ailesi × 12 kayıt akışı = 120 benzersiz vaka. Bu sayı 120 ayrı hile istemcisi anlamına gelmez. Her oturumda 4–5 vaka seçilir; önceki oturumun vaka kimlikleri hemen tekrarlanmaz. Ad, oyuncu, profil, yollar, olay zamanları ve sıranın yanı sıra normal dosyalar değişir. USB vakası yalnız aygıt bağlantısı ve dosya zamanını karşılaştırır; zaman yakınlığı aktarım veya kullanım kanıtı değildir. Dosya içerikleri/hash'ler eğitim verisidir.
 
-Orijinal Windows ortamı ayrı qcow2 inceleme katmanı üzerinde açılıp güncel masaüstü, AtlasAC-Lab ve AAC Uygulamalar klasörleri gözle incelendi. Asıl Windows diski değiştirilmedi. Windows kaynaklı ekran görüntüleri ve özel kurulum dosyaları bu siteye eklenmedi.
+## Görseller ve oturumlar
 
-## Windows masaüstü düzeni — 25 Kasım güncellemesi
+Atlas logosu kullanıcının orijinal yılbaşı logosudur. Uygulama simgeleri orijinal PE kaynaklarından çıkarıldı; `icons/sources.json` köken/SHA bilgisi içerir. JournalTrace EXE'sinde simge kaynağı bulunmadığından genel uygulama simgesi kullanılır. AtlasAC'nin değiştirilmemiş özgün görselleri `assets/atlasac-background.gif` ve `assets/atlasac-logo.png` içinde; masaüstü kış/Viking duvar kâğıdı önceki kullanıcı talebi için üretildi.
 
-Laboratuvar wiki içindeki dar iframe yerine ayrı sekmede, tüm tarayıcı alanını kullanır. Windows 11 düzeninde Başlat menüsü, görev çubuğu, Çalıştır, bağımsız ve aynı anda açık uygulama pencereleri vardır. Pencereler fareyle taşınır, kenardan boyutlandırılır; başlığa çift tıklayarak veya düğmelerle büyütülür, küçültülür ve kapatılır. Görev çubuğundan geri açılır. Kanıt defteri ihtiyaç halinde açılır, masaüstünden sürekli alan ayırmaz.
+Her sekme bağımsız `sessionStorage` oturumudur; aynı anda farklı kişiler kullanabilir. Yenilemede ortam ve bulgular korunur; açılmış pencere düzeni yeniden kurulur. Bu alıştırmadır; sunucuda doğrulanan/gizli cevap anahtarlı resmî sınav değildir. Supabase eklenmedi.
 
-Everything klasik açık renkli yüzey, File/Edit/View/Search/Bookmarks/Tools/Help menüleri, dosya adı/yol/boyut/tarih sütunları, uzantı filtresi, arama yer imleri ve sütun genişliği ayarı kullanır. NirSoft araçlarının tablo sütunları kaynak türüne göre ayrıdır. Journal-Tool görünümü, yerel Atlas-Mülakat V3-JOURNAL.png referansındaki Easy Journal Viewer'a göre hazırlanır: koyu mavi yüzey, altı renkli işlem filtresi, FILE PATH/ACTION/TIMESTAMP alanları, arama ve 15 kayıtlık sayfalama. Klasör simgesi dosya konumunu açar; eğitim kanıtı ayrı AAC denetimiyle eklenir.
+## Kontroller
 
-AtlasAC ekranı, kullanıcının yerel Atlas-AC/atlasac/desktop.py kaynağındaki build_scan/build_results düzenine ve mevcut wiki ekran görüntülerine dayanır. `assets/atlasac-background.gif` ve `assets/atlasac-logo.png` o uygulamanın özgün görsellerinin değiştirilmemiş kopyalarıdır. Tarama/Sonuçlar, eğitim kapsamı onayı, durdurma, arka planda tamamlanan tarama, sonuç araması, dosya indeksi, kapsam ekranı, JSON dışa aktarma, yerel tarama verisini silme ve ayrıntı açma çalışır.
+- `node tests/interview-engine.cjs`: 120 vakanın izinli araçlarla çözülebilmesi, 500 rastgele oturum, vaka havuzu, kaynak tutarlılığı, içerik tabanlı Atlas eşleşmesi, USB sınırı, Buldum/geri alma/yanlış işaretleme.
+- `python tests/interview-windows.py`: ayrı Firefox profilinde gerçek fareyle taşıma/boyutlandırma, pencere/görev çubuğu, çoklu seçim, Çalıştır, bağımsız aday sekmeleri ve wiki başlatıcısı.
+- `python tests/interview-findings.py`: klasör ağacı, Everything, doğrudan Buldum/tekilleştirme/geri alma, Properties, Prefetch, History Advanced Options, JournalTrace sürücü-tarama-layout-search, USB kapsamı, AtlasAC, sonuç ve mobil taşma.
 
-Bu sürüm gerçek Windows/EXE çalıştırmaz. Uygulama motorlarının, tüm menülerin ve her sürümün birebir yeniden uygulaması değildir. Yalnız bu oturumun sanal dosya ve kayıtlarında desteklenen inceleme akışlarını uygular. Bir tarayıcı simülasyonuna native EXE yetenekleri atfedilmez. Supabase eklenmedi; mevcut aday oturumları sekme başına bağımsızdır.
-
-`python tests/interview-windows.py`: ayrı Firefox headless profiliyle gerçek fare hareketleriyle taşıma/boyutlandırma, pencere geçişleri, araç tabloları, Journal filtreleri, kanıt toplama, AtlasAC onay/tarama/arka plan/ayrıntı/silme akışı, ayrı sekme oturumları, değerlendirme, wiki başlatıcısı ve mobil taşma kontrolü. Firefox ve Python gerekir; mevcut kişisel tarayıcı profilini kullanmaz.
+Python tarayıcı testleri Firefox gerektirir; kişisel açık tarayıcı profilini kullanmaz.
