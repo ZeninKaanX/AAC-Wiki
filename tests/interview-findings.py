@@ -44,6 +44,18 @@ try:
  cmd('WebDriver:Refresh');time.sleep(.3)
  assert js("return JSON.parse(sessionStorage.getItem('atlas-interview-v1')).session.seed")==first_session['seed']
  js("document.querySelector('[data-action=resume]').click();return true")
+ # Every desktop program has a visible icon, even if its image fails.
+ for _ in range(60):
+  if js("return document.querySelectorAll('.desktop-shortcuts .icon-loaded').length===8"):break
+  time.sleep(.1)
+ assert js("return document.querySelectorAll('.desktop-shortcuts .app-icon-frame').length===9 && [...document.querySelectorAll('.desktop-shortcuts .app-icon-frame img')].every(i=>i.complete&&i.naturalWidth>0&&getComputedStyle(i).opacity==='1')")
+ js("const i=document.querySelector('.desktop-shortcuts [data-tool=atlas] img');i.dataset.original=i.src;i.src='icons/missing-test.png';return true")
+ for _ in range(40):
+  if js("return !!document.querySelector('.desktop-shortcuts [data-tool=atlas] .icon-unavailable')"):break
+  time.sleep(.1)
+ assert js("const f=document.querySelector('.desktop-shortcuts [data-tool=atlas] .icon-fallback');return getComputedStyle(f).visibility==='visible'&&f.getBoundingClientRect().width===40")
+ js("const i=document.querySelector('.desktop-shortcuts [data-tool=atlas] img');i.src=i.dataset.original;return true")
+ time.sleep(.2)
  shot=cmd('WebDriver:TakeScreenshot',{'full':False})['value'];Path('/tmp/lab-persona-desktop.png').write_bytes(base64.b64decode(shot))
  js("document.querySelector('.desktop-shortcuts [data-tool=everything]').click();return true")
  assert js("return document.querySelectorAll('.window-active tbody tr').length>80 && !document.querySelector('.tools-sidebar') && document.documentElement.scrollHeight===innerHeight")

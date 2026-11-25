@@ -35,7 +35,7 @@ Dosya veya ilgili kayıt yanındaki **Buldum** doğrudan kaydeder. Form, durum s
 
 Sonuç: doğru bulunan / toplam şüpheli vaka, kaçırılanlar ve yanlış işaretlenen temiz dosyalar. Doğru vakalar eşit değerdedir; her temiz dosya işaretlemesi 10 puan düşürür, alt sınır 0. Eski ayrıntılı `evaluate` motoru test/uyumluluk için durur; kullanıcı akışı `evaluateFound` kullanır. Oturuma göre değişen yüzlerce olağan oyuncu dosyasını tek tek sınıflandırmak gerekmez; yanlış işaretlenirlerse değerlendirmeye girerler.
 
-`cases.js`: 10 doğrulanmış istemci/eklenti ailesi × 12 kayıt akışı = 120 benzersiz vaka. Bu sayı 120 ayrı hile istemcisi anlamına gelmez. Her oturumda 4–5 vaka seçilir; önceki oturumun vaka kimlikleri hemen tekrarlanmaz. Ad, oyuncu, profil, yollar, olay zamanları ve sıranın yanı sıra normal dosyalar değişir. USB vakası yalnız aygıt bağlantısı ve dosya zamanını karşılaştırır; zaman yakınlığı aktarım veya kullanım kanıtı değildir. Dosya içerikleri/hash'ler eğitim verisidir.
+`cases.js`: 10 doğrulanmış istemci/eklenti ailesi × 24 kayıt akışı = 240 benzersiz vaka. Bu sayı 240 ayrı hile istemcisi anlamına gelmez. Her oturumda 4–7 vaka seçilir; önceki oturumun vaka kimlikleri hemen tekrarlanmaz. Ad, oyuncu, profil, yollar, olay zamanları ve sıranın yanı sıra normal dosyalar değişir. USB vakası yalnız aygıt bağlantısı ve dosya zamanını karşılaştırır; zaman yakınlığı aktarım veya kullanım kanıtı değildir. Dosya içerikleri/hash'ler eğitim verisidir.
 
 ## Görseller ve oturumlar
 
@@ -45,10 +45,16 @@ Her sekme bağımsız `sessionStorage` oturumudur; aynı anda farklı kişiler k
 
 ## Kontroller
 
-- `node tests/interview-engine.cjs`: 120 vakanın izinli araçlarla çözülebilmesi, 500 rastgele oturum, vaka havuzu, kaynak tutarlılığı, içerik tabanlı Atlas eşleşmesi, USB sınırı, Buldum/geri alma/yanlış işaretleme.
+- `node tests/interview-engine.cjs`: 240 vakanın izinli araçlarla çözülebilmesi, 500 rastgele oturum, vaka havuzu, kaynak tutarlılığı, içerik tabanlı Atlas eşleşmesi, USB sınırı, Buldum/geri alma/yanlış işaretleme.
 - `python tests/interview-windows.py`: ayrı Firefox profilinde gerçek fareyle taşıma/boyutlandırma, pencere/görev çubuğu, çoklu seçim, Çalıştır, bağımsız aday sekmeleri ve wiki başlatıcısı.
 - `python tests/interview-findings.py`: klasör ağacı, Everything, doğrudan Buldum/tekilleştirme/geri alma, Properties, Prefetch, History Advanced Options, JournalTrace sürücü-tarama-layout-search, USB kapsamı, AtlasAC, sonuç ve mobil taşma.
 
 Python tarayıcı testleri Firefox gerektirir; kişisel açık tarayıcı profilini kullanmaz.
 
 Normal ortam: tarihli ekran görüntüleri, 2–4 dünya ve bölge verileri, gerçek bağımlılık adları, okul/kişisel belgeler, resimler, indirmeler, kaynak paketleri, Edge profili/önbelleği, Discord ve başlatıcı günlükleri, geçici dosyalar. Sayılar, seçimler, tarihler ve boyutlar seed ile değişir. Tarayıcı ve indirme kaynaklarında da normal kayıtlar bulunur. Tüm kişisel içerik sentetiktir.
+
+Yeni akışlar: geçici dizin, masaüstü paketi, JSON uzantılı ZIP, pasif mods alt klasörü, alternatif profil, masaüstü iç arşivi, kaynak paketi dizininde mod, tarihli karışık yedek, silinmiş geçici kopya, indirme ad zinciri, gizli belge yedeği, aynı isimli temiz dosya yanıltmacası. İlk 120 vakanın kimlikleri korunur.
+
+Simgeler: özgün PNG yüklenene kadar sabit boyutlu yerel SVG görünür; yükleme hatasında SVG kalır. Başarılı yüklemede özgün simge gösterilir. Masaüstü, Başlat, uygulama klasörü, pencere başlığı ve görev çubuğu aynı bileşeni kullanır.
+
+Oyuncu adları: 64 Minecraft turnuva/PvP nicki ve 16 kurgusal topluluk nicki; seçim ağırlığı %85 / %15. Ekranda “Sanal oyuncu” etiketi bulunur: isimler eğitim karakteri etiketidir, gerçek kişilerin dosyası veya kontrol kaydı değildir. İsim havuzu referansı: https://mcchampionship.wiki.gg/wiki/Players

@@ -7,7 +7,7 @@ const LabEngine=(()=>{
  function random(seed){let a=seed>>>0;return()=>{a+=0x6D2B79F5;let t=a;t=Math.imul(t^t>>>15,t|1);t^=t+Math.imul(t^t>>>7,t|61);return((t^t>>>14)>>>0)/4294967296;};}
  function create(seed,now=Date.now(),caseIds=null,exclude=[]){
   const rng=random(seed),pick=a=>a[Math.floor(rng()*a.length)],shuffle=a=>a.map(x=>[rng(),x]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]);
-  const id='AAC-'+seed.toString(36).toUpperCase(),user=pick(['Deniz','Arda','Eren','Bora','Mert','Oyuncu']),nick=pick(['Kuzey','Raven','Mavi','Frost','Kaya','Buz'])+Math.floor(10+rng()*980);
+  const id='AAC-'+seed.toString(36).toUpperCase(),user=pick(['Deniz','Arda','Eren','Bora','Mert','Oyuncu']),nick=pick(rng()<.85?C.playerNames.competitive:C.playerNames.community);
   const home='C:\\Users\\'+user,launcher=pick(['PrismLauncher','ModrinthApp','AtlasClient']),profile=pick(['Fabric-1.21.11','Atlas-1.21.11','Profil-'+Math.floor(10+rng()*90)]),game=home+'\\AppData\\Local\\Programs\\'+launcher+'\\instances\\'+profile+'\\.minecraft';
   const stamp=minutes=>new Date(now-minutes*60000).toISOString(),hex=()=>Array.from({length:64},()=>Math.floor(rng()*16).toString(16)).join('');
   const artifacts=[],events=[];
@@ -15,15 +15,16 @@ const LabEngine=(()=>{
   const make=(name,folder,status,kind,modId,story,extra={})=>{const a={id:'f'+(artifacts.length+1),name,path:folder+'\\'+name,folder,status,kind,modId,hash:hex(),size:Math.floor(80+rng()*5400)+' KB',modified:stamp(50),story,...extra};artifacts.push(a);return a;};
   let chosen;
   if(caseIds)chosen=caseIds.map(cid=>C.catalogue.find(c=>c.id===cid)).filter(Boolean);
-  else{const families=shuffle(C.families).slice(0,4+Math.floor(rng()*2));chosen=families.map(f=>pick(C.catalogue.filter(c=>c.family===f.id&&!exclude.includes(c.id))));}
+  else{const families=shuffle(C.families).slice(0,4+Math.floor(rng()*4));chosen=families.map(f=>pick(C.catalogue.filter(c=>c.family===f.id&&!exclude.includes(c.id))));}
   for(const c of chosen){
    const f=C.families.find(f=>f.id===c.family),p=C.patterns.find(p=>p.id===c.pattern),age=50+Math.floor(rng()*120),old=home+'\\Downloads\\'+f.id+'.jar';
-   const locations={mods:game+'\\mods',cache:home+'\\AppData\\Roaming\\Cache',resources:home+'\\Documents\\ResourcePacks',downloads:home+'\\Downloads',addons:home+'\\Downloads\\addons',oldprofile:home+'\\AppData\\Roaming\\.minecraft\\versions\\Archive-'+(/^\d/.test(f.version)?f.version.replace(/[^\w.-]/g,''):f.id)+'\\mods',libraries:home+'\\AppData\\Roaming\\.minecraft\\libraries\\org\\graphics\\cache',documents:home+'\\Documents\\Backups'};
+   const locations={mods:game+'\\mods',cache:home+'\\AppData\\Roaming\\Cache',resources:home+'\\Documents\\ResourcePacks',downloads:home+'\\Downloads',addons:home+'\\Downloads\\addons',oldprofile:home+'\\AppData\\Roaming\\.minecraft\\versions\\Archive-'+(/^\d/.test(f.version)?f.version.replace(/[^\w.-]/g,''):f.id)+'\\mods',libraries:home+'\\AppData\\Roaming\\.minecraft\\libraries\\org\\graphics\\cache',documents:home+'\\Documents\\Backups',temp:home+'\\AppData\\Local\\Temp',desktop:home+'\\Desktop',config:game+'\\config',submods:game+'\\mods\\disabled',alternate:home+'\\AppData\\Roaming\\.minecraft\\alternate-instance\\mods',packs:game+'\\resourcepacks',datedbackup:home+'\\Documents\\Backups\\'+stamp(age).slice(0,10)};
    let status=p.status,folder=locations[p.location];
    if(f.legacy&&status==='active'){status='archive';folder=locations.oldprofile;}
    const prefix=pick(['map-helper','render-cache','world-core','terrain-data','profile-helper','chunk-tools']),name=prefix+'-'+Math.floor(100+rng()*900)+p.suffix;
    const story=f.name+' kimliği içerikten doğrulanır. '+p.focus+(f.addon?' Bu bir Meteor eklentisidir; bağımsız istemci değildir.':'')+(f.legacy?' Bu örnek eski / farklı bir oyun profiline aittir.':'')+' Dosya / kayıt varlığı tek başına oyunda kullanım kanıtı değildir.';
    const a=make(name,folder,status,'ZIP / JAR',f.id,story,{caseId:c.id,caseTitle:c.title,pattern:p.id,focus:p.focus,hidden:!!p.hidden,nested:p.nested||0,mixed:!!p.mixed,minecraft:f.version,familyName:f.name,supportGroups:p.support,modified:stamp(age),addon:!!f.addon});
+   if(p.collision){const clean=make(name,game+'\\mods','clean','ZIP / JAR','fabric-api','Aynı isimli temiz bağımlılık. Dosya adından karar verme; tam yol ve içerik kimliğini ayır.',{context:true});addEvent(clean,'metadata',age,'İçerik','PK 03 04 · fabric.mod.json · id=fabric-api');addEvent(clean,'journal',age+3,'FILE_CREATE',clean.path);}
    if(status!=='deleted')addEvent(a,'metadata',age,'İçerik','PK 03 04 · '+(p.nested?'extras.zip > '+f.id+'.jar > ':'')+'fabric.mod.json · id='+f.id);
    addEvent(a,'downloads',age+40,'İndirme tamamlandı','https://downloads.example.invalid/lab/'+f.id+'.jar → '+old);
    addEvent(a,'history',age+45,'Sayfa ziyareti','https://catalogue.example.invalid/'+f.id+' · Ziyaret kaydı indirme veya kullanım kanıtı değildir');

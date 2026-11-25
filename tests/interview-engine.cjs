@@ -1,8 +1,8 @@
 'use strict';
 const assert=require('node:assert/strict'),E=require('../mulakat/engine.js');
 const fixed=1795608000000;
-assert.equal(E.catalogue.length,120);
-assert.equal(new Set(E.catalogue.map(c=>c.id)).size,120);
+assert.equal(E.catalogue.length,240);
+assert.equal(new Set(E.catalogue.map(c=>c.id)).size,240);
 assert.equal(E.families.length,10);
 assert.deepEqual(Object.keys(E.tools).sort(),['explorer','everything','journal','journaltrace','downloads','history','activity','prefetch','usb','atlas'].sort());
 assert.deepEqual(E.create(48,fixed),E.create(48,fixed));
@@ -18,7 +18,7 @@ for(const c of E.catalogue){
 const seen=new Set(),fingerprints=new Set();
 for(let seed=1;seed<=500;seed++){
  const s=E.create(seed,fixed);s.caseIds.forEach(id=>seen.add(id));
- assert.ok(s.scenarioCount>=4&&s.scenarioCount<=5);
+ assert.ok(s.scenarioCount>=4&&s.scenarioCount<=7);
  assert.equal(new Set(s.artifacts.map(a=>a.path)).size,s.artifacts.length);
  assert.equal(E.evaluate(s,{}).score,0);
  const notes=fullNotes(s);assert.equal(E.evaluate(s,notes).score,100);
@@ -28,8 +28,8 @@ for(let seed=1;seed<=500;seed++){
  assert.deepEqual(E.rows(s,'journaltrace'),E.rows(s,'journal'));
  fingerprints.add(s.artifacts.map(a=>a.path+':'+a.modId).join('|'));
 }
-assert.equal(seen.size,120,'Random sessions must reach the whole case catalogue');assert.equal(fingerprints.size,500);
-console.log('PASS: all 120 cases solvable with the approved 8 tools + AtlasAC, 500 random sessions, full catalogue coverage, USB evidence requirements, scoring and source consistency.');
+assert.equal(seen.size,240,'Random sessions must reach the whole case catalogue');assert.equal(fingerprints.size,500);
+console.log('PASS: all 240 cases solvable with the approved 8 tools + AtlasAC, 500 random sessions, full catalogue coverage, USB evidence requirements, scoring and source consistency.');
 
 // One-click findings: no manual verdict or source checklist is required.
 {const s=E.create(9234,fixed),notes={};assert.ok(s.artifacts.length>80);const targets=s.artifacts.filter(a=>a.status!=='clean');notes[targets[0].id]={found:true};assert.equal(E.evaluateFound(s,notes).identified,1);assert.equal(E.evaluateFound(s,notes).marked,1);for(const a of targets)notes[a.id]={found:true};assert.equal(E.evaluateFound(s,notes).score,100);const clean=s.artifacts.find(a=>a.status==='clean');notes[clean.id]={found:true};assert.equal(E.evaluateFound(s,notes).falsePositives,1);assert.equal(E.evaluateFound(s,notes).score,90);notes[clean.id].found=false;assert.equal(E.evaluateFound(s,notes).score,100);assert.equal(E.evaluateFound(s,notes).missed,0);}
@@ -40,3 +40,8 @@ console.log('PASS: content-driven Atlas scan, real USB field scope, Everything f
 
 {const sessions=Array.from({length:20},(_,i)=>E.create(i+1,fixed));const counts=sessions.map(s=>s.artifacts.filter(a=>a.context).length);assert.ok(counts.every(n=>n>=300&&n<750),counts.join(','));assert.ok(new Set(counts).size>10);for(const s of sessions){assert.ok(s.artifacts.some(a=>a.path.includes('\\Pictures\\')));assert.ok(s.artifacts.some(a=>a.path.includes('Cache_Data')));assert.ok(E.rows(s,'history').filter(r=>!r.artifact).length>=18);assert.equal(s.artifacts.filter(a=>a.status!=='clean').length,s.scenarioCount);}}
 console.log('PASS: varied ordinary player files, personal folders, browsing noise and unchanged target count.');
+
+assert.equal(E.patterns.length,24);assert.equal(E.catalogue.find(c=>c.id==='VAKA-013').family,'wurst','Existing case IDs stay stable');{const s=E.create(4,fixed,[E.catalogue.find(c=>c.pattern==='same-name-decoy').id]);const a=s.artifacts.find(a=>a.caseId);const twin=s.artifacts.find(b=>b.name===a.name&&b.id!==a.id);assert.ok(twin&&twin.status==='clean'&&twin.path!==a.path);assert.equal(E.evaluateFound(s,{[twin.id]:{found:true}}).falsePositives,1);}
+
+{const C=require('../mulakat/cases.js');assert.equal(C.playerNames.competitive.length,64);assert.equal(C.playerNames.community.length,16);assert.equal(new Set([...C.playerNames.competitive,...C.playerNames.community]).size,80);const names=Array.from({length:500},(_,i)=>E.create(i+1,fixed).nick);assert.ok(new Set(names).size>=70);const competitive=names.filter(n=>C.playerNames.competitive.includes(n)).length;assert.ok(competitive>=375&&competitive<=475,competitive);}
+console.log('PASS: 80 player names, competitive weighting and randomized name coverage.');
