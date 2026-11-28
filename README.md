@@ -35,3 +35,7 @@ AtlasAC 0.3.30 uygulama arşivleri, Windows/Linux otomatik testleri ve paket bü
 `#updates`, AtlasAC ve AtlasAC Mobil afişlerini, kısa yenilik notlarını ve ilgili rehber bağlantılarını içerir. Afişler `assets/updates/`, mobil ekran görüntüleri `assets/mobile/` içindedir. Mobil indirme düğmesi, kullanıcının paylaşım talebiyle AAC Wiki'nin `atlasac-mobil-4.7-test` sürümüne yüklenen test APK'sına yönlenir. APK/SHA-256 dosyası GitHub Releases üzerinden sunulur; 4.7'nin test paketi ve imza uyumluluğu rehberde belirtilir. Ana sayfada iki küçük duyuru kartı bulunur; afişlerin tam boyu `#updates` bölümündedir.
 
 AtlasAC rehberindeki dolu sonuç ve dosya detayı ekranları, doğrulanmış resmî BleachHack örneğinin tek dosyalık statik taramasından alınmıştır. Uygulama/istemci çalıştırma veya sunucuda kullanım kanıtı olarak sunulmaz. Kaynak ve SHA-256 bilgisi `assets/desktop/README.md` içindedir. Schematica Printer ve Litematica Easy Place satırlarında 3 günlük ceza için oyunda kullanım koşulu belirtilir.
+
+## AAC’nin 3. ayı
+
+`#anniversary` son ekip filmini (3:22, 1080p60), `#downloads` AtlasES 2.0.7-rc1 ve güncel Raphael Windows indirmelerini içerir. `anniversary.js` / `anniversary.css`; uygulama dosyaları GitHub Releases üzerindedir.
